@@ -310,7 +310,7 @@ select.fld-in{appearance:none;-webkit-appearance:none;background-image:url("data
 // ════════════════════════════════════════════════════════════════════════════
 
 const TEAM='team@castle.tech'
-const STORE_KEY='castle_tradebook_v11'
+const STORE_KEY='castle_tradebook_v12'
 
 // ─── SEED DATA (from castle_wire.md, captured 2026-06-24) ─────────────────────
 function seed(){return {seq:0,
@@ -421,7 +421,7 @@ function seed(){return {seq:0,
       docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
       experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
 
-    t10:{id:'t10',ref:'TRD-2026-0490',title:'SEC Quarterly Reporting Requirement',company:'Killington Technologies',coverage:'$1M',prob:21,phase:'settled',approval:'approved',resolution:'Jan 1, 2027',
+    t10:{id:'t10',ref:'TRD-2026-0490',title:'SEC Quarterly Reporting Requirement',company:'Killington Technologies',coverage:'$1M',prob:15,phase:'settled',approval:'approved',resolution:'Jan 1, 2027',
       status:'Settled · Bound',
       profile:'Alternative-data provider delivering near-real-time retail sales, inventory, and margin intelligence to the investment community; demand scales with how thin official public-company disclosure becomes.',
       concern:'A move to make quarterly (10-Q) reporting optional would widen the information gap Killington fills — a direct demand catalyst. Killington took YES exposure to monetize the swing if the SEC acts before the Jan 1, 2027 deadline.',
@@ -433,8 +433,8 @@ function seed(){return {seq:0,
         {text:`Outcome is verified using the Federal Register at federalregister.gov and the SEC rulemaking index at sec.gov, with supporting confirmation from The Wall Street Journal, Bloomberg News, Reuters, and the Associated Press. If no qualifying final rule is published on or before 11:59pm ET on January 1, 2027, the market resolves to No.`}
       ],
       marketUrl:'https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar?op_market_ticker=KXSECQUARTERLY-26MAR-27APR01',
-      marketVenue:'Kalshi',market:{yes:21,no:79,vol:'$8,140'},marketAt:'wire 2026-06-24',
-      history:[28,15,31,18,26,13,30,17,24,14,29,19,27,16,23,12,28,20,32,17,25,15,29,18,24,16,27,21,19,24,18,23,17,22,20,24,18,21,23,19,22,20,18,23,21,19,22,20,21,18,23,20,22,19,21,20,22,20,21,20,22,21,20,21,22,21,20,21,20,22,21,20,21,21,20,21,22,21,20,21,20,21,20,21],
+      marketVenue:'Kalshi',market:{yes:15,no:85,vol:'$8,140'},marketAt:'wire 2026-06-24',
+      history:[49,46,43,43,44,45,46,46,49,50,52,53,57,58,53,51,50,49,48,48,49,46,46,47,45,44,45,44,44,42,44,44,41,41,41,40,40,39,39,38,38,39,39,37,36,35,36,34,34,35,34,33,32,42,50,57,54,51,47,41,34,32,30,30,30,27,27,25,21,16,16,17,19,22,25,24,23,23,23,23,22,20,21,20,17,18,18,16,14,15],
       experts:[],granolaUrl:'',
       quotes:[
         {id:'q1',name:'SIG',price:'21',size:'1'}
