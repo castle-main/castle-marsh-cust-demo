@@ -1,0 +1,3729 @@
+{
+ "company": {
+  "id": "b870f402-d89f-42c4-b00e-684afa7b821f",
+  "name": "Killington Technologies",
+  "website": "https://www.killingtontechnologies.com/",
+  "industry": "Financial Services",
+  "description": "Killington Technologies is a San Francisco-based, early-stage (seed-funded) alternative data and market intelligence company founded in 2021. The company aggregates and analyzes millions of public data points in near real-time to deliver granular sales, inventory, and margin intelligence across hundreds of retailers, primarily serving institutional investors such as hedge funds and financial analysts seeking an informational edge ahead of earnings. The company is a very small outfit (1–10 employees) with approximately $640K–$1.94M in total funding raised across multiple seed rounds, and operates with no known government contracts or lobbying activity.",
+  "revenue_range": "Under $1M",
+  "employee_count": "1-10",
+  "regions": [
+   "na"
+  ],
+  "supplier_countries": [
+   "United States"
+  ],
+  "supplier_types": [
+   "Public web data sources (retailer websites, e-commerce platforms)",
+   "Cloud infrastructure providers (AWS, GCP, or Azure for data processing/storage)",
+   "Data pipeline and ETL tooling vendors",
+   "Open-source big data and analytics platforms",
+   "API data feed providers (social, search, pricing data)"
+  ],
+  "customer_type": "B2B",
+  "customer_countries": [
+   "United States"
+  ],
+  "customer_segments": [
+   "Hedge funds (long/short equity, quantitative strategies)",
+   "Institutional asset managers and investment advisers",
+   "Equity research analysts covering retail and consumer discretionary sectors",
+   "Private equity firms conducting due diligence on retail targets",
+   "Family offices and multi-family offices with equities exposure",
+   "Buy-side analysts at investment banks"
+  ],
+  "risk_factors": [
+   "SEC MNPI/Alternative Data Scrutiny: The SEC's Office of Compliance Inspections has flagged alternative data vendors as an exam priority, investigating whether data providers inadvertently supply material non-public information (MNPI) to investment managers — a legal risk that could disrupt Killington's client relationships or expose it to enforcement action under Section 10(b) and Rule 10b-5 of the Securities Exchange Act.",
+   "Web Scraping Legal Uncertainty: Federal court precedents on web scraping remain unsettled. Website terms-of-service violations, Computer Fraud and Abuse Act (CFAA) exposure, and potential platform-level blocking by major retailers pose ongoing operational and legal risks to Killington's core data collection methodology.",
+   "California CCPA/CPRA Compliance Burden: Headquartered in San Francisco, Killington is directly subject to the California Consumer Privacy Act (CCPA) and its strengthened successor CPRA, which impose strict obligations on companies that collect, process, or sell consumer-related data — with enforcement by the California Privacy Protection Agency (CPPA).",
+   "Federal Privacy Legislation Risk: Congress is actively debating a federal consumer data privacy law, which could impose sweeping new obligations on data brokers and alternative data providers — potentially requiring opt-in consent, data minimization, and new liability exposure that could fundamentally alter Killington's data acquisition model.",
+   "DOJ Bulk Data Rule (Jan 2025): The Department of Justice's January 2025 rule restricting bulk sensitive data transfers to foreign adversaries could affect data vendors operating internationally or with foreign-linked investors, adding compliance complexity to Killington's current and future operations.",
+   "Seed-Stage Capital & Runway Risk: With only ~$640K–$1.94M in total funding and a very small team, Killington faces existential risk from inability to raise additional capital. Rising interest rates, tighter VC markets, and competition from well-capitalized incumbents (YipitData, M Science, Earnest Analytics) increase this risk.",
+   "Market Concentration / Client Dependency: As a very small company likely serving a handful of institutional clients, loss of even one or two key accounts could materially impair revenues. Hedge fund industry consolidation and cost-cutting on data subscriptions increase this vulnerability.",
+   "Retail Sector Volatility: Killington's core data product tracks retail sales, inventory, and margins. A prolonged contraction in U.S. consumer spending — driven by tariffs, inflation, or recession — could reduce investor interest in granular retail intelligence, shrinking the addressable market for Killington's services.",
+   "Competitive Displacement by Larger Alt-Data Providers: Competitors such as YipitData, Earnest Analytics, Bloomberg Second Measure, and M Science have substantially more funding, broader datasets, and established institutional client relationships — threatening Killington's ability to differentiate and grow.",
+   "AI and Automation Disruption: Large financial institutions and hedge funds are building in-house AI/ML capabilities to directly scrape and analyze public data, potentially disintermediating third-party alt-data vendors like Killington over the medium term."
+  ],
+  "regulatory_agencies": [
+   "SEC (Securities and Exchange Commission) — primary regulator of investment adviser clients; oversees MNPI and alternative data use policies",
+   "FTC (Federal Trade Commission) — data broker oversight, consumer privacy enforcement",
+   "California Privacy Protection Agency (CPPA) — enforces CCPA/CPRA for California-based companies",
+   "DOJ (Department of Justice) — enforcer of Computer Fraud and Abuse Act (CFAA) and January 2025 bulk data rule"
+  ],
+  "congressional_committees": [
+   "Senate Banking, Housing, and Urban Affairs Committee — oversees SEC and securities regulation",
+   "Senate Commerce, Science, and Transportation Committee — oversees federal data privacy and consumer protection legislation",
+   "House Financial Services Committee — oversees SEC, investment adviser regulation, and market structure",
+   "House Energy and Commerce Committee — leads federal privacy legislation (American Privacy Rights Act)"
+  ],
+  "political_exposure_notes": "Killington Technologies has no identified lobbying activity, PAC contributions, or government contracts. It is a private, seed-stage company with no known federal funding dependencies. However, it operates in a politically sensitive space: (1) The SEC's ongoing focus on alternative data vendors and MNPI enforcement directly impacts Killington's customers (hedge funds) and indirectly shapes demand for its services; (2) Federal consumer data privacy legislation (e.g., the American Privacy Rights Act, under active debate in Congress) could impose new obligations on data intelligence companies; (3) The DOJ's January 2025 bulk data rule adds compliance complexity for companies handling aggregated consumer data; (4) California's CCPA/CPRA framework — administered by the CPPA — is the most directly applicable regulatory framework given Killington's San Francisco HQ; (5) The SEC's Regulation S-P amendments (effective December 2025 for large firms, June 2026 for smaller firms) heighten data protection and cybersecurity obligations for the hedge fund clients Killington serves. No evidence of political spending, registered lobbying, or government contract revenue was found.",
+  "raw_research": "COMPANY IDENTITY: Killington Technologies Inc. is a for-profit, seed-stage alternative data company headquartered at 548 Market Street, San Francisco, CA (per CB Insights). Founded in 2021 by Gil Patrice Zamfirescu (MIT-educated; formerly a CTO). The company operates at killingtontechnologies.com. A secondary domain killington.tech describes it as \"an MIT and Stanford founded competitive intelligence firm.\"\n\nPRODUCT/SERVICE: Delivers near real-time sales, inventory, and margin data across hundreds of retailers, helping institutional investors reach data-driven conclusions faster. Intelligence is derived from millions of public data points gathered daily. Coverage reportedly spans over 100 major corporations. Use cases demonstrated on website include: predicting iPhone 16 demand for Apple investors, detecting early weakness in Victoria's Secret's Q1 2025 guidance quarter, and forecasting Arhaus Q1 2025 revenue misses.\n\nSIZE: Estimated 1–10 employees (per Prospeo, SignalHire). Total funding: $600K–$1.94M across 2 rounds (sources vary: Tracxn cites $600K; CB Insights cites $1.94M; FormDs confirms a $400K equity raise on May 24, 2024; Crunchbase shows last round was a Seed in May 2024). Ranked 48th among 479 active alt-data competitors by Tracxn. No revenue figures publicly available; company is pre-revenue or very early revenue.\n\nLEADERSHIP: Gil Patrice Zamfirescu — Co-Founder & CEO. MIT-educated. Previously worked as a CTO. Has been with Killington for approximately 4 years 9 months (as of early 2026).\n\nGEOGRAPHY: HQ in San Francisco, CA. Operations appear entirely US-based. No international offices, manufacturing, or data centers identified. Customers appear to be U.S.-based institutional investors.\n\nSUPPLY CHAIN: No physical manufacturing. Core supply chain consists of: (1) Public web data from retailer websites and e-commerce platforms; (2) Cloud computing infrastructure (provider not confirmed, but typical for startups of this type — AWS, GCP, Azure); (3) Open-sou",
+  "citations": [
+   "https://www.killingtontechnologies.com/",
+   "https://tracxn.com/d/companies/killingtontechnologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0",
+   "https://www.cbinsights.com/company/killington-technologies",
+   "https://www.privco.com/company/killington-technologies",
+   "https://www.crunchbase.com/organization/killington-technologies",
+   "https://www.killington.tech/",
+   "https://www.signalhire.com/companies/killington-technologies",
+   "https://www.linkedin.com/company/killington-technologies",
+   "https://pitchbook.com/profiles/company/533571-22",
+   "https://tracxn.com/d/companies/killington-technologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0"
+  ]
+ },
+ "dashboard": {
+  "id": "910c2811-6022-4bd6-ab10-d20cc64d8672",
+  "brief_headline": "**SEC MNPI enforcement and CPPA data broker crackdown** put Killington's client base and operating license at risk",
+  "brief_summary": null,
+  "brief_points": [
+   "**SEC 2026 exam cycle targeting alt-data MNPI controls** could force hedge fund clients to suspend Killington vendor contracts immediately",
+   "**CPPA Delete Act Strike Force** is actively pursuing financial intelligence companies; $200/day fines could exceed Killington's entire seed funding",
+   "**Federal appellate CFAA ruling on anti-bot bypass** could criminalize Killington's core scraping infrastructure and trigger retailer litigation",
+   "**AI bubble deflation and fintech seed contraction** threaten Series A runway precisely when compliance buildout demands peak capital"
+  ],
+  "dominant_risk_label": "Regulatory Actions",
+  "dominant_risk_bucket": "regulatory_actions",
+  "risk_concerns": null,
+  "data_updated_at": "2026-06-24T22:30:29.196+00:00",
+  "created_at": "2026-06-24T22:30:29.283332+00:00"
+ },
+ "events": [
+  {
+   "id": "3bfb5a64-aff7-4206-aec9-2e0180abb7ec",
+   "event_key": "evt-0",
+   "title": "Reddit v. SerpApi (25-cv-08736 SDNY) – DMCA §1201 Anti-Circumvention Ruling on Web Scraping",
+   "description": "Reddit's federal lawsuit against Perplexity AI and data-scraping intermediaries in SDNY tests whether DMCA §1201 anti-circumvention provisions apply to bypassing anti-bot measures on public websites, potentially creating new liability theory for commercial scrapers.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q2 2027",
+   "sort_order": 0,
+   "sources": [
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention and Data – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    },
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit v. Perplexity: Terms of Access as the Next Front in AI Data Litigation – Caldwell Law",
+     "url": "https://caldwelllaw.com/news/reddit-perplexity-ai-lawsuit-contract-data-rights/"
+    },
+    {
+     "title": "Reddit Sues Perplexity and Data Firms Over Alleged Unauthorized Scraping – PYMNTS",
+     "url": "https://www.pymnts.com/cpi-posts/reddit-sues-perplexity-ai-and-data-firms-over-alleged-unauthorized-scraping/"
+    }
+   ]
+  },
+  {
+   "id": "76a93e78-238a-4753-9264-196232c3f9e7",
+   "event_key": "evt-1",
+   "title": "CPPA Data Broker DELETE Act DROP System – August 1, 2026 Compliance Deadline",
+   "description": "California's Delete Act requires all registered data brokers to fulfill consumer deletion requests via the CPPA's centralized DROP system beginning August 1, 2026, with mandatory 45-day access cycles and annual registration fees.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026",
+   "sort_order": 1,
+   "sources": [
+    {
+     "title": "CPPA Proposes Rules on Automated Decision-Making and Cybersecurity Audits – Perkins Coie",
+     "url": "https://perkinscoie.com/insights/blog/fasten-your-seatbelts-cppa-proposes-rules-automated-decision-making-and-cybersecurity"
+    },
+    {
+     "title": "New CCPA Regulations Taking Effect January 1, 2026 – Pearl Cohen",
+     "url": "https://www.pearlcohen.com/new-ccpa-regulations-taking-effect-january-1-2026/"
+    },
+    {
+     "title": "Plan Ahead: Updated CCPA Regulations Go Into Effect Jan. 1 – Paul Hastings",
+     "url": "https://www.paulhastings.com/insights/ph-privacy/plan-ahead-updated-ccpa-regulations-go-into-effect-jan-1"
+    },
+    {
+     "title": "CPPA Law & Regulations Page",
+     "url": "https://cppa.ca.gov/regulations/"
+    }
+   ]
+  },
+  {
+   "id": "ebf39f8a-8a48-407b-a2d5-997aa3d08907",
+   "event_key": "evt-2",
+   "title": "CPPA CCPA ADMT Regulations – January 1, 2027 Compliance Deadline for Automated Decision-Making",
+   "description": "California's finalized ADMT regulations require pre-use consumer notices, opt-out rights, and risk assessments for businesses using automated decision-making technology, effective January 1, 2027, with risk assessment attestations due April 1, 2028.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q1 2027",
+   "sort_order": 2,
+   "sources": [
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    },
+    {
+     "title": "California Finalizes CCPA Regulations on ADMT, Risk Assessments, and Cybersecurity Audits – Coblentz Law",
+     "url": "https://www.coblentzlaw.com/news/california-finalizes-ccpa-regulations-on-automated-decision-making-technology-risk-assessments-and-cybersecurity-audits/"
+    },
+    {
+     "title": "CPPA Approves New CCPA Regulations on AI, Cybersecurity, and Risk Governance – Wilson Sonsini",
+     "url": "https://www.wsgr.com/en/insights/alerts/cppa-approves-new-ccpa-regulations-on-ai-cybersecurity-and-risk-governance-and-advances-updated-data-broker-regulations.html"
+    }
+   ]
+  },
+  {
+   "id": "79e29431-3412-45ab-9474-2f8dfa4ce2ca",
+   "event_key": "evt-3",
+   "title": "SEC Regulation S-P Amendments – June 3, 2026 Deadline for Smaller Registered Investment Advisers",
+   "description": "SEC Regulation S-P amendments require smaller registered investment advisers (including many hedge fund clients) to implement incident response programs and data breach notification procedures by June 3, 2026.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q2–Q3 2026",
+   "sort_order": 3,
+   "sources": [
+    {
+     "title": "New SEC Regulation S-P Amendments: Impact on Private Fund Managers – EisnerAmper",
+     "url": "https://www.eisneramper.com/insights/financial-services/sec-regulation-s-p-private-fund-1225/"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus on Risks – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "0483e2df-a9d7-4ce4-8d6c-573d864d03fc",
+   "event_key": "evt-4",
+   "title": "SEC 2026 Exam Priorities – Alternative Data and MNPI Scrutiny Under Chair Atkins",
+   "description": "The SEC Division of Examinations' 2026 priorities continue focusing on alternative data use by investment advisers and MNPI compliance, though enforcement under Chair Atkins has shifted toward fraud-focused actions rather than novel regulatory theories.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q4 2026",
+   "sort_order": 4,
+   "sources": [
+    {
+     "title": "SEC Division of Examinations (Finally) Speaks on Alternative Data – Akin Gump",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "What the New SEC's First Year Signals for the Future of Private Fund Oversight – Proskauer",
+     "url": "https://www.proskauer.com/blog/what-the-new-secs-first-year-signals-for-the-future-of-private-fund-oversight"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "aa6e022b-c588-42ce-a2a4-64ea14fb17aa",
+   "event_key": "evt-5",
+   "title": "DMCA §1201 Second Circuit Precedent – Pending Appeal on Anti-Circumvention for Web Scraping",
+   "description": "A fully briefed case before the Second Circuit Court of Appeals on DMCA §1201 anti-circumvention principles could establish binding precedent on whether bypassing rate limits and anti-bot measures constitutes illegal circumvention, affecting all commercial web scrapers.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q1 2027",
+   "sort_order": 5,
+   "sources": [
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    }
+   ]
+  },
+  {
+   "id": "7b3a41c5-4808-4e11-a469-6217124f8925",
+   "event_key": "evt-6",
+   "title": "CPPA Opt-Out Preference Signals (OOPS) Rulemaking – Formal Regulations Expected Q4 2026",
+   "description": "The CPPA is advancing rulemaking on Opt-Out Preference Signals (OOPS) that would require businesses to honor browser-level opt-out signals from consumers, with formal proposed regulations expected after the April 2026 preliminary comment period closed.",
+   "category": "regulatory_actions",
+   "severity": "low",
+   "timeframe": "Q4 2026 – Q2 2027",
+   "sort_order": 6,
+   "sources": [
+    {
+     "title": "CPPA Law & Regulations – Current Rulemaking Activities",
+     "url": "https://cppa.ca.gov/regulations/"
+    },
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    }
+   ]
+  },
+  {
+   "id": "205bd793-719d-4be1-b9bb-ca4c161e7944",
+   "event_key": "evt-7",
+   "title": "Meta v. Bright Data – Logged-Off Public Scraping Precedent Stabilized (N.D. Cal. 2024)",
+   "description": "Meta dismissed its remaining claims against Bright Data after a federal court ruled that logged-off scraping of public data does not violate platform terms of service, stabilizing legal protection for scrapers of publicly accessible content—a favorable precedent for Killington.",
+   "category": "regulatory_actions",
+   "severity": "low",
+   "timeframe": "Ongoing (precedent established)",
+   "sort_order": 7,
+   "sources": [
+    {
+     "title": "Court Rules in Favor of Bright Data in Meta v. Bright Data Case – Bright Data",
+     "url": "https://brightdata.com/blog/web-data/court-rules-in-favor-of-bright-data-in-meta-v-bright-data-case"
+    },
+    {
+     "title": "Meta dismisses claim against Bright Data – Bright Data",
+     "url": "https://brightdata.com/blog/general/meta-dismisses-claim-against-bright-data"
+    },
+    {
+     "title": "Federal judge rules against Meta in data scraping case – Courthouse News",
+     "url": "https://www.courthousenews.com/federal-judge-rules-against-meta-in-data-scraping-case/"
+    }
+   ]
+  },
+  {
+   "id": "b5a5071e-116a-4417-bc2a-636b07ec13f3",
+   "event_key": "evt-8",
+   "title": "Amazon robots.txt Expansion – November 2025 Bot Blocking of AI Crawlers",
+   "description": "Amazon expanded robots.txt restrictions in November 2025 to block crawlers from Meta, Google, and OpenAI, signaling aggressive data-border defense that could extend to commercial data scraping firms targeting product/pricing data.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q4 2026",
+   "sort_order": 8,
+   "sources": [
+    {
+     "title": "Amazon AI scraping project creates unauthorized listings for small brands – PPC Land",
+     "url": "https://ppc.land/amazon-ai-scraping-project-creates-unauthorized-listings-for-small-brands/"
+    },
+    {
+     "title": "Is Web Scraping Legal in 2026? Laws, Ethics, and Risks Explained – Browserless",
+     "url": "https://www.browserless.io/blog/is-web-scraping-legal"
+    }
+   ]
+  },
+  {
+   "id": "17e84ebd-208c-476c-a9ed-ed4b15543995",
+   "event_key": "evt-9",
+   "title": "SEC FY2026 Exam Priorities — MNPI & Alternative Data Vendor Due Diligence Focus",
+   "description": "SEC Division of Examinations' FY2026 priorities continue scrutinizing hedge fund advisers' MNPI handling and alternative data vendor due diligence under Section 204A of the Investment Advisers Act, increasing compliance burdens on Killington's clients.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q2 2027",
+   "sort_order": 9,
+   "sources": [
+    {
+     "title": "SEC Division of Examinations FY2026 Exam Priorities (PDF)",
+     "url": "https://www.sec.gov/files/2026-exam-priorities.pdf"
+    },
+    {
+     "title": "Goodwin Law — 2026 SEC Exam Priorities for Registered Investment Advisers",
+     "url": "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-privateequity-pif-2026-sec-exam-priorities-for-registered-investment-advisers"
+    },
+    {
+     "title": "Akerman — SEC 2026 Exam Priorities: Key Implications for Private Fund Advisers",
+     "url": "https://www.akerman.com/en/perspectives/sec-releases-2026-examination-priorities-key-implications-for-private-fund-advisers.html"
+    },
+    {
+     "title": "Akin Gump — SEC Division of Examinations Speaks on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "Lowenstein Sandler — Key Considerations for Alternative Data and AI Vendors to Investment Firms",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "7dff88ba-39bd-4d90-90b1-b88c782b9bc9",
+   "event_key": "evt-10",
+   "title": "California SB 362 Delete Act — DROP Mandatory Processing Deadline August 1, 2026",
+   "description": "California's Delete Act requires data brokers to begin processing consumer deletion requests via the DROP platform every 45 days starting August 1, 2026, with $200/request/day penalties for noncompliance; CPPA's Data Broker Enforcement Strike Force has already fined S&P Global and other data providers.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026",
+   "sort_order": 10,
+   "sources": [
+    {
+     "title": "CalPrivacy — DROP for Data Brokers",
+     "url": "https://privacy.ca.gov/data-brokers/"
+    },
+    {
+     "title": "Clark Hill — California's DROP Goes Live, CalPrivacy Continues to Enforce Delete Act",
+     "url": "https://www.clarkhill.com/news-events/news/is-your-business-a-data-broker-californias-drop-goes-live-and-calprivacy-continues-to-enforce-delete-act/"
+    },
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Freshfields — CalPrivacy Seeks Input on Data Broker Audit Requirements",
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/the-delete-act-calprivacy-seeks-input-on-data-broker-audit-requirements-102mqe8"
+    },
+    {
+     "title": "Crowell & Moring — California Privacy Agency Launches Data Broker Strike Force",
+     "url": "https://www.crowell.com/en/insights/client-alerts/california-privacy-agency-launches-data-broker-strike-force-amid-delete-act-crackdown"
+    }
+   ]
+  },
+  {
+   "id": "5fd0e77f-69e8-4292-8b46-29fae236a5a2",
+   "event_key": "evt-11",
+   "title": "HR 8413 SECURE Data Act — House Energy & Commerce Subcommittee Hearing June 3, 2026",
+   "description": "The SECURE Data Act (HR 8413), introduced April 22, 2026, would establish federal data broker registration with the FTC, data minimization requirements, and preempt state privacy laws including CCPA/CPRA; a subcommittee hearing was held June 3, 2026.",
+   "category": "federal_legislation",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q4 2027",
+   "sort_order": 11,
+   "sources": [
+    {
+     "title": "IAPP — SECURE Data Act: Analysis of the New Federal Privacy Bill",
+     "url": "https://iapp.org/news/a/secure-data-act-analysis-of-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "House Energy & Commerce Committee — Hearing Announcement on HR 8413",
+     "url": "https://energycommerce.house.gov/posts/chairmen-guthrie-and-bilirakis-announce-hearing-on-establishing-a-federal-data-privacy-law"
+    },
+    {
+     "title": "Epstein Becker Green — One Nation, One Privacy Law: GOP Introduces Federal Privacy Legislation",
+     "url": "https://www.workforcebulletin.com/one-nation-one-privacy-law-gop-introduces-federal-privacy-legislation"
+    },
+    {
+     "title": "Privado AI — SECURE Data Act: What's in the New Federal Privacy Law",
+     "url": "https://www.privado.ai/post/us-secure-data-act-whats-in-the-newly-proposed-federal-privacy-law"
+    },
+    {
+     "title": "Tech Contracts — Proposed Federal Data Privacy Legislation: The SECURE Data Act",
+     "url": "https://www.techcontracts.com/2026/05/04/proposed-u-s-federal-data-privacy-legislation-the-secure-data-act-h-r-8413/"
+    }
+   ]
+  },
+  {
+   "id": "6de77500-0a7a-4527-b5b0-5270136b8a71",
+   "event_key": "evt-12",
+   "title": "DOJ Data Security Program (28 CFR Part 202) — Full Enforcement Under EO 14117",
+   "description": "DOJ's Data Security Program, fully effective since October 6, 2025, prohibits bulk transfers of sensitive personal data to countries of concern (China, Russia, Iran, North Korea, Cuba, Venezuela) via data brokerage; civil penalties up to $368,136 per violation or criminal penalties up to $1M and 20 years.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q4 2026",
+   "sort_order": 12,
+   "sources": [
+    {
+     "title": "DOJ — Justice Department Implements Critical National Security Program",
+     "url": "https://www.justice.gov/opa/pr/justice-department-implements-critical-national-security-program-protect-americans-sensitive"
+    },
+    {
+     "title": "DOJ National Security Division — Data Security Program",
+     "url": "https://www.justice.gov/nsd/data-security"
+    },
+    {
+     "title": "Cooley — Understanding and Complying with the DOJ's Bulk Data Rule",
+     "url": "https://cdp.cooley.com/understanding-and-complying-with-the-dojs-bulk-data-rule/"
+    },
+    {
+     "title": "Government Contracts Law — DOJ Launches New Data Security Program",
+     "url": "https://www.governmentcontractslaw.com/2026/01/doj-launches-new-data-security-program-what-your-company-needs-to-know/"
+    }
+   ]
+  },
+  {
+   "id": "472a5bbb-2d95-4cb5-ac14-9528299c0c5a",
+   "event_key": "evt-13",
+   "title": "FTC PADFAA Warning Letters to Data Brokers — February 2026 Enforcement Ramp-Up",
+   "description": "The FTC sent warning letters to 13 data brokers on February 9, 2026, signaling escalating enforcement of the Protecting Americans' Data from Foreign Adversaries Act (PADFAA), with civil penalties up to $53,088 per violation for selling sensitive personal data to foreign adversaries.",
+   "category": "regulatory_actions",
+   "severity": "low",
+   "timeframe": "Q3 2026 – Q2 2027",
+   "sort_order": 13,
+   "sources": [
+    {
+     "title": "FTC Press Release — FTC Reminds Data Brokers of Their Obligations to Comply with PADFAA",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa"
+    },
+    {
+     "title": "Wiley — FTC Sends Warning Letters to Data Brokers on PADFA Compliance",
+     "url": "https://www.wiley.law/alert-FTC-Sends-Warning-Letters-to-Data-Brokers-on-PADFA-Compliance"
+    },
+    {
+     "title": "Morrison Foerster — U.S. Cyber and Privacy Regulators Intensify Focus on Data Transfers to Foreign Adversaries",
+     "url": "https://www.mofo.com/resources/insights/260218-a-mofo-privacy-minute-qa-us-cyber-and-privacy-regulators"
+    },
+    {
+     "title": "Mayer Brown — Cross-Border Transfers of American Personal Information Carry Heightened Risks",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/cross-border-transfers-of-american-personal-information-carry-heightened-regulatory-litigation-risks"
+    }
+   ]
+  },
+  {
+   "id": "2b06a289-71a5-4729-a1b1-671ea984b900",
+   "event_key": "evt-14",
+   "title": "SEC Regulation S-P Amendments — June 3, 2026 Compliance Deadline for Smaller Entities",
+   "description": "The SEC's 2024 amendments to Regulation S-P require smaller registered investment advisers (under $1.5B AUM) to implement written incident response programs, 30-day breach notification, and enhanced vendor oversight by June 3, 2026; the SEC's 2026 exam priorities explicitly name Reg S-P compliance as a focus area.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026",
+   "sort_order": 14,
+   "sources": [
+    {
+     "title": "Sidley Austin — SEC Regulation S-P: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities"
+    },
+    {
+     "title": "Holland & Knight — Regulation S-P Amendments: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.hklaw.com/en/insights/publications/2026/05/regulation-s-p-amendments-compliance-deadline-approaching"
+    },
+    {
+     "title": "Carlton Fields — Regulation S-P Amendments: Implementation for Small Firms",
+     "url": "https://www.carltonfields.com/insights/publications/2026/regulation-sp-amendments-implementation-and-key-compliance-considerations-for-small-firms"
+    },
+    {
+     "title": "Grant Thornton — SEC Reveals 2026 Examination Priorities",
+     "url": "https://www.grantthornton.com/insights/articles/asset-management/2026/sec-reveals-examination-priorities"
+    }
+   ]
+  },
+  {
+   "id": "35b11e07-36d6-4d02-ab68-8ff19aac9004",
+   "event_key": "evt-15",
+   "title": "SEC Enforcement Division Restructuring Under Chairman Atkins — FY2026 Resource Reduction",
+   "description": "Under Chairman Atkins, the SEC's Enforcement Division FY2026 budget requests 1,178 FTEs, down 17% from FY2024's 1,424 actual FTEs, signaling a shift toward 'sensible enforcement' that could reduce scrutiny of alternative data but also create regulatory uncertainty.",
+   "category": "regulatory_actions",
+   "severity": "low",
+   "timeframe": "Q3 2026 – Q4 2027",
+   "sort_order": 15,
+   "sources": [
+    {
+     "title": "Gibson Dunn — Securities Enforcement 2025 Year-End Update",
+     "url": "https://www.gibsondunn.com/securities-enforcement-2025-year-end-update/"
+    },
+    {
+     "title": "Sidley Austin — SEC Division of Examinations 2026 Exam Priorities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2025/11/us-sec-division-of-examination-announces-2026-exam-priorities"
+    },
+    {
+     "title": "Lowenstein Sandler — Key Considerations for Alternative Data Vendors",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "7ae31a56-1ac7-48c8-a401-0c40972fb15c",
+   "event_key": "evt-16",
+   "title": "CPPA Data Broker Enforcement Strike Force — S&P Global and Datamasters Fines January 2026",
+   "description": "CalPrivacy's Data Broker Enforcement Strike Force issued two decisions on January 8, 2026, fining S&P Global $62,600 and Datamasters $45,000 for failing to register as data brokers, with Datamasters ordered to permanently stop selling California residents' personal information.",
+   "category": "regulatory_actions",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q4 2026",
+   "sort_order": 16,
+   "sources": [
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Crowell & Moring — California Privacy Agency Launches Data Broker Strike Force",
+     "url": "https://www.crowell.com/en/insights/client-alerts/california-privacy-agency-launches-data-broker-strike-force-amid-delete-act-crackdown"
+    },
+    {
+     "title": "DataGrail — The Delete Act and DROP: What You Need to Know",
+     "url": "https://www.datagrail.io/blog/regulations/the-delete-act-and-drop-what-you-need-to-know/"
+    },
+    {
+     "title": "Governor Newsom — First-in-the-Nation Privacy Tool Announcement",
+     "url": "https://www.gov.ca.gov/2026/01/20/governor-newsom-announces-first-in-the-nation-privacy-tool-allowing-californians-to-block-the-sale-of-their-data/"
+    }
+   ]
+  },
+  {
+   "id": "922795b5-5f50-43a1-96b8-fc78a5b132e7",
+   "event_key": "evt-17",
+   "title": "H.R. 8413 SECURE Data Act – Federal Data Broker Registration Requirement",
+   "description": "The SECURE Data Act (H.R. 8413), introduced April 22, 2026, would require data brokers to register annually with the FTC and impose data minimization and vendor contracting requirements on covered entities.",
+   "category": "federal_legislation",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q2 2027",
+   "sort_order": 17,
+   "sources": [
+    {
+     "title": "Hunton Andrews Kurth – SECURE Data Act",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/house-republicans-introduce-comprehensive-federal-privacy-bill-secure-data-act"
+    },
+    {
+     "title": "Maynard Nexsen – SECURE Data Act Analysis",
+     "url": "https://www.maynardnexsen.com/publication-the-secure-data-act-what-businesses-need-to-know-about-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "IAPP – US Republicans Introduce Privacy Legislation",
+     "url": "https://iapp.org/news/a/us-republicans-introduce-latest-comprehensive-privacy-legislation"
+    }
+   ]
+  },
+  {
+   "id": "684e0573-c2bb-4ade-83a3-3ffb5ef4d913",
+   "event_key": "evt-18",
+   "title": "S.4211 Consumer Data Privacy and Security Act – Senate Privacy Bill 119th Congress",
+   "description": "S.4211, introduced March 2026, would create federal privacy standards with FTC and state AG enforcement authority, imposing data processing transparency and consumer notification requirements on covered entities.",
+   "category": "federal_legislation",
+   "severity": "low",
+   "timeframe": "Q3 2026 – Q4 2027",
+   "sort_order": 18,
+   "sources": [
+    {
+     "title": "Congress.gov – S.4211 Text",
+     "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4211/text"
+    }
+   ]
+  },
+  {
+   "id": "51c10842-5bfe-4310-94f2-a4cbb635a8b2",
+   "event_key": "evt-19",
+   "title": "Hedge Fund In-House AI Build – Disintermediation of Third-Party Alt-Data Vendors",
+   "description": "With 95% of hedge funds now using generative AI and LLM-powered extraction reducing costs, mid-sized funds are increasingly building in-house web-scraping and analytics capabilities that could displace third-party alt-data vendors.",
+   "category": "macro_policy",
+   "severity": "high",
+   "timeframe": "Q3 2026 – Q4 2027",
+   "sort_order": 19,
+   "sources": [
+    {
+     "title": "Kadoa – Alternative Data for Hedge Funds Guide",
+     "url": "https://www.kadoa.com/blog/alternative-data-for-hedge-funds"
+    },
+    {
+     "title": "AIMA via Markets Herald – 95% Hedge Fund AI Adoption",
+     "url": "https://marketsherald.com/almost-every-hedge-fund-now-uses-ai-almost-none-of-them-let-it-trade/"
+    },
+    {
+     "title": "Tommaso Ricci – AI for Hedge Funds 2026 Guide",
+     "url": "https://www.tommasomariaricci.com/blog/ai-for-hedge-funds"
+    },
+    {
+     "title": "Sify – Agentic AI in Hedge Fund Operations",
+     "url": "https://www.sify.com/ai-analytics/the-dawn-of-hedge-agents-how-agentic-ai-is-transforming-hedge-fund-operations/"
+    }
+   ]
+  },
+  {
+   "id": "64a61d3f-e3ba-4b0e-9e7e-5dab7bc4991c",
+   "event_key": "evt-20",
+   "title": "SEC Section 204A Enforcement – Alt-Data Vendor MNPI Liability Expansion",
+   "description": "The SEC is expanding its theory that alternative data may itself constitute MNPI, with enforcement actions targeting advisers' failure to tailor MNPI policies to alt-data usage, creating direct liability risk for data vendors.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q2 2027",
+   "sort_order": 20,
+   "sources": [
+    {
+     "title": "Mondaq – AI, MNPI, and the SEC",
+     "url": "https://www.mondaq.com/unitedstates/securities/1799684/ai-mnpi-and-the-sec-how-existing-law-applies-to-model-driven-trading"
+    },
+    {
+     "title": "Lowenstein Sandler – MNPI in 2026 Panel",
+     "url": "https://www.lowenstein.com/news-insights/events/insider-trading-mnpi-in-2026-enforcement-risk-governance-cco-accountability-may-2026-redburn"
+    },
+    {
+     "title": "Akin Gump – SEC on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "WilmerHale – SEC Enforcement on MNPI Policies",
+     "url": "https://www.wilmerhale.com/en/insights/client-alerts/20241203-sec-enforcement-actions-reflect-expanding-focus-on-advisers-policies-and-procedures-to-prevent-misuse-of-material-nonpublic-information"
+    }
+   ]
+  },
+  {
+   "id": "52feb922-d68d-4e36-a243-445e35aeca6b",
+   "event_key": "evt-21",
+   "title": "H.R. 8014 Online Privacy Act of 2026 – Digital Privacy Agency Creation",
+   "description": "Rep. Lofgren's H.R. 8014, introduced March 2026, would create a Digital Privacy Agency with rulemaking authority, impose data minimization requirements, and grant a private right of action for privacy violations.",
+   "category": "federal_legislation",
+   "severity": "low",
+   "timeframe": "Q4 2026 – Q2 2027",
+   "sort_order": 21,
+   "sources": [
+    {
+     "title": "Congress.gov – H.R. 8014 Online Privacy Act of 2026",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/8014/text"
+    },
+    {
+     "title": "Rep. Lofgren – Online Privacy Act Press Release",
+     "url": "https://lofgren.house.gov/media/press-releases/lofgren-introduces-online-privacy-act-protect-americans-personal-data"
+    }
+   ]
+  },
+  {
+   "id": "68d2db9f-6610-48a8-ba5b-5f671308bfcb",
+   "event_key": "evt-22",
+   "title": "Trump Executive Order on AI Innovation – June 2, 2026 Deregulation Signal",
+   "description": "President Trump's June 2, 2026 Executive Order on Promoting Advanced AI Innovation and Security signals federal AI deregulation, potentially accelerating hedge fund in-house AI capabilities while creating tension with state-level AI regulation efforts.",
+   "category": "regulatory_actions",
+   "severity": "medium",
+   "timeframe": "Q3 2026 – Q4 2026",
+   "sort_order": 22,
+   "sources": [
+    {
+     "title": "Sidley Austin – Trump AI Executive Order June 2026",
+     "url": "https://datamatters.sidley.com/2026/04/30/u-s-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities/"
+    },
+    {
+     "title": "Lowenstein Sandler – Alt Data & AI Vendor Compliance",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "ac4d076a-c0b8-4417-abd7-c68ca9cb8aed",
+   "event_key": "evt-23",
+   "title": "VC Capital Concentration – Fintech Seed Funding Selectivity 2026",
+   "description": "Fintech venture funding is rising overall but concentrating into fewer, larger deals with 31.5% fewer transactions in Q1 2026 vs Q1 2025, creating existential fundraising risk for pre-revenue seed-stage startups without demonstrated traction.",
+   "category": "macro_policy",
+   "severity": "critical",
+   "timeframe": "Q2 2026 – Q4 2026",
+   "sort_order": 23,
+   "sources": [
+    {
+     "title": "Crunchbase – Fintech Startups Raise More in Fewer Deals Q1 2026",
+     "url": "https://news.crunchbase.com/fintech/global-startup-venture-funding-up-deals-down-q1-2026/"
+    },
+    {
+     "title": "Harvard Law – Venture Capital Outlook 2026",
+     "url": "https://corpgov.law.harvard.edu/2025/12/23/venture-capital-outlook-for-2026-5-key-trends/"
+    },
+    {
+     "title": "KPMG – Global Fintech Investment Rebounds 2025",
+     "url": "https://kpmg.com/xx/en/media/press-releases/2026/02/global-fintech-investment-rebounds-in-2025-supported-by-stronger-exit-activity.html"
+    },
+    {
+     "title": "Crunchbase – Fintech Funding Up 27% in 2025",
+     "url": "https://news.crunchbase.com/fintech/funding-jumped-big-checks-ai-ye-2025/"
+    }
+   ]
+  }
+ ],
+ "contracts": [
+  {
+   "id": "87fb5350-f650-40aa-b83a-f258713649bb",
+   "contract_key": "synthetic-sec-altdata-mnpi-enforcement",
+   "event_key": "evt-20",
+   "event_id": "64a61d3f-e3ba-4b0e-9e7e-5dab7bc4991c",
+   "title": "Will the SEC Division of Examinations issue a deficiency letter or refer a registered investment adviser to enforcement for inadequate MNPI policies specifically addressing alternative data vendor usage (under Exchange Act Section 204A) before December 31, 2026?",
+   "short_title": "SEC Alt-Data MNPI Enforcement",
+   "display_title": "Will the SEC cite a hedge fund for inadequate alternative data MNPI policies by end of 2026?",
+   "description": "Tracks whether the SEC takes a formal enforcement step targeting a hedge fund's failure to tailor MNPI compliance policies to its use of third-party alternative data vendors, which would directly threaten Killington's client relationships.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.62,
+   "volume": 850000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "SEC",
+    "MNPI",
+    "alternative data",
+    "hedge fund",
+    "enforcement"
+   ],
+   "event_title": "SEC Alt-Data Vendor Liability",
+   "rationale": "A formal SEC deficiency letter or enforcement referral citing MNPI policy failures at a hedge fund using alternative data would trigger immediate client contract reviews, pause new sales cycles, and force Killington to bear indemnification and due-diligence costs that a seed-stage company cannot absorb.",
+   "is_major": true,
+   "sort_order": 0,
+   "allocation_pct": 22,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [
+    {
+     "n": 0,
+     "text": "SEC Examinations issues deficiency letter citing MNPI failures at alt-data-using hedge fund."
+    },
+    {
+     "n": 1,
+     "text": "Affected hedge funds suspend third-party alt-data vendor contracts pending compliance reviews."
+    },
+    {
+     "n": 2,
+     "text": "Killington loses active subscriptions and pipeline deals; seed-stage runway collapses."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Mondaq – AI, MNPI, and the SEC",
+     "url": "https://www.mondaq.com/unitedstates/securities/1799684/ai-mnpi-and-the-sec-how-existing-law-applies-to-model-driven-trading"
+    },
+    {
+     "title": "Lowenstein Sandler – MNPI in 2026 Panel",
+     "url": "https://www.lowenstein.com/news-insights/events/insider-trading-mnpi-in-2026-enforcement-risk-governance-cco-accountability-may-2026-redburn"
+    },
+    {
+     "title": "Akin Gump – SEC on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "WilmerHale – SEC Enforcement on MNPI Policies",
+     "url": "https://www.wilmerhale.com/en/insights/client-alerts/20241203-sec-enforcement-actions-reflect-expanding-focus-on-advisers-policies-and-procedures-to-prevent-misuse-of-material-nonpublic-information"
+    }
+   ]
+  },
+  {
+   "id": "1aec9b70-269e-412a-a018-1e3ed68d7637",
+   "contract_key": "synthetic-reddit-dmca-ruling",
+   "event_key": "evt-0",
+   "event_id": "3bfb5a64-aff7-4206-aec9-2e0180abb7ec",
+   "title": "Will the SDNY issue a ruling on the merits of Reddit's DMCA §1201 anti-circumvention claims against commercial scraping intermediaries (Case 25-cv-08736) by June 30, 2027?",
+   "short_title": "Reddit DMCA Scraping Ruling",
+   "display_title": "Will the SDNY rule on Reddit's anti-circumvention claims against commercial scrapers by June 2027?",
+   "description": "Tracks whether the Southern District of New York issues a substantive merits ruling on Reddit's novel DMCA §1201 anti-circumvention theory applied to bypassing anti-bot measures.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.35,
+   "volume": 850000,
+   "expiry_date": "2027-06-30",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "DMCA",
+    "web-scraping",
+    "SDNY",
+    "alternative-data",
+    "CFAA"
+   ],
+   "event_title": "Reddit Scraping Lawsuit Precedent",
+   "rationale": "An adverse SDNY merits ruling on DMCA §1201 anti-circumvention for scraping intermediaries could create persuasive precedent directly threatening Killington's technical collection architecture, but the 2027 expiry and 0.35 probability reduce urgency relative to the CFAA appellate contract.",
+   "is_major": false,
+   "sort_order": 0,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 371,
+   "resolution": "Jun 30, 2027",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention and Data – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    },
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit v. Perplexity: Terms of Access as the Next Front in AI Data Litigation – Caldwell Law",
+     "url": "https://caldwelllaw.com/news/reddit-perplexity-ai-lawsuit-contract-data-rights/"
+    },
+    {
+     "title": "Reddit Sues Perplexity and Data Firms Over Alleged Unauthorized Scraping – PYMNTS",
+     "url": "https://www.pymnts.com/cpi-posts/reddit-sues-perplexity-ai-and-data-firms-over-alleged-unauthorized-scraping/"
+    }
+   ]
+  },
+  {
+   "id": "a659fcd3-b7d2-4df0-8c9a-5f1596013e9f",
+   "contract_key": "synthetic-cppa-killington-data-broker-registration",
+   "event_key": "evt-16",
+   "event_id": "7ae31a56-1ac7-48c8-a401-0c40972fb15c",
+   "title": "Will the California Privacy Protection Agency's Data Broker Enforcement Strike Force issue a formal notice of violation or civil penalty against a financial intelligence or alternative data analytics company for failure to register under the California DELETE Act (Cal. Civ. Code §1798.99.80) by December 31, 2026?",
+   "short_title": "CPPA Alt-Data Broker Penalty",
+   "display_title": "Will the CPPA penalize a financial intelligence or alt-data company for failing to register as a data broker by end of 2026?",
+   "description": "Tracks whether the CPPA Strike Force extends DELETE Act enforcement to financial intelligence or alt-data analytics companies, creating direct compliance risk for Killington.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.62,
+   "volume": 250000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.92,
+   "tags": [
+    "CPPA",
+    "data broker",
+    "California",
+    "alternative data",
+    "enforcement"
+   ],
+   "event_title": "California Data Broker Fines Escalate",
+   "rationale": "A CPPA Strike Force civil penalty against a financial intelligence or alt-data company would establish direct enforcement precedent for Killington as a San Francisco-headquartered data broker, creating immediate fine liability and mandatory compliance buildout costs that could exceed the company's current funding.",
+   "is_major": true,
+   "sort_order": 1,
+   "allocation_pct": 20,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [
+    {
+     "n": 0,
+     "text": "CPPA Strike Force issues civil penalty against financial alt-data firm for DELETE Act violations."
+    },
+    {
+     "n": 1,
+     "text": "Precedent directly implicates Killington; regulators demand registration and DROP system compliance."
+    },
+    {
+     "n": 2,
+     "text": "Killington faces $200/day fines per request plus legal costs exceeding its $400K equity raise."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Crowell & Moring — California Privacy Agency Launches Data Broker Strike Force",
+     "url": "https://www.crowell.com/en/insights/client-alerts/california-privacy-agency-launches-data-broker-strike-force-amid-delete-act-crackdown"
+    },
+    {
+     "title": "DataGrail — The Delete Act and DROP: What You Need to Know",
+     "url": "https://www.datagrail.io/blog/regulations/the-delete-act-and-drop-what-you-need-to-know/"
+    },
+    {
+     "title": "Governor Newsom — First-in-the-Nation Privacy Tool Announcement",
+     "url": "https://www.gov.ca.gov/2026/01/20/governor-newsom-announces-first-in-the-nation-privacy-tool-allowing-californians-to-block-the-sale-of-their-data/"
+    }
+   ]
+  },
+  {
+   "id": "97bf5d03-76e2-4d66-b7ac-13e922c490b2",
+   "contract_key": "poly-2110184",
+   "event_key": "evt-0",
+   "event_id": "3bfb5a64-aff7-4206-aec9-2e0180abb7ec",
+   "title": "AWS service disrupted by June 30?",
+   "short_title": "AWS Service Disruption",
+   "display_title": "AWS service disrupted by June 30?",
+   "description": "Tracks whether AWS suffers a major service disruption by June 30, 2026, relevant to Killington's cloud infrastructure dependency.",
+   "platform": "polymarket",
+   "category": "regulatory_actions",
+   "probability": 0.095,
+   "volume": 8488,
+   "expiry_date": "2026-06-30",
+   "url": "https://polymarket.com/event/aws-service-disrupted-by-june-30",
+   "relevance_score": 0.7,
+   "tags": [
+    "Tech",
+    "AWS",
+    "outage",
+    "amazon",
+    "Big Tech"
+   ],
+   "event_title": "Reddit Scraping Lawsuit Precedent",
+   "rationale": "An AWS major outage would disrupt Killington's cloud-dependent data pipeline and product delivery, but low volume ($8K) and only 0.10 probability make this a thin supplementary hedge with limited portfolio impact.",
+   "is_major": false,
+   "sort_order": 1,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 6,
+   "resolution": "Jun 30, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention and Data – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    },
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit v. Perplexity: Terms of Access as the Next Front in AI Data Litigation – Caldwell Law",
+     "url": "https://caldwelllaw.com/news/reddit-perplexity-ai-lawsuit-contract-data-rights/"
+    },
+    {
+     "title": "Reddit Sues Perplexity and Data Firms Over Alleged Unauthorized Scraping – PYMNTS",
+     "url": "https://www.pymnts.com/cpi-posts/reddit-sues-perplexity-ai-and-data-firms-over-alleged-unauthorized-scraping/"
+    }
+   ]
+  },
+  {
+   "id": "348b6954-008d-4feb-9880-088b041573bf",
+   "contract_key": "library-d14a4a76-e671-450c-a86d-3542f912914f",
+   "event_key": "evt-1",
+   "event_id": "76a93e78-238a-4753-9264-196232c3f9e7",
+   "title": "Will the California Privacy Protection Agency's Delete Act opt-out platform (AB 1491) become operational and begin accepting consumer deletion requests from California residents by September 30, 2026?",
+   "short_title": "CPPA DROP System Launch",
+   "display_title": "Will California's DELETE Act consumer deletion platform go live by September 2026?",
+   "description": "Tracks whether California's centralized consumer data deletion platform is operational and accepting requests by September 30, 2026, with the August 1, 2026 statutory compliance deadline as the key trigger.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.62,
+   "volume": 100000,
+   "expiry_date": "2026-09-30",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "CPPA",
+    "DELETE-Act",
+    "data-broker",
+    "California",
+    "DROP-system"
+   ],
+   "event_title": "California Data Broker Deletion Platform",
+   "rationale": "The DROP platform going live operationalizes penalty exposure for Killington as a registered California data broker, but the hedge is redundant with the higher-priority CPPA enforcement contract already capturing this risk vector.",
+   "is_major": false,
+   "sort_order": 2,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 98,
+   "resolution": "Sep 30, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CPPA Proposes Rules on Automated Decision-Making and Cybersecurity Audits – Perkins Coie",
+     "url": "https://perkinscoie.com/insights/blog/fasten-your-seatbelts-cppa-proposes-rules-automated-decision-making-and-cybersecurity"
+    },
+    {
+     "title": "New CCPA Regulations Taking Effect January 1, 2026 – Pearl Cohen",
+     "url": "https://www.pearlcohen.com/new-ccpa-regulations-taking-effect-january-1-2026/"
+    },
+    {
+     "title": "Plan Ahead: Updated CCPA Regulations Go Into Effect Jan. 1 – Paul Hastings",
+     "url": "https://www.paulhastings.com/insights/ph-privacy/plan-ahead-updated-ccpa-regulations-go-into-effect-jan-1"
+    },
+    {
+     "title": "CPPA Law & Regulations Page",
+     "url": "https://cppa.ca.gov/regulations/"
+    }
+   ]
+  },
+  {
+   "id": "e833a5e0-ee1c-4dc9-9c73-7814eb01f758",
+   "contract_key": "synthetic-amazon-robots-txt-commercial-scrapers",
+   "event_key": "evt-8",
+   "event_id": "b5a5071e-116a-4417-bc2a-636b07ec13f3",
+   "title": "Will Amazon.com expand its robots.txt restrictions or deploy technical measures (e.g., CAPTCHA enforcement, IP-block automation) specifically targeting commercial pricing and inventory data scrapers beyond AI training crawlers by December 31, 2026?",
+   "short_title": "Amazon Anti-Scraper Bot Blocking",
+   "display_title": "Will Amazon expand bot-blocking measures to specifically target commercial pricing and inventory data scrapers by end of 2026?",
+   "description": "Tracks whether Amazon escalates its November 2025 crawler restrictions—currently targeting AI training bots—to explicitly block commercial alternative data firms collecting product, pricing, and inventory signals from Amazon's public-facing pages.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.78,
+   "volume": 1500000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "Amazon",
+    "web-scraping",
+    "robots-txt",
+    "anti-bot",
+    "alternative-data"
+   ],
+   "event_title": "Amazon Blocks AI Web Crawlers",
+   "rationale": "Amazon product pricing, inventory, and sales rank data are core inputs to Killington's retail intelligence product; expanded bot-blocking targeting commercial scrapers would directly destroy data coverage for one of its most strategically important retailer sources, degrading product quality and triggering customer churn.",
+   "is_major": true,
+   "sort_order": 2,
+   "allocation_pct": 20,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [
+    {
+     "n": 0,
+     "text": "Amazon deploys CAPTCHA enforcement and IP-block automation targeting commercial pricing scrapers."
+    },
+    {
+     "n": 1,
+     "text": "Killington's Amazon-derived pricing and inventory signals become inaccessible or unreliable."
+    },
+    {
+     "n": 2,
+     "text": "Data coverage gaps across 100+ retailers erode product value; hedge fund clients churn to competitors."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Amazon AI scraping project creates unauthorized listings for small brands – PPC Land",
+     "url": "https://ppc.land/amazon-ai-scraping-project-creates-unauthorized-listings-for-small-brands/"
+    },
+    {
+     "title": "Is Web Scraping Legal in 2026? Laws, Ethics, and Risks Explained – Browserless",
+     "url": "https://www.browserless.io/blog/is-web-scraping-legal"
+    }
+   ]
+  },
+  {
+   "id": "91696b56-480c-4494-92df-6456c666d871",
+   "contract_key": "synthetic-cfaa-scraping-liability",
+   "event_key": "evt-0",
+   "event_id": "3bfb5a64-aff7-4206-aec9-2e0180abb7ec",
+   "title": "Will any federal appellate court issue a published opinion holding that automated bypass of anti-bot measures on publicly accessible websites constitutes a violation of the Computer Fraud and Abuse Act (18 U.S.C. §1030) by December 31, 2026?",
+   "short_title": "CFAA Anti-Bot Appellate Ruling",
+   "display_title": "Will a federal appeals court rule that bypassing anti-bot measures on public websites violates the CFAA by end of 2026?",
+   "description": "Tracks whether any federal circuit court establishes new CFAA liability for bypassing anti-bot defenses on publicly accessible websites, which would directly criminalize core elements of Killington's scraping infrastructure.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.12,
+   "volume": 400000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.91,
+   "tags": [
+    "CFAA",
+    "web-scraping",
+    "federal-courts",
+    "alternative-data",
+    "anti-bot"
+   ],
+   "event_title": "Reddit Scraping Lawsuit Precedent",
+   "rationale": "A federal appellate ruling establishing CFAA liability for bypassing anti-bot measures would criminalize core elements of Killington's web-scraping infrastructure, forcing an immediate product shutdown or costly re-architecture while exposing the company to private litigation from targeted retailers.",
+   "is_major": true,
+   "sort_order": 3,
+   "allocation_pct": 18,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [
+    {
+     "n": 0,
+     "text": "Federal circuit court holds CFAA liability attaches to bypassing anti-bot defenses on public sites."
+    },
+    {
+     "n": 1,
+     "text": "Ruling exposes commercial scrapers to federal criminal liability and private civil suits from retailers."
+    },
+    {
+     "n": 2,
+     "text": "Killington must halt scraping pipeline; product delivery ceases and company faces existential shutdown."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention and Data – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    },
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit v. Perplexity: Terms of Access as the Next Front in AI Data Litigation – Caldwell Law",
+     "url": "https://caldwelllaw.com/news/reddit-perplexity-ai-lawsuit-contract-data-rights/"
+    },
+    {
+     "title": "Reddit Sues Perplexity and Data Firms Over Alleged Unauthorized Scraping – PYMNTS",
+     "url": "https://www.pymnts.com/cpi-posts/reddit-sues-perplexity-ai-and-data-firms-over-alleged-unauthorized-scraping/"
+    }
+   ]
+  },
+  {
+   "id": "00bbdd82-5ae6-4baf-a25e-ea64810f1f02",
+   "contract_key": "synthetic-cppa-drop-penalty",
+   "event_key": "evt-1",
+   "event_id": "76a93e78-238a-4753-9264-196232c3f9e7",
+   "title": "Will the California Privacy Protection Agency issue a civil penalty exceeding $200 per day against any data broker for failure to honor consumer deletion requests through the centralized DROP system after the August 1, 2026 compliance deadline?",
+   "short_title": "CPPA DROP Civil Penalty Action",
+   "display_title": "Will California fine a data broker for failing to honor deletion requests through the DROP system after August 2026?",
+   "description": "Tracks whether the CPPA levies statutory civil penalties against a data broker for non-compliance with the DELETE Act's centralized deletion mechanism after the August 1, 2026 go-live date.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.05,
+   "volume": 600000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.87,
+   "tags": [
+    "CPPA",
+    "DELETE-Act",
+    "civil-penalty",
+    "data-broker",
+    "California"
+   ],
+   "event_title": "California Data Broker Deletion Platform",
+   "rationale": "A CPPA civil penalty against any data broker for DROP non-compliance signals enforcement escalation that could reach Killington, but the 0.05 probability and December expiry limit near-term hedge value.",
+   "is_major": false,
+   "sort_order": 3,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CPPA Proposes Rules on Automated Decision-Making and Cybersecurity Audits – Perkins Coie",
+     "url": "https://perkinscoie.com/insights/blog/fasten-your-seatbelts-cppa-proposes-rules-automated-decision-making-and-cybersecurity"
+    },
+    {
+     "title": "New CCPA Regulations Taking Effect January 1, 2026 – Pearl Cohen",
+     "url": "https://www.pearlcohen.com/new-ccpa-regulations-taking-effect-january-1-2026/"
+    },
+    {
+     "title": "Plan Ahead: Updated CCPA Regulations Go Into Effect Jan. 1 – Paul Hastings",
+     "url": "https://www.paulhastings.com/insights/ph-privacy/plan-ahead-updated-ccpa-regulations-go-into-effect-jan-1"
+    },
+    {
+     "title": "CPPA Law & Regulations Page",
+     "url": "https://cppa.ca.gov/regulations/"
+    }
+   ]
+  },
+  {
+   "id": "5919ba85-1223-4ed4-877a-3bb4d5aa0387",
+   "contract_key": "library-2d99c148-ac72-452b-be1f-01652d070bf9",
+   "event_key": "evt-1",
+   "event_id": "76a93e78-238a-4753-9264-196232c3f9e7",
+   "title": "Will the California Privacy Protection Agency issue its first enforcement action against a registered data broker for DELETE Act non-compliance by June 30, 2026?",
+   "short_title": "CPPA DELETE Act Enforcement",
+   "display_title": "Will California issue its first DELETE Act enforcement action against a data broker by June 2026?",
+   "description": "Tracks whether the CPPA brings its first formal enforcement action against a data broker for failure to comply with California's DELETE Act, signaling the regulatory teeth behind the August 1, 2026 DROP system deadline.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.9,
+   "volume": 100000,
+   "expiry_date": "2026-06-30",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "CPPA",
+    "DELETE-Act",
+    "data-broker",
+    "California",
+    "enforcement"
+   ],
+   "event_title": "California Data Broker Deletion Platform",
+   "rationale": "The CPPA's first formal enforcement action against a data broker signals the agency's enforcement posture and near-term threat to Killington, but this contract is closely correlated with the major CPPA alt-data penalty contract already in the portfolio.",
+   "is_major": false,
+   "sort_order": 4,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 6,
+   "resolution": "Jun 30, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CPPA Proposes Rules on Automated Decision-Making and Cybersecurity Audits – Perkins Coie",
+     "url": "https://perkinscoie.com/insights/blog/fasten-your-seatbelts-cppa-proposes-rules-automated-decision-making-and-cybersecurity"
+    },
+    {
+     "title": "New CCPA Regulations Taking Effect January 1, 2026 – Pearl Cohen",
+     "url": "https://www.pearlcohen.com/new-ccpa-regulations-taking-effect-january-1-2026/"
+    },
+    {
+     "title": "Plan Ahead: Updated CCPA Regulations Go Into Effect Jan. 1 – Paul Hastings",
+     "url": "https://www.paulhastings.com/insights/ph-privacy/plan-ahead-updated-ccpa-regulations-go-into-effect-jan-1"
+    },
+    {
+     "title": "CPPA Law & Regulations Page",
+     "url": "https://cppa.ca.gov/regulations/"
+    }
+   ]
+  },
+  {
+   "id": "640282a5-44fd-4bac-8757-7f47a60618af",
+   "contract_key": "poly-691340",
+   "event_key": "evt-19",
+   "event_id": "51c10842-5bfe-4310-94f2-a4cbb635a8b2",
+   "title": "AI bubble burst by...?: December 31, 2026",
+   "short_title": "AI Bubble Burst Risk",
+   "display_title": "AI bubble burst by December 31, 2026?",
+   "description": "Tracks whether the AI investment bubble bursts by end of 2026, which would accelerate hedge fund budget cuts and reduce spending on third-party alt-data and AI-adjacent analytics services.",
+   "platform": "polymarket",
+   "category": "macro_policy",
+   "probability": 0.1875,
+   "volume": 2298927,
+   "expiry_date": "2026-12-31",
+   "url": "https://polymarket.com/event/ai-bubble-burst-by",
+   "relevance_score": 0.74,
+   "tags": [
+    "Business",
+    "Tech",
+    "Finance",
+    "Big Tech"
+   ],
+   "event_title": "Hedge Fund In-House AI Threat",
+   "rationale": "An AI investment bubble burst by end-2026 would trigger broad VC pullback from AI-adjacent fintech startups like Killington, simultaneously shrinking hedge fund technology budgets and collapsing Killington's Series A fundraising prospects at the precise moment it needs growth capital.",
+   "is_major": true,
+   "sort_order": 4,
+   "allocation_pct": 10,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "deep",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [
+    {
+     "n": 0,
+     "text": "AI investment bubble bursts; major model companies suffer valuation collapse by December 2026."
+    },
+    {
+     "n": 1,
+     "text": "VC sentiment sours toward AI-adjacent data startups; seed and Series A deal flow contracts sharply."
+    },
+    {
+     "n": 2,
+     "text": "Killington fails to close Series A; runway exhausted before next product milestone."
+    }
+   ],
+   "sources": [
+    {
+     "title": "Kadoa – Alternative Data for Hedge Funds Guide",
+     "url": "https://www.kadoa.com/blog/alternative-data-for-hedge-funds"
+    },
+    {
+     "title": "AIMA via Markets Herald – 95% Hedge Fund AI Adoption",
+     "url": "https://marketsherald.com/almost-every-hedge-fund-now-uses-ai-almost-none-of-them-let-it-trade/"
+    },
+    {
+     "title": "Tommaso Ricci – AI for Hedge Funds 2026 Guide",
+     "url": "https://www.tommasomariaricci.com/blog/ai-for-hedge-funds"
+    },
+    {
+     "title": "Sify – Agentic AI in Hedge Fund Operations",
+     "url": "https://www.sify.com/ai-analytics/the-dawn-of-hedge-agents-how-agentic-ai-is-transforming-hedge-fund-operations/"
+    }
+   ]
+  },
+  {
+   "id": "1d2eb236-4c1e-4d32-8fe7-100b422ab250",
+   "contract_key": "library-63209795-2825-4556-a03f-f8dc7ac72184",
+   "event_key": "evt-2",
+   "event_id": "ebf39f8a-8a48-407b-a2d5-997aa3d08907",
+   "title": "Will California's CCPA automated decision-making technology (ADMT) regulations (11 CCR §§7150–7158) take effect on January 1, 2027 without a legislative delay, court-ordered stay, or OAL disapproval?",
+   "short_title": "CPPA ADMT Regs Effective Date",
+   "display_title": "Will California's automated decision-making regulations take effect January 1, 2027 without a delay or court stay?",
+   "description": "Tracks whether California's ADMT regulations requiring pre-use notices, opt-out rights, and risk assessments for automated decision-making technology take effect on schedule without judicial or legislative interference.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.3,
+   "volume": 100000,
+   "expiry_date": "2027-01-01",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "CPPA",
+    "ADMT",
+    "CCPA",
+    "California",
+    "automated-decision-making"
+   ],
+   "event_title": "California Automated Decision Rules",
+   "rationale": "ADMT regulations taking effect on schedule would impose risk assessment and opt-out obligations on Killington's AI-powered analytics pipeline, but the 0.30 probability and indirect applicability to B2B institutional tools reduce hedge priority.",
+   "is_major": false,
+   "sort_order": 5,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 191,
+   "resolution": "Jan 1, 2027",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    },
+    {
+     "title": "California Finalizes CCPA Regulations on ADMT, Risk Assessments, and Cybersecurity Audits – Coblentz Law",
+     "url": "https://www.coblentzlaw.com/news/california-finalizes-ccpa-regulations-on-automated-decision-making-technology-risk-assessments-and-cybersecurity-audits/"
+    },
+    {
+     "title": "CPPA Approves New CCPA Regulations on AI, Cybersecurity, and Risk Governance – Wilson Sonsini",
+     "url": "https://www.wsgr.com/en/insights/alerts/cppa-approves-new-ccpa-regulations-on-ai-cybersecurity-and-risk-governance-and-advances-updated-data-broker-regulations.html"
+    }
+   ]
+  },
+  {
+   "id": "6867f57d-a6d2-44fa-93aa-8b05962686d5",
+   "contract_key": "library-b09419c5-49cc-4f6d-8fd6-49735b8bc50d",
+   "event_key": "evt-2",
+   "event_id": "ebf39f8a-8a48-407b-a2d5-997aa3d08907",
+   "title": "Will the California Privacy Protection Agency extend the January 1, 2027 ADMT compliance deadline by at least 6 months?",
+   "short_title": "CPPA ADMT Deadline Extension",
+   "display_title": "Will California extend the ADMT compliance deadline by at least 6 months past January 2027?",
+   "description": "Tracks whether the CPPA grants at least a 6-month extension to the January 1, 2027 ADMT compliance deadline, which would give Killington additional runway to build required opt-out and risk assessment infrastructure.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.35,
+   "volume": 100000,
+   "expiry_date": "2026-12-14",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "CPPA",
+    "ADMT",
+    "CCPA",
+    "California",
+    "compliance-deadline"
+   ],
+   "event_title": "California Automated Decision Rules",
+   "rationale": "A NO outcome (no extension granted) means ADMT compliance hits on schedule, imposing immediate obligations on Killington; this serves as a low-allocation trigger hedge for accelerated compliance costs.",
+   "is_major": false,
+   "sort_order": 6,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 173,
+   "resolution": "Dec 14, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    },
+    {
+     "title": "California Finalizes CCPA Regulations on ADMT, Risk Assessments, and Cybersecurity Audits – Coblentz Law",
+     "url": "https://www.coblentzlaw.com/news/california-finalizes-ccpa-regulations-on-automated-decision-making-technology-risk-assessments-and-cybersecurity-audits/"
+    },
+    {
+     "title": "CPPA Approves New CCPA Regulations on AI, Cybersecurity, and Risk Governance – Wilson Sonsini",
+     "url": "https://www.wsgr.com/en/insights/alerts/cppa-approves-new-ccpa-regulations-on-ai-cybersecurity-and-risk-governance-and-advances-updated-data-broker-regulations.html"
+    }
+   ]
+  },
+  {
+   "id": "1b4daaac-9a76-4407-b7cf-5a549e1be441",
+   "contract_key": "library-aaa86010-1ce6-4aac-996f-35a8a204dc0b",
+   "event_key": "evt-2",
+   "event_id": "ebf39f8a-8a48-407b-a2d5-997aa3d08907",
+   "title": "Will the California Privacy Protection Agency publish formal guidance or an enforcement advisory before January 1, 2027 clarifying that AI-powered institutional credit underwriting and deal analysis tools used by B2B financial platforms (serving California-licensed lenders) constitute 'automated decision-making technology' subject to 11 CCR §7150 risk assessment and opt-out requirements?",
+   "short_title": "CPPA B2B ADMT Guidance",
+   "display_title": "Will the CPPA clarify that AI-powered B2B financial analysis tools are subject to ADMT opt-out rules before January 2027?",
+   "description": "Tracks whether the CPPA issues formal guidance confirming that AI-driven institutional analytics tools serving financial industry clients fall within the ADMT regulations' scope, directly implicating Killington's hedge-fund-facing product.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.04,
+   "volume": 100000,
+   "expiry_date": "2027-01-01",
+   "url": "",
+   "relevance_score": 0.8,
+   "tags": [
+    "CPPA",
+    "ADMT",
+    "CCPA",
+    "B2B",
+    "financial-data"
+   ],
+   "event_title": "California Automated Decision Rules",
+   "rationale": "Formal CPPA guidance confirming that institutional analytics tools are within ADMT scope would directly expand Killington's compliance obligations, but the 0.04 base probability makes this a very low-priority satellite hedge.",
+   "is_major": false,
+   "sort_order": 7,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 191,
+   "resolution": "Jan 1, 2027",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    },
+    {
+     "title": "California Finalizes CCPA Regulations on ADMT, Risk Assessments, and Cybersecurity Audits – Coblentz Law",
+     "url": "https://www.coblentzlaw.com/news/california-finalizes-ccpa-regulations-on-automated-decision-making-technology-risk-assessments-and-cybersecurity-audits/"
+    },
+    {
+     "title": "CPPA Approves New CCPA Regulations on AI, Cybersecurity, and Risk Governance – Wilson Sonsini",
+     "url": "https://www.wsgr.com/en/insights/alerts/cppa-approves-new-ccpa-regulations-on-ai-cybersecurity-and-risk-governance-and-advances-updated-data-broker-regulations.html"
+    }
+   ]
+  },
+  {
+   "id": "12076ec3-ca3b-4719-8360-e796517fd0fb",
+   "contract_key": "synthetic-regsp-vendor-audit",
+   "event_key": "evt-3",
+   "event_id": "79e29431-3412-45ab-9474-2f8dfa4ce2ca",
+   "title": "Will the SEC Division of Examinations issue examination guidance or a risk alert by December 31, 2026 specifically addressing third-party alternative data vendor oversight requirements under amended Regulation S-P (File No. S7-05-23) for registered investment advisers?",
+   "short_title": "SEC Alt-Data Vendor Oversight Alert",
+   "display_title": "Will the SEC issue a risk alert on alternative data vendor oversight under Regulation S-P by end of 2026?",
+   "description": "Tracks whether the SEC's Division of Examinations publishes specific guidance directing investment advisers to assess third-party alternative data providers' data security and incident response capabilities under Regulation S-P.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.05,
+   "volume": 550000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.9,
+   "tags": [
+    "SEC",
+    "Regulation-S-P",
+    "alternative-data",
+    "vendor-management",
+    "risk-alert"
+   ],
+   "event_title": "SEC Data Breach Rules for Fund Clients",
+   "rationale": "SEC guidance directing RIAs to audit alternative data vendors' cybersecurity posture under Reg S-P would force Killington's clients to impose onerous diligence requirements or terminate vendor relationships with sub-scale providers.",
+   "is_major": false,
+   "sort_order": 8,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "New SEC Regulation S-P Amendments: Impact on Private Fund Managers – EisnerAmper",
+     "url": "https://www.eisneramper.com/insights/financial-services/sec-regulation-s-p-private-fund-1225/"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus on Risks – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "3b86f02e-86db-409d-aa84-b90fd640c0d9",
+   "contract_key": "library-dee5a6eb-22bd-4204-835a-67602688c804",
+   "event_key": "evt-3",
+   "event_id": "79e29431-3412-45ab-9474-2f8dfa4ce2ca",
+   "title": "Will the SEC bring enforcement action against a registered investment adviser for Regulation S-P violations (incident response, breach notification, or vendor oversight failures) by December 31, 2026?",
+   "short_title": "SEC Reg S-P Enforcement Action",
+   "display_title": "Will the SEC enforce Regulation S-P violations against an investment adviser by end of 2026?",
+   "description": "Tracks whether the SEC brings a formal enforcement action against a registered investment adviser for Regulation S-P violations related to incident response programs, breach notification, or vendor oversight after the June 3, 2026 compliance deadline.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.42,
+   "volume": 100000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.83,
+   "tags": [
+    "SEC",
+    "Regulation-S-P",
+    "enforcement",
+    "RIA",
+    "data-breach"
+   ],
+   "event_title": "SEC Data Breach Rules for Fund Clients",
+   "rationale": "A formal SEC Reg S-P enforcement action against a hedge fund for vendor oversight failures would create sector-wide chilling effect on alt-data procurement, indirectly threatening Killington's customer base.",
+   "is_major": false,
+   "sort_order": 9,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "New SEC Regulation S-P Amendments: Impact on Private Fund Managers – EisnerAmper",
+     "url": "https://www.eisneramper.com/insights/financial-services/sec-regulation-s-p-private-fund-1225/"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus on Risks – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "a776f50d-7dfb-4c07-8ccb-5e8c30b6f78f",
+   "contract_key": "library-7afe1121-4934-4967-a9e4-a2db8d04e06e",
+   "event_key": "evt-3",
+   "event_id": "79e29431-3412-45ab-9474-2f8dfa4ce2ca",
+   "title": "Will the SEC extend or delay the amended Regulation S-P smaller-firm compliance deadline (currently June 3, 2026) for firms with under $1.5 billion AUM, providing at least a 6-month extension to December 3, 2026?",
+   "short_title": "SEC Reg S-P Deadline Extension",
+   "display_title": "Will the SEC delay the Regulation S-P smaller-firm compliance deadline by at least 6 months to December 2026?",
+   "description": "Tracks whether the SEC grants smaller registered investment advisers (under $1.5B AUM) at least a 6-month extension on the June 3, 2026 Regulation S-P incident response and breach notification compliance deadline.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.3,
+   "volume": 100000,
+   "expiry_date": "2026-12-03",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "SEC",
+    "Regulation-S-P",
+    "RIA",
+    "compliance-deadline",
+    "data-security"
+   ],
+   "event_title": "SEC Data Breach Rules for Fund Clients",
+   "rationale": "A NO outcome (no extension) means smaller RIA clients must comply immediately with Reg S-P vendor oversight obligations by June 3, 2026, accelerating scrutiny of Killington as a third-party data provider.",
+   "is_major": false,
+   "sort_order": 10,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 162,
+   "resolution": "Dec 3, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "New SEC Regulation S-P Amendments: Impact on Private Fund Managers – EisnerAmper",
+     "url": "https://www.eisneramper.com/insights/financial-services/sec-regulation-s-p-private-fund-1225/"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus on Risks – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "040b33b7-d11b-4423-98de-ee60807a84de",
+   "contract_key": "synthetic-sec-mnpi-altdata-action",
+   "event_key": "evt-4",
+   "event_id": "0483e2df-a9d7-4ce4-8d6c-573d864d03fc",
+   "title": "Will the SEC Division of Examinations issue a formal deficiency letter or refer a registered investment adviser to enforcement citing material nonpublic information (MNPI) policy failures related to the use of third-party alternative data vendors by December 31, 2026?",
+   "short_title": "SEC MNPI Alt-Data Deficiency",
+   "display_title": "Will the SEC cite an investment adviser for MNPI failures tied to alternative data vendor use by end of 2026?",
+   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal deficiency letter or enforcement referral specifically linking an investment adviser's alternative data procurement to inadequate MNPI controls.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.72,
+   "volume": 700000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.92,
+   "tags": [
+    "SEC",
+    "MNPI",
+    "alternative-data",
+    "hedge-fund",
+    "enforcement"
+   ],
+   "event_title": "SEC Alternative Data Exam Focus",
+   "rationale": "An SEC deficiency letter explicitly linking alternative data procurement to MNPI control failures is a near-duplicate of the primary major contract already selected; lower allocation avoids over-concentration in the same risk vector.",
+   "is_major": false,
+   "sort_order": 11,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "SEC Division of Examinations (Finally) Speaks on Alternative Data – Akin Gump",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "What the New SEC's First Year Signals for the Future of Private Fund Oversight – Proskauer",
+     "url": "https://www.proskauer.com/blog/what-the-new-secs-first-year-signals-for-the-future-of-private-fund-oversight"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "bd15dbce-18d0-4e99-8a6b-51d702019fda",
+   "contract_key": "synthetic-sec-altdata-guidance",
+   "event_key": "evt-4",
+   "event_id": "0483e2df-a9d7-4ce4-8d6c-573d864d03fc",
+   "title": "Will the SEC Division of Examinations publish an updated risk alert or staff bulletin on alternative data and MNPI compliance for investment advisers (updating its April 2022 guidance) by December 31, 2026?",
+   "short_title": "SEC Alt-Data MNPI Risk Alert",
+   "display_title": "Will the SEC publish updated alternative data and MNPI compliance guidance for investment advisers by end of 2026?",
+   "description": "Tracks whether the SEC's Division of Examinations issues new staff-level guidance on alternative data procurement, MNPI policies, and vendor due diligence requirements for registered investment advisers.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.35,
+   "volume": 450000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.89,
+   "tags": [
+    "SEC",
+    "alternative-data",
+    "MNPI",
+    "risk-alert",
+    "investment-advisers"
+   ],
+   "event_title": "SEC Alternative Data Exam Focus",
+   "rationale": "A new SEC risk alert on alternative data MNPI compliance would raise the compliance bar for Killington's hedge fund clients and increase scrutiny of their vendor relationships, indirectly threatening contract renewals.",
+   "is_major": false,
+   "sort_order": 12,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "SEC Division of Examinations (Finally) Speaks on Alternative Data – Akin Gump",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "What the New SEC's First Year Signals for the Future of Private Fund Oversight – Proskauer",
+     "url": "https://www.proskauer.com/blog/what-the-new-secs-first-year-signals-for-the-future-of-private-fund-oversight"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "71616982-f12a-4758-9267-748a629c712d",
+   "contract_key": "poly-1632674",
+   "event_key": "evt-4",
+   "event_id": "0483e2df-a9d7-4ce4-8d6c-573d864d03fc",
+   "title": "SEC removes quarterly reporting requirement?",
+   "short_title": "SEC Quarterly Reporting Removal",
+   "display_title": "SEC removes quarterly reporting requirement?",
+   "description": "Tracks the probability that the SEC eliminates mandatory quarterly earnings reporting, serving as a deregulatory posture signal for how aggressively the Atkins SEC pursues alternative data MNPI enforcement.",
+   "platform": "polymarket",
+   "category": "regulatory_actions",
+   "probability": 0.185,
+   "volume": 51385,
+   "expiry_date": "2026-12-31",
+   "url": "https://polymarket.com/event/sec-removes-quarterly-reporting-requirement",
+   "relevance_score": 0.72,
+   "tags": [
+    "Finance",
+    "sec",
+    "Economy",
+    "Business",
+    "quarterly reporting"
+   ],
+   "event_title": "SEC Alternative Data Exam Focus",
+   "rationale": "If the SEC does NOT remove quarterly reporting (NO outcome), it signals continued regulatory stringency that could sustain enforcement pressure on alternative data practices; used as a deregulatory posture signal hedge.",
+   "is_major": false,
+   "sort_order": 13,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "SEC Division of Examinations (Finally) Speaks on Alternative Data – Akin Gump",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "What the New SEC's First Year Signals for the Future of Private Fund Oversight – Proskauer",
+     "url": "https://www.proskauer.com/blog/what-the-new-secs-first-year-signals-for-the-future-of-private-fund-oversight"
+    },
+    {
+     "title": "SEC Examination Priorities Show Continued Focus – K&L Gates",
+     "url": "https://www.klgates.com/SEC-Examination-Priorities-Show-Continued-Focus-on-Risks-in-Changed-Enforcement-Environment-12-1-2025"
+    }
+   ]
+  },
+  {
+   "id": "6b95b407-e023-4e5f-9831-6a46ee2e0fc4",
+   "contract_key": "synthetic-dmca-1201-2nd-circuit",
+   "event_key": "evt-5",
+   "event_id": "aa6e022b-c588-42ce-a2a4-64ea14fb17aa",
+   "title": "Will the Second Circuit Court of Appeals issue a ruling applying DMCA §1201 anti-circumvention liability to commercial web scrapers that bypass rate-limiting and anti-bot technical measures by Q1 2027?",
+   "short_title": "DMCA Anti-Circumvention Ruling",
+   "display_title": "Will the Second Circuit rule that bypassing anti-bot measures violates DMCA §1201?",
+   "description": "Tracks whether the Second Circuit issues a binding precedent holding that commercially circumventing rate limits and bot-blocking systems violates the DMCA's anti-circumvention provisions.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.04,
+   "volume": 1200000,
+   "expiry_date": "2027-03-31",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "DMCA",
+    "web-scraping",
+    "anti-circumvention",
+    "Second-Circuit",
+    "alternative-data"
+   ],
+   "event_title": "Appeals Court Scraping Precedent",
+   "rationale": "A Second Circuit ruling applying DMCA §1201 to commercial bot-bypass scrapers would create binding appellate precedent with direct criminal implications for Killington's data collection infrastructure.",
+   "is_major": false,
+   "sort_order": 14,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 280,
+   "resolution": "Mar 31, 2027",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    }
+   ]
+  },
+  {
+   "id": "299514a9-7dfb-4016-b5ae-1cbff25a5a83",
+   "contract_key": "synthetic-reddit-perplexity-dmca-ruling",
+   "event_key": "evt-5",
+   "event_id": "aa6e022b-c588-42ce-a2a4-64ea14fb17aa",
+   "title": "Will the Southern District of New York issue a merits ruling in Reddit v. Perplexity AI (Case 1:25-cv-08736) holding that automated bypass of platform access controls violates DMCA §1201 anti-circumvention provisions by December 31, 2026?",
+   "short_title": "Reddit v. Perplexity DMCA Ruling",
+   "display_title": "Will the Reddit v. Perplexity lawsuit result in a ruling that bypassing platform access controls violates copyright anti-circumvention law?",
+   "description": "Tracks whether the SDNY issues a substantive ruling in Reddit's DMCA §1201 case against Perplexity AI that could serve as persuasive precedent on anti-circumvention liability for commercial scrapers.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.08,
+   "volume": 850000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "DMCA",
+    "web-scraping",
+    "Reddit",
+    "Perplexity",
+    "SDNY"
+   ],
+   "event_title": "Appeals Court Scraping Precedent",
+   "rationale": "An adverse SDNY ruling finding DMCA anti-circumvention liability in Reddit v. Perplexity would establish persuasive precedent directly applicable to Killington's scraping practices, even without binding appellate force.",
+   "is_major": false,
+   "sort_order": 15,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    }
+   ]
+  },
+  {
+   "id": "5619f2cf-caf3-45a2-a0f7-e252e5f77e4d",
+   "contract_key": "kalshi-KXSCOTUSAICOPYRIGHT-27JAN-AICOPYRIGHT",
+   "event_key": "evt-5",
+   "event_id": "aa6e022b-c588-42ce-a2a4-64ea14fb17aa",
+   "title": "Will the Supreme Court hear a case about AI and copyright law before 2027?",
+   "short_title": "SCOTUS AI Copyright Case",
+   "display_title": null,
+   "description": "Tracks whether SCOTUS grants certiorari on an AI/copyright case before January 2027, signaling judicial appetite for defining digital data access boundaries.",
+   "platform": "kalshi",
+   "category": "regulatory_actions",
+   "probability": 0.155,
+   "volume": 8941,
+   "expiry_date": "2027-01-01",
+   "url": "https://kalshi.com/markets/kxscotusaicopyright/will-the-scotus-hear-a-case-about-ai-and-copyright-law-before-2027/kxscotusaicopyright-27jan",
+   "relevance_score": 0.72,
+   "tags": [],
+   "event_title": "Appeals Court Scraping Precedent",
+   "rationale": "SCOTUS granting cert on an AI copyright case would signal judicial appetite to tighten digital data access rules, creating systemic legal risk across the web-scraping industry that affects Killington.",
+   "is_major": false,
+   "sort_order": 16,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 191,
+   "resolution": "Jan 1, 2027",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "How Artificial Intelligence is Shaping Web Scraping Litigation – ZwillGen",
+     "url": "https://www.zwillgen.com/alternative-data/how-artificial-intelligence-shaping-web-scraping-litigation/"
+    },
+    {
+     "title": "Reddit Sues Perplexity AI Over DMCA §1201 Circumvention – National Law Review",
+     "url": "https://natlawreview.com/article/anti-circumvention-reddits-case-against-perplexity"
+    }
+   ]
+  },
+  {
+   "id": "2b41374d-0f37-4f48-9b6a-38cc0f6e4aa3",
+   "contract_key": "synthetic-cppa-oops-formal-rulemaking",
+   "event_key": "evt-6",
+   "event_id": "7b3a41c5-4808-4e11-a469-6217124f8925",
+   "title": "Will the California Privacy Protection Agency publish a formal Notice of Proposed Rulemaking (NOPR) on Opt-Out Preference Signals (OOPS) requiring businesses to honor browser-level opt-out signals under CPRA (Cal. Civ. Code §1798.135) by December 31, 2026?",
+   "short_title": "CPPA Opt-Out Signal Rules",
+   "display_title": "Will California's privacy agency formally propose rules requiring businesses to honor browser-level opt-out signals by end of 2026?",
+   "description": "Tracks whether the CPPA advances its OOPS rulemaking from preliminary comment stage to formal proposed regulations requiring businesses to honor Global Privacy Control and similar browser-based opt-out signals.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.82,
+   "volume": 750000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "CPPA",
+    "CCPA",
+    "CPRA",
+    "opt-out",
+    "California-privacy"
+   ],
+   "event_title": "California Browser Opt-Out Signals Rule",
+   "rationale": "CPPA formalizing opt-out preference signal requirements would expand data collection restrictions applicable to Killington's browser-accessible public data sources, adding compliance friction to its supply chain.",
+   "is_major": false,
+   "sort_order": 17,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CPPA Law & Regulations – Current Rulemaking Activities",
+     "url": "https://cppa.ca.gov/regulations/"
+    },
+    {
+     "title": "California Finalizes Regulations to Strengthen Consumers' Privacy – CPPA",
+     "url": "https://cppa.ca.gov/announcements/2025/20250923.html"
+    }
+   ]
+  },
+  {
+   "id": "f1f02ccb-a729-458b-ba5d-04505ec11c6d",
+   "contract_key": "synthetic-meta-brightdata-appeal-waiver",
+   "event_key": "evt-7",
+   "event_id": "205bd793-719d-4be1-b9bb-ca4c161e7944",
+   "title": "Will any federal appellate court issue a ruling reversing or materially limiting the N.D. Cal. holding in Meta Platforms v. Bright Data (Case 3:23-cv-00077) that logged-off scraping of publicly accessible platform data does not violate platform Terms of Service by December 31, 2026?",
+   "short_title": "Bright Data Precedent Reversal",
+   "display_title": "Will a federal appeals court reverse the ruling that publicly accessible data scraping does not violate platform terms of service?",
+   "description": "Tracks whether the favorable Bright Data precedent protecting logged-off public scraping is overturned or narrowed by a federal appellate court, which would undermine Killington's primary legal defense for its data collection practices.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.05,
+   "volume": 600000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.9,
+   "tags": [
+    "web-scraping",
+    "Meta",
+    "Bright-Data",
+    "ToS",
+    "CFAA"
+   ],
+   "event_title": "Public Data Scraping Legal Shield",
+   "rationale": "Reversal of the Bright Data precedent would eliminate Killington's primary legal defense for logged-off public website scraping, immediately exposing its core data collection methodology to ToS-based civil liability from major retailers.",
+   "is_major": false,
+   "sort_order": 18,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Court Rules in Favor of Bright Data in Meta v. Bright Data Case – Bright Data",
+     "url": "https://brightdata.com/blog/web-data/court-rules-in-favor-of-bright-data-in-meta-v-bright-data-case"
+    },
+    {
+     "title": "Meta dismisses claim against Bright Data – Bright Data",
+     "url": "https://brightdata.com/blog/general/meta-dismisses-claim-against-bright-data"
+    },
+    {
+     "title": "Federal judge rules against Meta in data scraping case – Courthouse News",
+     "url": "https://www.courthousenews.com/federal-judge-rules-against-meta-in-data-scraping-case/"
+    }
+   ]
+  },
+  {
+   "id": "4390baee-a77a-410b-9014-95941451a8ab",
+   "contract_key": "synthetic-cfaa-scraping-circuit-expansion",
+   "event_key": "evt-7",
+   "event_id": "205bd793-719d-4be1-b9bb-ca4c161e7944",
+   "title": "Will any U.S. Circuit Court of Appeals outside the Ninth Circuit issue a ruling holding that commercial automated scraping of publicly accessible websites without authorization violates the Computer Fraud and Abuse Act (18 U.S.C. §1030) by December 31, 2026?",
+   "short_title": "CFAA Scraping Circuit Split",
+   "display_title": "Will a federal appeals court outside the Ninth Circuit rule that scraping public websites without authorization violates federal computer fraud law?",
+   "description": "Tracks whether a circuit split emerges on CFAA applicability to commercial web scraping, which could expose Killington to federal criminal and civil liability in jurisdictions outside the Ninth Circuit.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.12,
+   "volume": 500000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "CFAA",
+    "web-scraping",
+    "circuit-split",
+    "computer-fraud",
+    "alternative-data"
+   ],
+   "event_title": "Public Data Scraping Legal Shield",
+   "rationale": "A circuit split on CFAA applicability to commercial scraping would expose Killington to federal criminal and civil liability in jurisdictions outside the protective Ninth Circuit Bright Data precedent.",
+   "is_major": false,
+   "sort_order": 19,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Court Rules in Favor of Bright Data in Meta v. Bright Data Case – Bright Data",
+     "url": "https://brightdata.com/blog/web-data/court-rules-in-favor-of-bright-data-in-meta-v-bright-data-case"
+    },
+    {
+     "title": "Meta dismisses claim against Bright Data – Bright Data",
+     "url": "https://brightdata.com/blog/general/meta-dismisses-claim-against-bright-data"
+    },
+    {
+     "title": "Federal judge rules against Meta in data scraping case – Courthouse News",
+     "url": "https://www.courthousenews.com/federal-judge-rules-against-meta-in-data-scraping-case/"
+    }
+   ]
+  },
+  {
+   "id": "f28169bd-6e7c-4bf5-8909-f47b5f6c4814",
+   "contract_key": "synthetic-amazon-scraping-litigation",
+   "event_key": "evt-8",
+   "event_id": "b5a5071e-116a-4417-bc2a-636b07ec13f3",
+   "title": "Will Amazon.com, Inc. file or join a federal lawsuit against a commercial alternative data or market intelligence firm specifically for unauthorized scraping of product pricing, inventory, or sales rank data from Amazon's public-facing pages by December 31, 2026?",
+   "short_title": "Amazon Data Scraping Lawsuit",
+   "display_title": "Will Amazon sue a commercial data firm for scraping its product pricing or inventory data?",
+   "description": "Tracks whether Amazon initiates or joins federal litigation against a commercial alternative data provider for scraping publicly accessible product data, which would signal an aggressive legal posture that could target Killington directly.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.08,
+   "volume": 900000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "Amazon",
+    "web-scraping",
+    "CFAA",
+    "litigation",
+    "alternative-data"
+   ],
+   "event_title": "Amazon Blocks AI Web Crawlers",
+   "rationale": "Amazon filing a federal lawsuit against a commercial alternative data firm for scraping product data would create sector-wide legal shock and directly threaten Killington's core Amazon data collection operations.",
+   "is_major": false,
+   "sort_order": 20,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Amazon AI scraping project creates unauthorized listings for small brands – PPC Land",
+     "url": "https://ppc.land/amazon-ai-scraping-project-creates-unauthorized-listings-for-small-brands/"
+    },
+    {
+     "title": "Is Web Scraping Legal in 2026? Laws, Ethics, and Risks Explained – Browserless",
+     "url": "https://www.browserless.io/blog/is-web-scraping-legal"
+    }
+   ]
+  },
+  {
+   "id": "d2d7bdcf-95fa-42d6-b329-804a27daf653",
+   "contract_key": "synthetic-sec-mnpi-alt-data-enforcement",
+   "event_key": "evt-9",
+   "event_id": "17e84ebd-208c-476c-a9ed-ed4b15543995",
+   "title": "Will the SEC Division of Examinations issue a risk alert or enforcement referral specifically citing alternative data vendor due diligence deficiencies under Section 204A of the Investment Advisers Act (15 U.S.C. §80b-4a) at a registered investment adviser by December 31, 2026?",
+   "short_title": "SEC Alternative Data Risk Alert",
+   "display_title": "Will the SEC issue a risk alert or enforcement referral citing alternative data vendor due diligence failures at an investment adviser by end of 2026?",
+   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal risk alert or enforcement referral specifically targeting hedge fund alternative data practices, which would directly increase compliance scrutiny on Killington's clients and their vendor relationships.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.2,
+   "volume": 2000000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.92,
+   "tags": [
+    "SEC",
+    "MNPI",
+    "alternative-data",
+    "hedge-funds",
+    "Investment-Advisers-Act"
+   ],
+   "event_title": "SEC Alternative Data Scrutiny",
+   "rationale": "An SEC risk alert or enforcement referral targeting alternative data due diligence deficiencies would force hedge fund clients to impose stringent vendor vetting requirements that Killington, as a seed-stage company, may fail to satisfy.",
+   "is_major": false,
+   "sort_order": 21,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "SEC Division of Examinations FY2026 Exam Priorities (PDF)",
+     "url": "https://www.sec.gov/files/2026-exam-priorities.pdf"
+    },
+    {
+     "title": "Goodwin Law — 2026 SEC Exam Priorities for Registered Investment Advisers",
+     "url": "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-privateequity-pif-2026-sec-exam-priorities-for-registered-investment-advisers"
+    },
+    {
+     "title": "Akerman — SEC 2026 Exam Priorities: Key Implications for Private Fund Advisers",
+     "url": "https://www.akerman.com/en/perspectives/sec-releases-2026-examination-priorities-key-implications-for-private-fund-advisers.html"
+    },
+    {
+     "title": "Akin Gump — SEC Division of Examinations Speaks on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    }
+   ]
+  },
+  {
+   "id": "b0442316-1ff3-474b-840a-2dc415872eed",
+   "contract_key": "kalshi-KXSECQUARTERLY-26MAR-26JUL01",
+   "event_key": "evt-9",
+   "event_id": "17e84ebd-208c-476c-a9ed-ed4b15543995",
+   "title": "Will Securities and Exchange Commission (SEC) announce the publication of a final rule, with an effective date, making quarterly reporting optional for public companies before Jul 1, 2026?",
+   "short_title": "SEC Optional Quarterly Reporting",
+   "display_title": null,
+   "description": "Tracks whether the SEC finalizes optional quarterly reporting, a proxy for the agency's overall regulatory posture and willingness to reduce disclosure burdens that affect hedge fund investment processes.",
+   "platform": "kalshi",
+   "category": "regulatory_actions",
+   "probability": 0.01,
+   "volume": 2629,
+   "expiry_date": "2026-07-01",
+   "url": "https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar",
+   "relevance_score": 0.7,
+   "tags": [],
+   "event_title": "SEC Alternative Data Scrutiny",
+   "rationale": "Deregulatory posture signal only; the 0.01 probability and negligible volume make this effectively zero-allocation as a standalone hedge for Killington's risk profile.",
+   "is_major": false,
+   "sort_order": 22,
+   "allocation_pct": 0,
+   "position": "Buy NO",
+   "days_left": 7,
+   "resolution": "Jul 1, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "SEC Division of Examinations FY2026 Exam Priorities (PDF)",
+     "url": "https://www.sec.gov/files/2026-exam-priorities.pdf"
+    },
+    {
+     "title": "Goodwin Law — 2026 SEC Exam Priorities for Registered Investment Advisers",
+     "url": "https://www.goodwinlaw.com/en/insights/publications/2025/12/alerts-privateequity-pif-2026-sec-exam-priorities-for-registered-investment-advisers"
+    },
+    {
+     "title": "Akerman — SEC 2026 Exam Priorities: Key Implications for Private Fund Advisers",
+     "url": "https://www.akerman.com/en/perspectives/sec-releases-2026-examination-priorities-key-implications-for-private-fund-advisers.html"
+    },
+    {
+     "title": "Akin Gump — SEC Division of Examinations Speaks on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    }
+   ]
+  },
+  {
+   "id": "73ce74be-6fb1-45fb-b560-9906c66530ea",
+   "contract_key": "synthetic-cppa-drop-deadline-aug2026",
+   "event_key": "evt-10",
+   "event_id": "7dff88ba-39bd-4d90-90b1-b88c782b9bc9",
+   "title": "Will the California Privacy Protection Agency's DELETE Act DROP platform be fully operational and begin imposing $200/day/request civil penalties on non-compliant registered data brokers (Cal. Civ. Code §1798.99.80) by August 1, 2026?",
+   "short_title": "CPPA DELETE Act Penalty Activation",
+   "display_title": "Will the CPPA begin imposing DELETE Act penalties on data brokers by August 1, 2026?",
+   "description": "Tracks whether the CPPA activates mandatory penalty enforcement under SB 362 on the statutory August 1, 2026 deadline, directly determining Killington's financial exposure for non-compliance with deletion request processing.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.62,
+   "volume": 1200000,
+   "expiry_date": "2026-08-15",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "CPPA",
+    "Delete Act",
+    "SB 362",
+    "data broker",
+    "California privacy"
+   ],
+   "event_title": "California Delete Act Compliance",
+   "rationale": "The CPPA activating mandatory $200/day penalties under the DELETE Act on August 1, 2026 directly triggers Killington's fine exposure as a registered California data broker with no compliance infrastructure in place.",
+   "is_major": false,
+   "sort_order": 23,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 52,
+   "resolution": "Aug 15, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CalPrivacy — DROP for Data Brokers",
+     "url": "https://privacy.ca.gov/data-brokers/"
+    },
+    {
+     "title": "Clark Hill — California's DROP Goes Live, CalPrivacy Continues to Enforce Delete Act",
+     "url": "https://www.clarkhill.com/news-events/news/is-your-business-a-data-broker-californias-drop-goes-live-and-calprivacy-continues-to-enforce-delete-act/"
+    },
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Freshfields — CalPrivacy Seeks Input on Data Broker Audit Requirements",
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/the-delete-act-calprivacy-seeks-input-on-data-broker-audit-requirements-102mqe8"
+    }
+   ]
+  },
+  {
+   "id": "ebd255ff-944a-40b8-a068-5bef5b94ab32",
+   "contract_key": "synthetic-cppa-strike-force-fine-2026",
+   "event_key": "evt-10",
+   "event_id": "7dff88ba-39bd-4d90-90b1-b88c782b9bc9",
+   "title": "Will the CPPA Data Broker Enforcement Strike Force issue a civil penalty or consent order against a retail-sector or financial data intelligence company (distinct from S&P Global) for DELETE Act violations (Cal. Civ. Code §1798.99.80) before December 31, 2026?",
+   "short_title": "CPPA Financial Data Broker Fine",
+   "display_title": "Will the CPPA Strike Force fine a financial data company for DELETE Act violations before end of 2026?",
+   "description": "Tracks whether CPPA enforcement expands beyond its initial S&P Global action to target financial intelligence or alt-data companies, directly signaling enforcement risk for Killington Technologies.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.35,
+   "volume": 900000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "CPPA",
+    "Delete Act",
+    "data broker",
+    "enforcement",
+    "alternative data"
+   ],
+   "event_title": "California Delete Act Compliance",
+   "rationale": "A CPPA Strike Force penalty against a retail or financial data intelligence company is a closely correlated signal to the primary major contract; retained at low allocation to capture scenario where enforcement precedes the August DROP deadline.",
+   "is_major": false,
+   "sort_order": 24,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "CalPrivacy — DROP for Data Brokers",
+     "url": "https://privacy.ca.gov/data-brokers/"
+    },
+    {
+     "title": "Clark Hill — California's DROP Goes Live, CalPrivacy Continues to Enforce Delete Act",
+     "url": "https://www.clarkhill.com/news-events/news/is-your-business-a-data-broker-californias-drop-goes-live-and-calprivacy-continues-to-enforce-delete-act/"
+    },
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Freshfields — CalPrivacy Seeks Input on Data Broker Audit Requirements",
+     "url": "https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/the-delete-act-calprivacy-seeks-input-on-data-broker-audit-requirements-102mqe8"
+    }
+   ]
+  },
+  {
+   "id": "3ea58943-67cd-40d8-b052-65db1364decc",
+   "contract_key": "synthetic-secure-data-act-committee-vote",
+   "event_key": "evt-11",
+   "event_id": "5fd0e77f-69e8-4292-8b46-29fae236a5a2",
+   "title": "Will the SECURE Data Act (HR 8413), which establishes federal FTC data broker registration, data minimization requirements, and preempts state privacy laws including CCPA/CPRA, be reported out of the House Energy and Commerce Committee by December 31, 2026?",
+   "short_title": "SECURE Data Act Committee Passage",
+   "display_title": "Will the SECURE Data Act pass out of the House Energy and Commerce Committee by end of 2026?",
+   "description": "Tracks whether HR 8413 clears the committee markup stage — the decisive procedural threshold before a House floor vote — within the 119th Congress calendar.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.12,
+   "volume": 750000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.92,
+   "tags": [
+    "SECURE Data Act",
+    "HR 8413",
+    "federal privacy",
+    "FTC",
+    "data broker"
+   ],
+   "event_title": "Federal Data Privacy Bill Hearing",
+   "rationale": "SECURE Data Act clearing committee would signal imminent federal data broker registration and minimization requirements, materially increasing Killington's compliance obligations and restructuring its business model.",
+   "is_major": false,
+   "sort_order": 25,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "IAPP — SECURE Data Act: Analysis of the New Federal Privacy Bill",
+     "url": "https://iapp.org/news/a/secure-data-act-analysis-of-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "House Energy & Commerce Committee — Hearing Announcement on HR 8413",
+     "url": "https://energycommerce.house.gov/posts/chairmen-guthrie-and-bilirakis-announce-hearing-on-establishing-a-federal-data-privacy-law"
+    },
+    {
+     "title": "Epstein Becker Green — One Nation, One Privacy Law: GOP Introduces Federal Privacy Legislation",
+     "url": "https://www.workforcebulletin.com/one-nation-one-privacy-law-gop-introduces-federal-privacy-legislation"
+    },
+    {
+     "title": "Privado AI — SECURE Data Act: What's in the New Federal Privacy Law",
+     "url": "https://www.privado.ai/post/us-secure-data-act-whats-in-the-newly-proposed-federal-privacy-law"
+    }
+   ]
+  },
+  {
+   "id": "17e09b45-881c-4e56-8cef-317259309405",
+   "contract_key": "synthetic-secure-data-act-enacted-2026",
+   "event_key": "evt-11",
+   "event_id": "5fd0e77f-69e8-4292-8b46-29fae236a5a2",
+   "title": "Will the SECURE Data Act (HR 8413), which establishes a federal FTC data broker registry, opt-out deletion rights, and data minimization rules while preempting CCPA/CPRA, be signed into law before December 31, 2027?",
+   "short_title": "SECURE Data Act Enactment",
+   "display_title": "Will the SECURE Data Act become federal law by end of 2027?",
+   "description": "Tracks full enactment of the SECURE Data Act through House passage, Senate approval, and presidential signature, determining whether federal preemption of CCPA replaces Killington's current California compliance regime.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.03,
+   "volume": 1400000,
+   "expiry_date": "2027-12-31",
+   "url": "",
+   "relevance_score": 0.9,
+   "tags": [
+    "SECURE Data Act",
+    "HR 8413",
+    "federal privacy",
+    "CCPA preemption",
+    "data broker"
+   ],
+   "event_title": "Federal Data Privacy Bill Hearing",
+   "rationale": "Full enactment of the SECURE Data Act would impose federal data broker registration and data minimization requirements on Killington while potentially preempting the CCPA regime it has partially adapted to.",
+   "is_major": false,
+   "sort_order": 26,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 555,
+   "resolution": "Dec 31, 2027",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "IAPP — SECURE Data Act: Analysis of the New Federal Privacy Bill",
+     "url": "https://iapp.org/news/a/secure-data-act-analysis-of-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "House Energy & Commerce Committee — Hearing Announcement on HR 8413",
+     "url": "https://energycommerce.house.gov/posts/chairmen-guthrie-and-bilirakis-announce-hearing-on-establishing-a-federal-data-privacy-law"
+    },
+    {
+     "title": "Epstein Becker Green — One Nation, One Privacy Law: GOP Introduces Federal Privacy Legislation",
+     "url": "https://www.workforcebulletin.com/one-nation-one-privacy-law-gop-introduces-federal-privacy-legislation"
+    },
+    {
+     "title": "Privado AI — SECURE Data Act: What's in the New Federal Privacy Law",
+     "url": "https://www.privado.ai/post/us-secure-data-act-whats-in-the-newly-proposed-federal-privacy-law"
+    }
+   ]
+  },
+  {
+   "id": "f31633ec-761d-4e1c-af7c-61f1ebf86bcd",
+   "contract_key": "kalshi-KXBILLS-FISA",
+   "event_key": "evt-11",
+   "event_id": "5fd0e77f-69e8-4292-8b46-29fae236a5a2",
+   "title": "Will legislation that reauthorizes FISA Title VII, including Section 702, for two years become law before Jan 1, 2027?",
+   "short_title": "FISA Title VII Reauthorization",
+   "display_title": null,
+   "description": "Tracks congressional capacity to advance surveillance and data-related legislation in the 119th Congress, providing signal on the legislative bandwidth available for data privacy bills like the SECURE Data Act.",
+   "platform": "kalshi",
+   "category": "federal_legislation",
+   "probability": 0.175,
+   "volume": 131447,
+   "expiry_date": "2027-01-01",
+   "url": "https://kalshi.com/markets/kxbills/which-bills-will-become-law-in-2026/kxbills",
+   "relevance_score": 0.71,
+   "tags": [],
+   "event_title": "Federal Data Privacy Bill Hearing",
+   "rationale": "FISA reauthorization failure would signal congressional gridlock on data-related legislation, but the link to Killington's risk profile is too indirect for meaningful allocation.",
+   "is_major": false,
+   "sort_order": 27,
+   "allocation_pct": 0,
+   "position": "Buy NO",
+   "days_left": 191,
+   "resolution": "Jan 1, 2027",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Spending Bills",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "IAPP — SECURE Data Act: Analysis of the New Federal Privacy Bill",
+     "url": "https://iapp.org/news/a/secure-data-act-analysis-of-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "House Energy & Commerce Committee — Hearing Announcement on HR 8413",
+     "url": "https://energycommerce.house.gov/posts/chairmen-guthrie-and-bilirakis-announce-hearing-on-establishing-a-federal-data-privacy-law"
+    },
+    {
+     "title": "Epstein Becker Green — One Nation, One Privacy Law: GOP Introduces Federal Privacy Legislation",
+     "url": "https://www.workforcebulletin.com/one-nation-one-privacy-law-gop-introduces-federal-privacy-legislation"
+    },
+    {
+     "title": "Privado AI — SECURE Data Act: What's in the New Federal Privacy Law",
+     "url": "https://www.privado.ai/post/us-secure-data-act-whats-in-the-newly-proposed-federal-privacy-law"
+    }
+   ]
+  },
+  {
+   "id": "ea66e3f5-c4da-47a5-823c-7ed7119cf512",
+   "contract_key": "synthetic-doj-dsp-first-enforcement-2026",
+   "event_key": "evt-12",
+   "event_id": "6de77500-0a7a-4527-b5b0-5270136b8a71",
+   "title": "Will the DOJ National Security Division issue its first civil or criminal enforcement action under the Data Security Program (28 CFR Part 202, implemented under EO 14117) against a U.S. data vendor for bulk sensitive personal data transfers to a country of concern before December 31, 2026?",
+   "short_title": "DOJ Data Security Program Enforcement",
+   "display_title": "Will the DOJ bring its first enforcement action under the Data Security Program against a data vendor by end of 2026?",
+   "description": "Tracks whether DOJ escalates the Data Security Program from compliance guidance to active prosecution of a data vendor, directly signaling enforcement risk for companies like Killington handling aggregated consumer data.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.25,
+   "volume": 1100000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "DOJ",
+    "Data Security Program",
+    "bulk data",
+    "28 CFR Part 202",
+    "EO 14117"
+   ],
+   "event_title": "DOJ Bulk Data Transfer Rule",
+   "rationale": "DOJ's first DSP enforcement action against a data vendor would signal active prosecution risk under the bulk data rule for companies like Killington that aggregate consumer data, potentially triggering compliance restructuring costs.",
+   "is_major": false,
+   "sort_order": 28,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "DOJ — Justice Department Implements Critical National Security Program",
+     "url": "https://www.justice.gov/opa/pr/justice-department-implements-critical-national-security-program-protect-americans-sensitive"
+    },
+    {
+     "title": "DOJ National Security Division — Data Security Program",
+     "url": "https://www.justice.gov/nsd/data-security"
+    },
+    {
+     "title": "Cooley — Understanding and Complying with the DOJ's Bulk Data Rule",
+     "url": "https://cdp.cooley.com/understanding-and-complying-with-the-dojs-bulk-data-rule/"
+    },
+    {
+     "title": "Government Contracts Law — DOJ Launches New Data Security Program",
+     "url": "https://www.governmentcontractslaw.com/2026/01/doj-launches-new-data-security-program-what-your-company-needs-to-know/"
+    }
+   ]
+  },
+  {
+   "id": "81d6d274-9bae-4a07-a1dc-9522fd745f48",
+   "contract_key": "synthetic-doj-dsp-guidance-altdata-2026",
+   "event_key": "evt-12",
+   "event_id": "6de77500-0a7a-4527-b5b0-5270136b8a71",
+   "title": "Will the DOJ National Security Division issue formal compliance guidance or a frequently-asked-questions document under 28 CFR Part 202 (Data Security Program) specifically addressing data aggregators, alternative data vendors, or commercial analytics companies by September 30, 2026?",
+   "short_title": "DOJ Bulk Data Rule Guidance",
+   "display_title": "Will the DOJ issue compliance guidance targeting data aggregators under the Data Security Program by Q3 2026?",
+   "description": "Tracks whether DOJ narrows regulatory uncertainty for alternative data companies by publishing sector-specific compliance guidance under the bulk data transfer rule, which would clarify Killington's obligations.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.05,
+   "volume": 600000,
+   "expiry_date": "2026-09-30",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "DOJ",
+    "Data Security Program",
+    "alternative data",
+    "compliance guidance",
+    "28 CFR Part 202"
+   ],
+   "event_title": "DOJ Bulk Data Transfer Rule",
+   "rationale": "If DOJ does NOT publish alt-data sector guidance (NO outcome), regulatory uncertainty persists and compliance costs remain elevated for Killington with no clear safe harbor; useful as a low-allocation uncertainty hedge.",
+   "is_major": false,
+   "sort_order": 29,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 98,
+   "resolution": "Sep 30, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "DOJ — Justice Department Implements Critical National Security Program",
+     "url": "https://www.justice.gov/opa/pr/justice-department-implements-critical-national-security-program-protect-americans-sensitive"
+    },
+    {
+     "title": "DOJ National Security Division — Data Security Program",
+     "url": "https://www.justice.gov/nsd/data-security"
+    },
+    {
+     "title": "Cooley — Understanding and Complying with the DOJ's Bulk Data Rule",
+     "url": "https://cdp.cooley.com/understanding-and-complying-with-the-dojs-bulk-data-rule/"
+    },
+    {
+     "title": "Government Contracts Law — DOJ Launches New Data Security Program",
+     "url": "https://www.governmentcontractslaw.com/2026/01/doj-launches-new-data-security-program-what-your-company-needs-to-know/"
+    }
+   ]
+  },
+  {
+   "id": "a1da83f6-ff6b-423c-9833-0d07929ed1c2",
+   "contract_key": "synthetic-ftc-padfaa-formal-action-2026",
+   "event_key": "evt-13",
+   "event_id": "472a5bbb-2d95-4cb5-ac14-9528299c0c5a",
+   "title": "Will the FTC issue a formal civil complaint or consent order under the Protecting Americans' Data from Foreign Adversaries Act (PADFAA, 15 U.S.C. §9301 et seq.) against any of the 13 data brokers that received February 9, 2026 warning letters before December 31, 2026?",
+   "short_title": "FTC PADFAA Formal Enforcement Action",
+   "display_title": "Will the FTC file a formal PADFAA enforcement action against any warned data broker by end of 2026?",
+   "description": "Tracks whether the FTC's February 2026 PADFAA warning letter campaign escalates to a formal enforcement action against any named data broker within the 119th Congress enforcement cycle.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.15,
+   "volume": 950000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.9,
+   "tags": [
+    "FTC",
+    "PADFAA",
+    "data broker",
+    "enforcement",
+    "foreign adversary"
+   ],
+   "event_title": "FTC Foreign Data Transfer Enforcement",
+   "rationale": "An FTC PADFAA enforcement action against a named data broker would demonstrate the agency's willingness to prosecute data transfer violations, raising compliance costs and reputational risk for Killington's data aggregation business.",
+   "is_major": false,
+   "sort_order": 30,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "FTC Press Release — FTC Reminds Data Brokers of Their Obligations to Comply with PADFAA",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa"
+    },
+    {
+     "title": "Wiley — FTC Sends Warning Letters to Data Brokers on PADFA Compliance",
+     "url": "https://www.wiley.law/alert-FTC-Sends-Warning-Letters-to-Data-Brokers-on-PADFA-Compliance"
+    },
+    {
+     "title": "Morrison Foerster — U.S. Cyber and Privacy Regulators Intensify Focus on Data Transfers to Foreign Adversaries",
+     "url": "https://www.mofo.com/resources/insights/260218-a-mofo-privacy-minute-qa-us-cyber-and-privacy-regulators"
+    },
+    {
+     "title": "Mayer Brown — Cross-Border Transfers of American Personal Information Carry Heightened Risks",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/cross-border-transfers-of-american-personal-information-carry-heightened-regulatory-litigation-risks"
+    }
+   ]
+  },
+  {
+   "id": "6682e4bc-e2c9-44ff-9a42-107388aeff80",
+   "contract_key": "synthetic-ftc-data-broker-rulemaking-2026",
+   "event_key": "evt-13",
+   "event_id": "472a5bbb-2d95-4cb5-ac14-9528299c0c5a",
+   "title": "Will the FTC publish a Notice of Proposed Rulemaking (NPRM) under Section 18 of the FTC Act establishing mandatory data broker registration, opt-out deletion rights, or data minimization requirements applicable to commercial data intelligence companies before December 31, 2026?",
+   "short_title": "FTC Data Broker Rulemaking NPRM",
+   "display_title": "Will the FTC issue a formal rulemaking proposal on data broker registration or deletion rights by end of 2026?",
+   "description": "Tracks whether the FTC initiates formal rulemaking on data broker obligations beyond PADFAA, which would impose new structural compliance obligations on Killington's data aggregation business.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.06,
+   "volume": 700000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "FTC",
+    "data broker",
+    "rulemaking",
+    "NPRM",
+    "data minimization"
+   ],
+   "event_title": "FTC Foreign Data Transfer Enforcement",
+   "rationale": "An FTC NPRM on data broker registration would begin the rulemaking clock on mandatory federal compliance obligations for Killington, creating multi-year compliance cost uncertainty during its critical growth phase.",
+   "is_major": false,
+   "sort_order": 31,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "FTC Press Release — FTC Reminds Data Brokers of Their Obligations to Comply with PADFAA",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa"
+    },
+    {
+     "title": "Wiley — FTC Sends Warning Letters to Data Brokers on PADFA Compliance",
+     "url": "https://www.wiley.law/alert-FTC-Sends-Warning-Letters-to-Data-Brokers-on-PADFA-Compliance"
+    },
+    {
+     "title": "Morrison Foerster — U.S. Cyber and Privacy Regulators Intensify Focus on Data Transfers to Foreign Adversaries",
+     "url": "https://www.mofo.com/resources/insights/260218-a-mofo-privacy-minute-qa-us-cyber-and-privacy-regulators"
+    },
+    {
+     "title": "Mayer Brown — Cross-Border Transfers of American Personal Information Carry Heightened Risks",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/cross-border-transfers-of-american-personal-information-carry-heightened-regulatory-litigation-risks"
+    }
+   ]
+  },
+  {
+   "id": "b3f3a462-3b0f-490b-a0ae-fc2733466537",
+   "contract_key": "poly-1228017",
+   "event_key": "evt-13",
+   "event_id": "472a5bbb-2d95-4cb5-ac14-9528299c0c5a",
+   "title": "SCOTUS lets Trump fire FTC commissioners in Trump v. Slaughter?",
+   "short_title": "SCOTUS FTC Commissioner Removal",
+   "display_title": null,
+   "description": "Tracks whether the Supreme Court grants the executive branch authority to remove FTC commissioners at will, which would fundamentally restructure the FTC's independence and its enforcement posture toward data brokers.",
+   "platform": "polymarket",
+   "category": "regulatory_actions",
+   "probability": 0.902,
+   "volume": 21815,
+   "expiry_date": "2026-12-31",
+   "url": "https://polymarket.com/event/scotus-lets-trump-fire-ftc-commissioners-in-trump-v-slaughter",
+   "relevance_score": 0.75,
+   "tags": [
+    "SCOTUS",
+    "ftc",
+    "Politics",
+    "Trump",
+    "Courts",
+    "Supreme Court ",
+    "humphreys",
+    "Humphrey's Executor"
+   ],
+   "event_title": "FTC Foreign Data Transfer Enforcement",
+   "rationale": "If SCOTUS rules AGAINST executive removal of FTC commissioners (NO), FTC retains enforcement independence, sustaining aggressive data broker enforcement posture that threatens Killington; low allocation given indirect relationship.",
+   "is_major": false,
+   "sort_order": 32,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "FTC Press Release — FTC Reminds Data Brokers of Their Obligations to Comply with PADFAA",
+     "url": "https://www.ftc.gov/news-events/news/press-releases/2026/02/ftc-reminds-data-brokers-their-obligations-comply-padfaa"
+    },
+    {
+     "title": "Wiley — FTC Sends Warning Letters to Data Brokers on PADFA Compliance",
+     "url": "https://www.wiley.law/alert-FTC-Sends-Warning-Letters-to-Data-Brokers-on-PADFA-Compliance"
+    },
+    {
+     "title": "Morrison Foerster — U.S. Cyber and Privacy Regulators Intensify Focus on Data Transfers to Foreign Adversaries",
+     "url": "https://www.mofo.com/resources/insights/260218-a-mofo-privacy-minute-qa-us-cyber-and-privacy-regulators"
+    },
+    {
+     "title": "Mayer Brown — Cross-Border Transfers of American Personal Information Carry Heightened Risks",
+     "url": "https://www.mayerbrown.com/en/insights/publications/2026/03/cross-border-transfers-of-american-personal-information-carry-heightened-regulatory-litigation-risks"
+    }
+   ]
+  },
+  {
+   "id": "eacb883a-11a1-4f77-a8e7-325a53812fdf",
+   "contract_key": "synthetic-sec-regsp-exam-altdata-2026",
+   "event_key": "evt-14",
+   "event_id": "2b06a289-71a5-4729-a1b1-671ea984b900",
+   "title": "Will the SEC Division of Examinations conduct targeted examinations of Regulation S-P (17 CFR §248.30) incident response program compliance at registered investment advisers who use third-party alternative data vendors during Q3-Q4 2026, as flagged in the 2026 Exam Priorities report?",
+   "short_title": "SEC Reg S-P Alt-Data Vendor Exams",
+   "display_title": "Will the SEC conduct targeted Reg S-P exams of investment advisers using alternative data vendors in H2 2026?",
+   "description": "Tracks whether the SEC's 2026 exam cycle specifically scrutinizes the vendor oversight and incident response obligations of RIAs that purchase alternative data, directly putting Killington's customer relationships under examination scope.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.1,
+   "volume": 800000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.91,
+   "tags": [
+    "SEC",
+    "Regulation S-P",
+    "alternative data",
+    "examination",
+    "vendor oversight"
+   ],
+   "event_title": "SEC Client Data Protection Deadline",
+   "rationale": "SEC examinations specifically targeting Reg S-P vendor oversight at alternative-data-using RIAs would put Killington's client relationships under direct examination scope, triggering client-imposed due diligence demands that could disqualify a seed-stage vendor.",
+   "is_major": false,
+   "sort_order": 33,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Sidley Austin — SEC Regulation S-P: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities"
+    },
+    {
+     "title": "Holland & Knight — Regulation S-P Amendments: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.hklaw.com/en/insights/publications/2026/05/regulation-s-p-amendments-compliance-deadline-approaching"
+    },
+    {
+     "title": "Carlton Fields — Regulation S-P Amendments: Implementation for Small Firms",
+     "url": "https://www.carltonfields.com/insights/publications/2026/regulation-sp-amendments-implementation-and-key-compliance-considerations-for-small-firms"
+    },
+    {
+     "title": "Grant Thornton — SEC Reveals 2026 Examination Priorities",
+     "url": "https://www.grantthornton.com/insights/articles/asset-management/2026/sec-reveals-examination-priorities"
+    }
+   ]
+  },
+  {
+   "id": "bfc1769e-3e60-4e66-93fc-d3721bd50e90",
+   "contract_key": "library-70395f8f-78a7-441f-9e32-268516453532",
+   "event_key": "evt-14",
+   "event_id": "2b06a289-71a5-4729-a1b1-671ea984b900",
+   "title": "Will the SEC issue a formal deficiency letter or enforcement action citing Amended Regulation S-P (incident response program and 30-day breach notification requirements) failures against any registered investment adviser with AUM below $1.5B before September 30, 2026?",
+   "short_title": "SEC Reg S-P Small RIA Action",
+   "display_title": null,
+   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal Regulation S-P deficiency letter or enforcement action against a smaller RIA, establishing precedent that would force Killington's hedge fund clients to scrutinize their third-party data vendor relationships.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.3,
+   "volume": 900000,
+   "expiry_date": "2026-09-30",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "SEC",
+    "Regulation S-P",
+    "investment adviser",
+    "enforcement",
+    "cybersecurity"
+   ],
+   "event_title": "SEC Client Data Protection Deadline",
+   "rationale": "An SEC deficiency letter against a smaller RIA for Reg S-P failures would set precedent that directly forces Killington's hedge fund clients to scrutinize and potentially terminate data vendor relationships lacking robust cybersecurity programs.",
+   "is_major": false,
+   "sort_order": 34,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 98,
+   "resolution": "Sep 30, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Sidley Austin — SEC Regulation S-P: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2026/04/us-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities"
+    },
+    {
+     "title": "Holland & Knight — Regulation S-P Amendments: Compliance Deadline Approaching for Smaller Entities",
+     "url": "https://www.hklaw.com/en/insights/publications/2026/05/regulation-s-p-amendments-compliance-deadline-approaching"
+    },
+    {
+     "title": "Carlton Fields — Regulation S-P Amendments: Implementation for Small Firms",
+     "url": "https://www.carltonfields.com/insights/publications/2026/regulation-sp-amendments-implementation-and-key-compliance-considerations-for-small-firms"
+    },
+    {
+     "title": "Grant Thornton — SEC Reveals 2026 Examination Priorities",
+     "url": "https://www.grantthornton.com/insights/articles/asset-management/2026/sec-reveals-examination-priorities"
+    }
+   ]
+  },
+  {
+   "id": "55c47410-8c3d-4d19-80bc-a6d51f2646da",
+   "contract_key": "synthetic-sec-spring-2025-alt-data-guidance",
+   "event_key": "evt-15",
+   "event_id": "35b11e07-36d6-4d02-ab68-8ff19aac9004",
+   "title": "Will the SEC's Division of Examinations publish formal written guidance or a risk alert specifically addressing alternative data vendor due diligence and MNPI controls for registered investment advisers before December 31, 2026?",
+   "short_title": "SEC Alt-Data Risk Alert",
+   "display_title": "Will the SEC publish a risk alert on alternative data vendor MNPI controls before end of 2026?",
+   "description": "Tracks whether the SEC issues formal examinations-level guidance on alternative data MNPI risk, which would directly shape compliance obligations for Killington's hedge fund clients.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.2,
+   "volume": 200000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "SEC",
+    "alternative data",
+    "MNPI",
+    "hedge funds",
+    "enforcement"
+   ],
+   "event_title": "SEC Enforcement Staff Reduction",
+   "rationale": "Formal SEC guidance on alternative data MNPI risk would raise compliance costs for Killington's hedge fund clients and increase the documentation burden placed on Killington as a data vendor.",
+   "is_major": false,
+   "sort_order": 35,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Gibson Dunn — Securities Enforcement 2025 Year-End Update",
+     "url": "https://www.gibsondunn.com/securities-enforcement-2025-year-end-update/"
+    },
+    {
+     "title": "Sidley Austin — SEC Division of Examinations 2026 Exam Priorities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2025/11/us-sec-division-of-examination-announces-2026-exam-priorities"
+    },
+    {
+     "title": "Lowenstein Sandler — Key Considerations for Alternative Data Vendors",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "e2a500bd-cd0e-40b5-91e0-896ec30840a1",
+   "contract_key": "synthetic-sec-atkins-enforcement-staffing",
+   "event_key": "evt-15",
+   "event_id": "35b11e07-36d6-4d02-ab68-8ff19aac9004",
+   "title": "Will the SEC Enforcement Division's full-time equivalent headcount fall below 1,200 FTEs in its FY2026 enacted budget, confirming a 15%+ reduction from FY2024 levels and signaling sustained deregulatory posture toward alternative data and fintech enforcement?",
+   "short_title": "SEC Enforcement FTE Reduction",
+   "display_title": "Will the SEC Enforcement Division's headcount fall below 1,200 FTEs in the FY2026 enacted budget?",
+   "description": "Tracks whether the SEC Enforcement Division budget is enacted at below 1,200 FTEs, confirming the scale of resource reduction signaled in Chairman Atkins' FY2026 request.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.3,
+   "volume": 350000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.82,
+   "tags": [
+    "SEC",
+    "enforcement",
+    "alternative data",
+    "deregulation",
+    "fintech"
+   ],
+   "event_title": "SEC Enforcement Staff Reduction",
+   "rationale": "Reduced SEC enforcement staffing would decrease enforcement pressure on alt-data practices, making this contract beneficial rather than a downside hedge for Killington; excluded from meaningful allocation under downside-only principles.",
+   "is_major": false,
+   "sort_order": 36,
+   "allocation_pct": 0,
+   "position": "Buy NO",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Gibson Dunn — Securities Enforcement 2025 Year-End Update",
+     "url": "https://www.gibsondunn.com/securities-enforcement-2025-year-end-update/"
+    },
+    {
+     "title": "Sidley Austin — SEC Division of Examinations 2026 Exam Priorities",
+     "url": "https://www.sidley.com/en/insights/newsupdates/2025/11/us-sec-division-of-examination-announces-2026-exam-priorities"
+    },
+    {
+     "title": "Lowenstein Sandler — Key Considerations for Alternative Data Vendors",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "8b73315d-2b46-4241-b433-c1bf840fbafc",
+   "contract_key": "synthetic-cppa-admt-b2b-analytics-scope",
+   "event_key": "evt-16",
+   "event_id": "7ae31a56-1ac7-48c8-a401-0c40972fb15c",
+   "title": "Will the California Privacy Protection Agency publish formal guidance or an enforcement advisory before December 31, 2026 clarifying that B2B financial analytics platforms providing retail sales intelligence to institutional investors constitute 'automated decision-making technology' subject to 11 CCR §7150 risk assessment requirements?",
+   "short_title": "CPPA ADMT B2B Analytics Scope",
+   "display_title": "Will the CPPA clarify that B2B financial analytics platforms are subject to automated decision-making rules by end of 2026?",
+   "description": "Tracks whether the CPPA formally clarifies that commercial analytics tools serving institutional investors fall within ADMT risk assessment obligations under finalized CCPA regulations.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.03,
+   "volume": 150000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.8,
+   "tags": [
+    "CPPA",
+    "ADMT",
+    "CCPA",
+    "California",
+    "alternative data"
+   ],
+   "event_title": "California Data Broker Fines Escalate",
+   "rationale": "CPPA guidance confirming B2B analytics platforms serving institutional investors are within ADMT scope would impose risk assessment and opt-out obligations on Killington's core hedge-fund-facing product pipeline.",
+   "is_major": false,
+   "sort_order": 37,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Baird Holm — California Brings New Enforcement Actions Against Data Brokers",
+     "url": "https://www.bairdholm.com/blog/california-brings-new-enforcement-actions-against-data-brokers/"
+    },
+    {
+     "title": "Crowell & Moring — California Privacy Agency Launches Data Broker Strike Force",
+     "url": "https://www.crowell.com/en/insights/client-alerts/california-privacy-agency-launches-data-broker-strike-force-amid-delete-act-crackdown"
+    },
+    {
+     "title": "DataGrail — The Delete Act and DROP: What You Need to Know",
+     "url": "https://www.datagrail.io/blog/regulations/the-delete-act-and-drop-what-you-need-to-know/"
+    },
+    {
+     "title": "Governor Newsom — First-in-the-Nation Privacy Tool Announcement",
+     "url": "https://www.gov.ca.gov/2026/01/20/governor-newsom-announces-first-in-the-nation-privacy-tool-allowing-californians-to-block-the-sale-of-their-data/"
+    }
+   ]
+  },
+  {
+   "id": "60f93295-7f15-44d6-ae25-9479fbb429c3",
+   "contract_key": "synthetic-secure-data-act-enacted",
+   "event_key": "evt-17",
+   "event_id": "922795b5-5f50-43a1-96b8-fc78a5b132e7",
+   "title": "Will H.R. 8413 (SECURE Data Act — requiring annual FTC registration for data brokers, imposing data minimization standards, and mandating written vendor contracting requirements) be enacted into law before June 30, 2027?",
+   "short_title": "SECURE Data Act Passage",
+   "display_title": "Will the SECURE Data Act (federal data broker registration) become law before June 2027?",
+   "description": "Tracks full enactment of H.R. 8413, which would require Killington to register annually with the FTC and comply with data minimization and vendor contracting mandates as a covered data broker.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.02,
+   "volume": 600000,
+   "expiry_date": "2027-06-30",
+   "url": "",
+   "relevance_score": 0.95,
+   "tags": [
+    "SECURE Data Act",
+    "data broker",
+    "FTC",
+    "federal privacy",
+    "alternative data"
+   ],
+   "event_title": "Federal Data Broker Registration",
+   "rationale": "Near-duplicate of the SECURE Data Act enactment contract already tracked under evt-11; zero allocation to avoid redundant position with negligible incremental hedge value.",
+   "is_major": false,
+   "sort_order": 38,
+   "allocation_pct": 0,
+   "position": "Buy YES",
+   "days_left": 371,
+   "resolution": "Jun 30, 2027",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Hunton Andrews Kurth – SECURE Data Act",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/house-republicans-introduce-comprehensive-federal-privacy-bill-secure-data-act"
+    },
+    {
+     "title": "Maynard Nexsen – SECURE Data Act Analysis",
+     "url": "https://www.maynardnexsen.com/publication-the-secure-data-act-what-businesses-need-to-know-about-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "IAPP – US Republicans Introduce Privacy Legislation",
+     "url": "https://iapp.org/news/a/us-republicans-introduce-latest-comprehensive-privacy-legislation"
+    }
+   ]
+  },
+  {
+   "id": "90fddd56-6439-4f80-869e-e9e326be6b87",
+   "contract_key": "synthetic-secure-data-act-committee-markup",
+   "event_key": "evt-17",
+   "event_id": "922795b5-5f50-43a1-96b8-fc78a5b132e7",
+   "title": "Will the House Energy and Commerce Committee hold a markup vote on H.R. 8413 (SECURE Data Act — requiring annual FTC registration for data brokers and imposing data minimization and vendor contracting requirements) before December 31, 2026?",
+   "short_title": "SECURE Data Act Markup",
+   "display_title": "Will the House Energy and Commerce Committee hold a markup vote on the SECURE Data Act by end of 2026?",
+   "description": "Tracks whether the House Energy and Commerce Committee advances H.R. 8413 to a markup, the critical procedural step toward floor consideration of mandatory federal data broker registration.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.04,
+   "volume": 400000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.93,
+   "tags": [
+    "SECURE Data Act",
+    "data broker",
+    "FTC",
+    "federal privacy",
+    "Congress"
+   ],
+   "event_title": "Federal Data Broker Registration",
+   "rationale": "Committee markup of the SECURE Data Act advancing federal data broker registration requirements is an early-warning procedural trigger that would signal increased regulatory pressure on Killington's business model.",
+   "is_major": false,
+   "sort_order": 39,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Hunton Andrews Kurth – SECURE Data Act",
+     "url": "https://www.hunton.com/privacy-and-cybersecurity-law-blog/house-republicans-introduce-comprehensive-federal-privacy-bill-secure-data-act"
+    },
+    {
+     "title": "Maynard Nexsen – SECURE Data Act Analysis",
+     "url": "https://www.maynardnexsen.com/publication-the-secure-data-act-what-businesses-need-to-know-about-the-new-federal-privacy-bill"
+    },
+    {
+     "title": "IAPP – US Republicans Introduce Privacy Legislation",
+     "url": "https://iapp.org/news/a/us-republicans-introduce-latest-comprehensive-privacy-legislation"
+    }
+   ]
+  },
+  {
+   "id": "cf4a3d69-8424-48fe-998d-376662079133",
+   "contract_key": "synthetic-s4211-senate-commerce-hearing",
+   "event_key": "evt-18",
+   "event_id": "684e0573-c2bb-4ade-83a3-3ffb5ef4d913",
+   "title": "Will the Senate Commerce, Science, and Transportation Committee hold a hearing or markup on S.4211 (Consumer Data Privacy and Security Act of 2026 — establishing federal privacy standards with FTC and state AG enforcement, data processing transparency, and consumer notification requirements) before December 31, 2026?",
+   "short_title": "S.4211 Senate Commerce Hearing",
+   "display_title": "Will the Senate Commerce Committee hold a hearing or markup on the Consumer Data Privacy and Security Act by end of 2026?",
+   "description": "Tracks whether the Senate Commerce Committee schedules a hearing or markup on S.4211, the key procedural step toward floor consideration of a federal consumer data privacy standard with enforcement authority over data processors.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.12,
+   "volume": 300000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "S.4211",
+    "federal privacy",
+    "Senate",
+    "data privacy",
+    "FTC"
+   ],
+   "event_title": "Senate Consumer Privacy Bill",
+   "rationale": "A Senate Commerce Committee hearing on S.4211 would signal legislative momentum toward federal data processing transparency obligations that would expand compliance costs for Killington.",
+   "is_major": false,
+   "sort_order": 40,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – S.4211 Text",
+     "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4211/text"
+    }
+   ]
+  },
+  {
+   "id": "f23793fb-8e00-432b-8f30-64db9dbd2ebe",
+   "contract_key": "synthetic-s4211-enacted",
+   "event_key": "evt-18",
+   "event_id": "684e0573-c2bb-4ade-83a3-3ffb5ef4d913",
+   "title": "Will S.4211 (Consumer Data Privacy and Security Act of 2026 — creating federal consumer data privacy standards with FTC and state AG enforcement authority, data processing transparency obligations, and consumer notification requirements for covered entities) be enacted into law before December 31, 2027?",
+   "short_title": "S.4211 Federal Privacy Enactment",
+   "display_title": "Will the Consumer Data Privacy and Security Act become law by end of 2027?",
+   "description": "Tracks full enactment of S.4211, which would impose federal-level data processing transparency and consumer notification obligations on data intelligence companies operating in the United States.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.03,
+   "volume": 500000,
+   "expiry_date": "2027-12-31",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "S.4211",
+    "federal privacy",
+    "FTC",
+    "data broker",
+    "consumer protection"
+   ],
+   "event_title": "Senate Consumer Privacy Bill",
+   "rationale": "S.4211 enactment would impose federal consumer notification and data processing transparency obligations on Killington, creating a new compliance cost layer on top of existing CCPA/CPRA obligations.",
+   "is_major": false,
+   "sort_order": 41,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 555,
+   "resolution": "Dec 31, 2027",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – S.4211 Text",
+     "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4211/text"
+    }
+   ]
+  },
+  {
+   "id": "3043f28c-e622-45c7-b66d-d18f16fe82e9",
+   "contract_key": "library-3-online-privacy-act",
+   "event_key": "evt-18",
+   "event_id": "684e0573-c2bb-4ade-83a3-3ffb5ef4d913",
+   "title": "Will Rep. Lofgren's Online Privacy Act (HR bill introduced March 2026) establishing a Digital Privacy Agency and opt-out rights be reported out of House Energy and Commerce Committee by December 31, 2026?",
+   "short_title": "Online Privacy Act Committee Vote",
+   "display_title": "Will the Online Privacy Act be reported out of the House Energy and Commerce Committee by end of 2026?",
+   "description": "Tracks whether the competing Online Privacy Act clears committee, signaling whether federal privacy legislation with opt-out rights and a new privacy agency will reach the House floor.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.04,
+   "volume": 200000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.78,
+   "tags": [
+    "federal privacy",
+    "Congress",
+    "data broker",
+    "opt-out",
+    "FTC"
+   ],
+   "event_title": "Senate Consumer Privacy Bill",
+   "rationale": "The Online Privacy Act clearing committee would introduce a competing federal privacy framework with opt-out rights and a new Digital Privacy Agency, adding regulatory uncertainty and potential compliance obligations for Killington.",
+   "is_major": false,
+   "sort_order": 42,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – S.4211 Text",
+     "url": "https://www.congress.gov/bill/119th-congress/senate-bill/4211/text"
+    }
+   ]
+  },
+  {
+   "id": "22d19e3c-37f7-4630-8758-848aef975fa1",
+   "contract_key": "synthetic-hedge-fund-inhouse-scraping-adoption",
+   "event_key": "evt-19",
+   "event_id": "51c10842-5bfe-4310-94f2-a4cbb635a8b2",
+   "title": "Will a published industry survey or primary research report by a recognized alternative data research firm (e.g., Neudata, ExtractAlpha, Opimas) document that more than 40% of hedge funds with AUM between $500M and $5B have deployed in-house LLM-powered web-scraping or retail data extraction capabilities as a substitute for third-party alt-data vendor subscriptions by December 31, 2026?",
+   "short_title": "Hedge Fund In-House AI Adoption",
+   "display_title": "Will more than 40% of mid-sized hedge funds deploy in-house LLM web-scraping as a substitute for third-party alt-data vendors by end of 2026?",
+   "description": "Tracks whether published research confirms majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction, the core disintermediation threat to Killington's vendor model.",
+   "platform": "synthetic",
+   "category": "macro_policy",
+   "probability": 0.03,
+   "volume": 750000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.91,
+   "tags": [
+    "hedge funds",
+    "AI",
+    "alternative data",
+    "disintermediation",
+    "LLM"
+   ],
+   "event_title": "Hedge Fund In-House AI Threat",
+   "rationale": "Published research confirming majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction would validate the core disintermediation threat to Killington's vendor subscription model, accelerating customer churn.",
+   "is_major": false,
+   "sort_order": 43,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Kadoa – Alternative Data for Hedge Funds Guide",
+     "url": "https://www.kadoa.com/blog/alternative-data-for-hedge-funds"
+    },
+    {
+     "title": "AIMA via Markets Herald – 95% Hedge Fund AI Adoption",
+     "url": "https://marketsherald.com/almost-every-hedge-fund-now-uses-ai-almost-none-of-them-let-it-trade/"
+    },
+    {
+     "title": "Tommaso Ricci – AI for Hedge Funds 2026 Guide",
+     "url": "https://www.tommasomariaricci.com/blog/ai-for-hedge-funds"
+    },
+    {
+     "title": "Sify – Agentic AI in Hedge Fund Operations",
+     "url": "https://www.sify.com/ai-analytics/the-dawn-of-hedge-agents-how-agentic-ai-is-transforming-hedge-fund-operations/"
+    }
+   ]
+  },
+  {
+   "id": "050047b0-c9c2-4ee4-9968-f4d4c55d689c",
+   "contract_key": "synthetic-reddit-perplexity-cfaa-ruling",
+   "event_key": "evt-19",
+   "event_id": "51c10842-5bfe-4310-94f2-a4cbb635a8b2",
+   "title": "Will the U.S. District Court for the Southern District of New York issue a ruling in Reddit, Inc. v. Perplexity AI, Inc. (Case No. 25-cv-08736) finding that commercial API-bypass scraping of platform content constitutes a violation of the Computer Fraud and Abuse Act (18 U.S.C. § 1030) or DMCA §1201 anti-circumvention provisions, by December 31, 2026?",
+   "short_title": "Reddit v. Perplexity CFAA Ruling",
+   "display_title": "Will the Reddit v. Perplexity court rule that commercial scraping via API bypass violates the CFAA or DMCA anti-circumvention provisions by end of 2026?",
+   "description": "Tracks whether the SDNY issues an adverse CFAA or DMCA anti-circumvention ruling in Reddit v. Perplexity that would expand legal risk for commercial scrapers collecting public web data as part of their core product.",
+   "platform": "synthetic",
+   "category": "macro_policy",
+   "probability": 0.08,
+   "volume": 500000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "CFAA",
+    "web scraping",
+    "DMCA",
+    "alternative data",
+    "litigation"
+   ],
+   "event_title": "Hedge Fund In-House AI Threat",
+   "rationale": "An adverse CFAA or DMCA ruling in Reddit v. Perplexity would directly threaten Killington's commercial scraping infrastructure, already captured in the primary CFAA appellate contract but retained here as a jurisdictionally distinct hedge.",
+   "is_major": false,
+   "sort_order": 44,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Litigation",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Kadoa – Alternative Data for Hedge Funds Guide",
+     "url": "https://www.kadoa.com/blog/alternative-data-for-hedge-funds"
+    },
+    {
+     "title": "AIMA via Markets Herald – 95% Hedge Fund AI Adoption",
+     "url": "https://marketsherald.com/almost-every-hedge-fund-now-uses-ai-almost-none-of-them-let-it-trade/"
+    },
+    {
+     "title": "Tommaso Ricci – AI for Hedge Funds 2026 Guide",
+     "url": "https://www.tommasomariaricci.com/blog/ai-for-hedge-funds"
+    },
+    {
+     "title": "Sify – Agentic AI in Hedge Fund Operations",
+     "url": "https://www.sify.com/ai-analytics/the-dawn-of-hedge-agents-how-agentic-ai-is-transforming-hedge-fund-operations/"
+    }
+   ]
+  },
+  {
+   "id": "cd6f701e-9808-4158-b1a2-ddc44577a8ff",
+   "contract_key": "synthetic-sec-altdata-vendor-guidance",
+   "event_key": "evt-20",
+   "event_id": "64a61d3f-e3ba-4b0e-9e7e-5dab7bc4991c",
+   "title": "Will the SEC Division of Examinations publish a Risk Alert or Staff Bulletin before December 31, 2026 specifically addressing alternative data vendor due diligence obligations for registered investment advisers under Exchange Act Section 204A and Rule 10b-5?",
+   "short_title": "SEC Alt-Data Risk Alert",
+   "display_title": "Will the SEC publish a Risk Alert on alternative data vendor obligations by end of 2026?",
+   "description": "Tracks whether the SEC formally signals expanded supervisory expectations for hedge funds' use of third-party alternative data vendors through a published Risk Alert or guidance document.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.08,
+   "volume": 600000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.91,
+   "tags": [
+    "SEC",
+    "alternative data",
+    "MNPI",
+    "investment adviser",
+    "risk alert"
+   ],
+   "event_title": "SEC Alt-Data Vendor Liability",
+   "rationale": "A formal SEC Risk Alert on alternative data vendor due diligence would signal heightened supervisory expectations, indirectly threatening Killington's hedge fund client relationships and increasing compliance documentation demands.",
+   "is_major": false,
+   "sort_order": 45,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Mondaq – AI, MNPI, and the SEC",
+     "url": "https://www.mondaq.com/unitedstates/securities/1799684/ai-mnpi-and-the-sec-how-existing-law-applies-to-model-driven-trading"
+    },
+    {
+     "title": "Lowenstein Sandler – MNPI in 2026 Panel",
+     "url": "https://www.lowenstein.com/news-insights/events/insider-trading-mnpi-in-2026-enforcement-risk-governance-cco-accountability-may-2026-redburn"
+    },
+    {
+     "title": "Akin Gump – SEC on Alternative Data",
+     "url": "https://www.akingump.com/en/insights/alerts/sec-division-of-examinations-finally-speaks-on-alternative-data"
+    },
+    {
+     "title": "WilmerHale – SEC Enforcement on MNPI Policies",
+     "url": "https://www.wilmerhale.com/en/insights/client-alerts/20241203-sec-enforcement-actions-reflect-expanding-focus-on-advisers-policies-and-procedures-to-prevent-misuse-of-material-nonpublic-information"
+    }
+   ]
+  },
+  {
+   "id": "e2c73c03-4e89-4add-a0d4-ac041c789191",
+   "contract_key": "library-6da746f4-f4a3-4bdd-9ee4-a777c3398c04",
+   "event_key": "evt-21",
+   "event_id": "52feb922-d68d-4e36-a243-445e35aeca6b",
+   "title": "Will Rep. Lofgren's Online Privacy Act (HR bill introduced March 2026) establishing a Digital Privacy Agency and opt-out rights be reported out of House Energy and Commerce Committee by December 31, 2026?",
+   "short_title": "Online Privacy Act Committee Vote",
+   "display_title": "Will the Online Privacy Act advance out of House committee by end of 2026?",
+   "description": "Tracks whether H.R. 8014, which would create a Digital Privacy Agency with rulemaking authority and impose data minimization requirements, clears the House Energy and Commerce Committee — the key legislative gateway for this bill.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.03,
+   "volume": 400000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.88,
+   "tags": [
+    "privacy",
+    "federal legislation",
+    "Digital Privacy Agency",
+    "data minimization",
+    "House Energy and Commerce"
+   ],
+   "event_title": "Online Privacy Act New Agency",
+   "rationale": "Duplicate of the Online Privacy Act committee vote contract already tracked under evt-18; zero allocation to avoid double-counting.",
+   "is_major": false,
+   "sort_order": 46,
+   "allocation_pct": 0,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – H.R. 8014 Online Privacy Act of 2026",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/8014/text"
+    },
+    {
+     "title": "Rep. Lofgren – Online Privacy Act Press Release",
+     "url": "https://lofgren.house.gov/media/press-releases/lofgren-introduces-online-privacy-act-protect-americans-personal-data"
+    }
+   ]
+  },
+  {
+   "id": "17fc464c-04ef-467d-b9bf-375018931fad",
+   "contract_key": "synthetic-apra-senate-privacy-vote",
+   "event_key": "evt-21",
+   "event_id": "52feb922-d68d-4e36-a243-445e35aeca6b",
+   "title": "Will any comprehensive federal consumer data privacy bill imposing data broker registration and data minimization requirements — including H.R. 8014 (Online Privacy Act), H.R. 8413 (SECURE Data Act), or S. 4211 (Consumer Data Privacy and Security Act of 2026) — pass both chambers of Congress and be signed into law before June 30, 2027?",
+   "short_title": "Federal Privacy Bill Enactment",
+   "display_title": "Will any comprehensive federal privacy bill become law before mid-2027?",
+   "description": "Tracks whether any of the three competing comprehensive federal privacy frameworks advances to enactment, which would impose new federal data broker registration obligations and data minimization requirements on Killington.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.03,
+   "volume": 1200000,
+   "expiry_date": "2027-06-30",
+   "url": "",
+   "relevance_score": 0.87,
+   "tags": [
+    "federal privacy",
+    "data broker registration",
+    "data minimization",
+    "Congress",
+    "preemption"
+   ],
+   "event_title": "Online Privacy Act New Agency",
+   "rationale": "Enactment of any comprehensive federal privacy bill would impose data broker registration and minimization requirements on Killington, potentially displacing its existing California-centric compliance approach.",
+   "is_major": false,
+   "sort_order": 47,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 371,
+   "resolution": "Jun 30, 2027",
+   "liquidity": "moderate",
+   "contract_type": "downside",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – H.R. 8014 Online Privacy Act of 2026",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/8014/text"
+    },
+    {
+     "title": "Rep. Lofgren – Online Privacy Act Press Release",
+     "url": "https://lofgren.house.gov/media/press-releases/lofgren-introduces-online-privacy-act-protect-americans-personal-data"
+    }
+   ]
+  },
+  {
+   "id": "edfb4dbc-abb0-41e1-8cf3-bae58bdecf13",
+   "contract_key": "synthetic-secure-data-act-passage",
+   "event_key": "evt-21",
+   "event_id": "52feb922-d68d-4e36-a243-445e35aeca6b",
+   "title": "Will the SECURE Data Act (H.R. 8413), which preempts state privacy laws and establishes federal data minimization, purpose limitation, and data broker registration requirements, pass the full House of Representatives before December 31, 2026?",
+   "short_title": "SECURE Data Act House Vote",
+   "display_title": "Will the SECURE Data Act pass the House by end of 2026?",
+   "description": "Tracks whether the Republican-introduced SECURE Data Act — the primary competing federal privacy vehicle to H.R. 8014 — advances to a full House floor vote, which would determine whether a federal preemption framework or a new agency model governs data intelligence companies.",
+   "platform": "synthetic",
+   "category": "federal_legislation",
+   "probability": 0.04,
+   "volume": 750000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "federal privacy",
+    "data broker",
+    "SECURE Data Act",
+    "preemption",
+    "Congress"
+   ],
+   "event_title": "Online Privacy Act New Agency",
+   "rationale": "SECURE Data Act advancing to a House floor vote signals near-term enactment risk of federal data broker registration requirements, triggering Killington compliance planning costs ahead of a potential law.",
+   "is_major": false,
+   "sort_order": 48,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": "Banking Rules",
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Congress.gov – H.R. 8014 Online Privacy Act of 2026",
+     "url": "https://www.congress.gov/bill/119th-congress/house-bill/8014/text"
+    },
+    {
+     "title": "Rep. Lofgren – Online Privacy Act Press Release",
+     "url": "https://lofgren.house.gov/media/press-releases/lofgren-introduces-online-privacy-act-protect-americans-personal-data"
+    }
+   ]
+  },
+  {
+   "id": "8f55bb7b-e4e5-4d7f-acee-2a760d48e4b5",
+   "contract_key": "synthetic-trump-ai-eo-hedge-fund-carveout",
+   "event_key": "evt-22",
+   "event_id": "68d2db9f-6610-48a8-ba5b-5f671308bfcb",
+   "title": "Will the Trump Administration's June 2, 2026 Executive Order on Promoting Advanced AI Innovation and Security result in formal SEC guidance or a no-action letter before December 31, 2026 clarifying that AI-driven alternative data analytics tools used by registered investment advisers are exempt from existing MNPI scrutiny frameworks?",
+   "short_title": "AI EO SEC MNPI Carveout",
+   "display_title": "Will the Trump AI Executive Order lead to SEC guidance exempting AI analytics tools from MNPI scrutiny by end of 2026?",
+   "description": "Tracks whether the Trump AI deregulation EO translates into concrete SEC guidance reducing compliance friction for hedge funds and their AI-powered alternative data vendors, which would materially benefit Killington's sales cycle.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.03,
+   "volume": 300000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.8,
+   "tags": [
+    "AI",
+    "SEC",
+    "MNPI",
+    "executive order",
+    "alternative data"
+   ],
+   "event_title": "Trump AI Deregulation Order",
+   "rationale": "A YES outcome (SEC grants MNPI carveout for AI data tools) would benefit Killington; the NO position is the downside hedge but the 0.03 probability makes this effectively worthless as a portfolio hedge.",
+   "is_major": false,
+   "sort_order": 49,
+   "allocation_pct": 0,
+   "position": "Buy NO",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Sidley Austin – Trump AI Executive Order June 2026",
+     "url": "https://datamatters.sidley.com/2026/04/30/u-s-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities/"
+    },
+    {
+     "title": "Lowenstein Sandler – Alt Data & AI Vendor Compliance",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "d0b0ad68-b9b2-46cf-9766-875657498949",
+   "contract_key": "synthetic-california-ai-preemption-conflict",
+   "event_key": "evt-22",
+   "event_id": "68d2db9f-6610-48a8-ba5b-5f671308bfcb",
+   "title": "Will the California Legislature pass a state AI governance bill (including SB 1047's successor or AB 2013-class legislation) that directly conflicts with the Trump Administration's June 2, 2026 federal AI deregulation Executive Order, triggering a state-federal preemption dispute before June 30, 2027?",
+   "short_title": "California AI Preemption Conflict",
+   "display_title": "Will California pass a state AI law that conflicts with Trump's federal AI deregulation order by mid-2027?",
+   "description": "Tracks whether California enacts state AI legislation that creates a direct regulatory conflict with the federal Trump AI EO, which would fragment the compliance landscape for AI-powered data intelligence companies operating across state lines.",
+   "platform": "synthetic",
+   "category": "regulatory_actions",
+   "probability": 0.38,
+   "volume": 550000,
+   "expiry_date": "2027-06-30",
+   "url": "",
+   "relevance_score": 0.77,
+   "tags": [
+    "California",
+    "AI regulation",
+    "federal preemption",
+    "state law",
+    "alternative data"
+   ],
+   "event_title": "Trump AI Deregulation Order",
+   "rationale": "California enacting AI legislation conflicting with the federal Trump AI EO would fragment the compliance landscape for Killington's AI-powered data analytics, creating multi-jurisdictional compliance costs and legal uncertainty.",
+   "is_major": false,
+   "sort_order": 50,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 371,
+   "resolution": "Jun 30, 2027",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Sidley Austin – Trump AI Executive Order June 2026",
+     "url": "https://datamatters.sidley.com/2026/04/30/u-s-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities/"
+    },
+    {
+     "title": "Lowenstein Sandler – Alt Data & AI Vendor Compliance",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "ddfff01f-e545-4cb0-8cdf-012a761f1f33",
+   "contract_key": "poly-676842",
+   "event_key": "evt-22",
+   "event_id": "68d2db9f-6610-48a8-ba5b-5f671308bfcb",
+   "title": "U.S. enacts AI safety bill before 2027?",
+   "short_title": "US Federal AI Safety Bill",
+   "display_title": "Will the U.S. enact an AI safety bill before 2027?",
+   "description": "Tracks whether Congress passes and the President signs any federal AI safety legislation before year-end 2026, the primary legislative check on the Trump EO's deregulatory AI posture.",
+   "platform": "polymarket",
+   "category": "regulatory_actions",
+   "probability": 0.415,
+   "volume": 100210,
+   "expiry_date": "2026-12-31",
+   "url": "https://polymarket.com/event/us-enacts-ai-safety-bill-before-2027",
+   "relevance_score": 0.75,
+   "tags": [
+    "Politics",
+    "AI",
+    "OpenAI",
+    "Science",
+    "Tech"
+   ],
+   "event_title": "Trump AI Deregulation Order",
+   "rationale": "Federal AI safety legislation passing could impose new governance obligations on AI-powered data analytics tools like Killington's, creating compliance costs that are difficult for a seed-stage company to absorb.",
+   "is_major": false,
+   "sort_order": 51,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "moderate",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Sidley Austin – Trump AI Executive Order June 2026",
+     "url": "https://datamatters.sidley.com/2026/04/30/u-s-sec-regulation-s-p-compliance-deadline-approaching-for-smaller-entities/"
+    },
+    {
+     "title": "Lowenstein Sandler – Alt Data & AI Vendor Compliance",
+     "url": "https://www.lowenstein.com/news-insights/publications/articles/key-considerations-for-alternative-data-and-ai-vendors-to-investment-firms-demonstrating-compliance-in-the-face-of-an-evolving-regulatory-environment"
+    }
+   ]
+  },
+  {
+   "id": "a5c1b870-a901-4e59-8869-7ff2139e4289",
+   "contract_key": "synthetic-fintech-seed-q3-2026",
+   "event_key": "evt-23",
+   "event_id": "ac4d076a-c0b8-4417-abd7-c68ca9cb8aed",
+   "title": "Will total U.S. fintech seed and pre-seed venture funding in Q3 2026 remain below the Q3 2025 level, as measured by PitchBook or Crunchbase transaction count data, indicating continued capital concentration away from early-stage deals?",
+   "short_title": "Fintech Seed Funding Contraction",
+   "display_title": "Will U.S. fintech seed funding in Q3 2026 remain below Q3 2025 levels?",
+   "description": "Tracks whether fintech venture capital continues to concentrate into larger, later-stage deals in Q3 2026 rather than recovering to 2025 seed-stage transaction volumes, directly measuring the funding environment Killington must navigate for its next raise.",
+   "platform": "synthetic",
+   "category": "macro_policy",
+   "probability": 0.62,
+   "volume": 200000,
+   "expiry_date": "2026-11-30",
+   "url": "",
+   "relevance_score": 0.9,
+   "tags": [
+    "venture capital",
+    "fintech",
+    "seed funding",
+    "early-stage",
+    "alternative data"
+   ],
+   "event_title": "Venture Capital Funding Squeeze",
+   "rationale": "Continued fintech seed funding contraction in Q3 2026 would directly signal Killington's inability to raise follow-on capital at current valuations, creating existential runway risk for a company already at seed stage.",
+   "is_major": false,
+   "sort_order": 52,
+   "allocation_pct": 1,
+   "position": "Buy YES",
+   "days_left": 159,
+   "resolution": "Nov 30, 2026",
+   "liquidity": "thin",
+   "contract_type": "downside",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Crunchbase – Fintech Startups Raise More in Fewer Deals Q1 2026",
+     "url": "https://news.crunchbase.com/fintech/global-startup-venture-funding-up-deals-down-q1-2026/"
+    },
+    {
+     "title": "Harvard Law – Venture Capital Outlook 2026",
+     "url": "https://corpgov.law.harvard.edu/2025/12/23/venture-capital-outlook-for-2026-5-key-trends/"
+    },
+    {
+     "title": "KPMG – Global Fintech Investment Rebounds 2025",
+     "url": "https://kpmg.com/xx/en/media/press-releases/2026/02/global-fintech-investment-rebounds-in-2025-supported-by-stronger-exit-activity.html"
+    },
+    {
+     "title": "Crunchbase – Fintech Funding Up 27% in 2025",
+     "url": "https://news.crunchbase.com/fintech/funding-jumped-big-checks-ai-ye-2025/"
+    }
+   ]
+  },
+  {
+   "id": "fcf33dcc-3be1-4614-99e2-d4c12722a967",
+   "contract_key": "synthetic-altdata-vc-series-a-conditions",
+   "event_key": "evt-23",
+   "event_id": "ac4d076a-c0b8-4417-abd7-c68ca9cb8aed",
+   "title": "Will any U.S.-based alternative data or financial data intelligence startup (excluding companies with prior institutional backing exceeding $10M) close a Series A venture funding round of $5M or more before December 31, 2026, as reported by PitchBook, Crunchbase, or SEC Form D filing?",
+   "short_title": "Alt-Data Startup Series A Activity",
+   "display_title": "Will a U.S. alt-data startup close a $5M+ Series A by end of 2026?",
+   "description": "Tracks whether comparable alternative data startups at Killington's stage are successfully raising Series A capital in 2026, providing a direct benchmark signal for Killington's own fundraising viability.",
+   "platform": "synthetic",
+   "category": "macro_policy",
+   "probability": 0.97,
+   "volume": 150000,
+   "expiry_date": "2026-12-31",
+   "url": "",
+   "relevance_score": 0.85,
+   "tags": [
+    "venture capital",
+    "alternative data",
+    "Series A",
+    "fintech funding",
+    "seed stage"
+   ],
+   "event_title": "Venture Capital Funding Squeeze",
+   "rationale": "A NO outcome (no comparable alt-data startup closes a Series A) signals market conditions hostile to Killington's own fundraising, indicating VC appetite for this sector has dried up during its critical raise window.",
+   "is_major": false,
+   "sort_order": 53,
+   "allocation_pct": 1,
+   "position": "Buy NO",
+   "days_left": 190,
+   "resolution": "Dec 31, 2026",
+   "liquidity": "thin",
+   "contract_type": "conditional",
+   "radar_label": null,
+   "loss_steps": [],
+   "sources": [
+    {
+     "title": "Crunchbase – Fintech Startups Raise More in Fewer Deals Q1 2026",
+     "url": "https://news.crunchbase.com/fintech/global-startup-venture-funding-up-deals-down-q1-2026/"
+    },
+    {
+     "title": "Harvard Law – Venture Capital Outlook 2026",
+     "url": "https://corpgov.law.harvard.edu/2025/12/23/venture-capital-outlook-for-2026-5-key-trends/"
+    },
+    {
+     "title": "KPMG – Global Fintech Investment Rebounds 2025",
+     "url": "https://kpmg.com/xx/en/media/press-releases/2026/02/global-fintech-investment-rebounds-in-2025-supported-by-stronger-exit-activity.html"
+    },
+    {
+     "title": "Crunchbase – Fintech Funding Up 27% in 2025",
+     "url": "https://news.crunchbase.com/fintech/funding-jumped-big-checks-ai-ye-2025/"
+    }
+   ]
+  }
+ ]
+}

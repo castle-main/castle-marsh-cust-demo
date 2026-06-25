@@ -1,0 +1,1012 @@
+<title>Trade Book — Castle</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{overflow-y:scroll}
+body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#171717;background:#fff;-webkit-font-smoothing:antialiased}
+:root{
+  --ink:#171717;--ink-2:#383832;--ink-3:#55554E;--ink-4:#6B6B63;--ink-5:#9A9A90;--ink-6:#A0A096;
+  --border:rgba(24,24,24,0.09);--border-m:rgba(24,24,24,0.11);--border-s:rgba(24,24,24,0.06);
+  --bg1:#FAFAF8;--bg2:#F5F5F2;--bg3:#F0F0EC;
+  --mono:ui-monospace,'SF Mono','Cascadia Mono',Consolas,monospace;
+  --serif:Georgia,'Cambria','Times New Roman',serif;
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
+@keyframes fadein{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+::-webkit-scrollbar{width:8px;height:8px}
+::-webkit-scrollbar-thumb{background:#e4e4de;border-radius:6px;border:2px solid #fff}
+input,textarea{appearance:none;-webkit-appearance:none;font-family:inherit}
+input:focus,textarea:focus{outline:none}
+button{font-family:inherit;cursor:pointer;border:none}
+
+/* Topbar */
+.bar{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.bar-in{max-width:1140px;margin:0 auto;padding:0 56px;height:54px;display:flex;align-items:center;gap:11px}
+.castle-word{font-family:var(--serif);font-size:16px;font-weight:400;letter-spacing:-.04em;color:var(--ink)}
+.bar-sep{width:1px;height:14px;background:rgba(24,24,24,.15);margin:0 3px}
+.bar-label{font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.16em;color:var(--ink-5)}
+.bar-actions{margin-left:auto;display:flex;align-items:center;gap:10px}
+.btn-out{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--ink-2);background:#fff;border:1px solid rgba(24,24,24,.16);border-radius:999px;padding:7px 15px;cursor:pointer;transition:border-color .15s}
+.btn-out:hover{border-color:rgba(24,24,24,.32)}
+.btn-solid{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#fff;background:var(--ink);border-radius:999px;padding:8px 17px;cursor:pointer;transition:opacity .15s}
+.btn-solid:hover{opacity:.84}
+.btn-primary{display:inline-flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:#fff;background:var(--ink);border-radius:999px;padding:12px 22px;cursor:pointer;transition:opacity .15s;border:none}
+.btn-primary:hover{opacity:.84}
+.btn-primary[disabled]{opacity:.4;cursor:not-allowed}
+.btn-ghost{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--ink-2);background:#F4F4F0;border:1px solid #E4E4DC;border-radius:999px;padding:9px 16px;cursor:pointer;transition:background .15s}
+.btn-ghost:hover{background:#ECECE5}
+
+/* List */
+.list-wrap{max-width:1140px;margin:0 auto;padding:32px 56px 90px}
+.tabs{display:flex;gap:26px;border-bottom:1px solid var(--border)}
+.tab{padding:0 1px 13px;font-size:14px;font-weight:600;cursor:pointer;color:var(--ink-5);border-bottom:2px solid transparent;margin-bottom:-1px;transition:color .15s,border-color .15s}
+.tab.on{color:var(--ink);border-bottom-color:var(--ink)}
+.tab-ct{font-family:var(--mono);font-size:11px;font-weight:500;color:var(--ink-6);margin-left:4px}
+.tbl-head{display:grid;grid-template-columns:2.7fr 3fr 1fr .8fr 1.25fr 26px;gap:18px;padding:16px 8px 12px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.12em;color:var(--ink-6)}
+.tbl-row{display:grid;grid-template-columns:2.7fr 3fr 1fr .8fr 1.25fr 26px;gap:18px;align-items:center;padding:17px 8px;border-bottom:1px solid var(--border-s);cursor:pointer;transition:background .1s}
+.tbl-row:hover{background:var(--bg1)}
+.row-co{font-size:14px;font-weight:600;color:var(--ink);line-height:1.25}
+.row-ref{font-family:var(--mono);font-size:11px;color:var(--ink-6);margin-top:2px}
+.row-ev{font-size:13px;color:var(--ink-3);line-height:1.45}
+.row-cov{text-align:right;font-family:var(--mono);font-size:13.5px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.row-imp{text-align:right;font-family:var(--mono);font-size:13px;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.badge{display:inline-flex;align-items:center;font-size:11.5px;font-weight:600;border-radius:999px;padding:4px 11px}
+
+/* Detail */
+.det-wrap{max-width:1040px;margin:0 auto;padding:30px 56px 90px}
+.back-btn{display:inline-flex;align-items:center;gap:7px;font-size:13px;font-weight:600;color:var(--ink-4);cursor:pointer;background:none;border:none;transition:color .15s;padding:0}
+.back-btn:hover{color:var(--ink)}
+.det-hd{display:flex;align-items:flex-start;justify-content:space-between;gap:24px;margin-top:20px}
+.trade-name{font-family:var(--serif);font-size:27px;font-weight:400;letter-spacing:-.012em;line-height:1.1;color:var(--ink)}
+.det-meta{display:flex;align-items:center;gap:12px;margin-top:9px;flex-wrap:wrap}
+.det-ref{font-family:var(--mono);font-size:11.5px;color:var(--ink-6)}
+.det-status{font-size:12px;color:var(--ink-4)}
+.tiles{display:flex;border:1px solid rgba(24,24,24,.10);border-radius:10px;overflow:hidden;flex:none}
+.tile{padding:12px 20px}
+.tile:not(:last-child){border-right:1px solid rgba(24,24,24,.08)}
+.tile-lbl{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;color:var(--ink-6)}
+.tile-val{font-family:var(--mono);font-size:18px;font-weight:600;color:var(--ink);margin-top:5px;font-variant-numeric:tabular-nums}
+
+/* Phase nav */
+.phase-nav{display:flex;align-items:stretch;margin-top:28px;border:1px solid rgba(24,24,24,.10);border-radius:12px;overflow:hidden}
+.ph-item{flex:1;display:flex;align-items:center;gap:11px;padding:15px 18px;background:#fff;transition:background .1s}
+.ph-item:not(:first-child){border-left:1px solid rgba(24,24,24,.08)}
+.ph-item.viewing{background:var(--bg1)}
+.ph-item.clickable{cursor:pointer}
+.ph-dot{flex:none;width:22px;height:22px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10.5px;font-weight:600}
+.ph-dot.done{background:var(--ink);color:#fff;font-size:11px}
+.ph-dot.cur{background:var(--ink);color:#fff}
+.ph-dot.locked{background:#fff;border:1px solid #D6D6CE;color:#B0B0A6}
+.ph-label{font-size:13px;font-weight:600;letter-spacing:-.008em;white-space:nowrap}
+.ph-sub{font-family:var(--mono);font-size:9.5px;font-weight:500;letter-spacing:.08em;margin-top:2px;white-space:nowrap}
+
+/* Panels */
+.panel{margin-top:30px;animation:fadein .25s ease}
+.p-label{font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.13em;color:var(--ink-6);margin-bottom:12px}
+.fld-lbl{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.1em;color:#7A7A70;display:block;margin-bottom:7px}
+.fld-in{width:100%;border:1px solid #E2E2DA;border-radius:7px;padding:9px 11px;font-size:13.5px;font-weight:500;color:var(--ink);background:#fff;transition:border-color .15s}
+.fld-in:focus{border-color:var(--ink)}
+.fld-ta{width:100%;border:1px solid #E2E2DA;border-radius:7px;padding:10px 12px;font-size:13.5px;color:var(--ink);resize:vertical;line-height:1.6;background:#fff;transition:border-color .15s}
+.fld-ta:focus{border-color:var(--ink)}
+
+/* Sent pill / notices */
+.sent-pill{display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#2A2A26;background:#EDEFEA;border:1px solid #DDE0D6;border-radius:999px;padding:5px 11px}
+.empty{border:1px dashed #D9D9D1;border-radius:12px;padding:30px 24px;text-align:center;color:var(--ink-4);font-size:13px;line-height:1.6}
+
+/* Contract */
+.ct-grid{display:grid;grid-template-columns:1fr 318px;gap:28px;align-items:start}
+.gdoc{border:1px solid var(--border-m);border-radius:12px;background:#fff;overflow:hidden}
+.gdoc-bar{display:flex;align-items:center;gap:10px;padding:11px 16px;border-bottom:1px solid #ECECE6}
+.gdoc-title{font-size:13px;color:#202124}
+.gdoc-link{margin-left:auto;display:inline-flex;align-items:center;gap:6px;font-size:11.5px;font-weight:600;color:#171717;text-decoration:none}
+.gdoc-link:hover{text-decoration:underline}
+.gdoc-body{background:#F4F5F6;padding:26px 22px;max-height:440px;overflow-y:auto}
+.gdoc-inner{background:#fff;box-shadow:0 1px 3px rgba(60,64,67,.16);border-radius:2px;padding:40px 46px;color:#202124}
+.doc-kicker{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.16em;color:var(--ink-6)}
+.doc-q{font-family:var(--serif);font-size:20px;font-weight:700;letter-spacing:-.01em;line-height:1.3;margin:13px 0 0;color:var(--ink)}
+.doc-meta{font-size:12px;color:#9A9A90;margin-top:8px;border-bottom:1px solid #ECECE6;padding-bottom:15px}
+.doc-p{font-size:12.5px;line-height:1.75;color:#2C2C28;margin:13px 0 0;text-align:justify}
+.doc-p em{font-style:italic}
+.doc-ul{margin:9px 0 0 18px}
+.doc-ul li{font-size:12.5px;line-height:1.7;color:#2C2C28;margin-top:4px}
+.doc-strikes{margin-top:10px;border:1px solid #E6E6E0;border-radius:6px;overflow:hidden;display:flex;flex-wrap:wrap}
+.doc-strike{font-family:var(--mono);font-size:11px;color:#3D3D38;padding:7px 12px;border-right:1px solid #EFEFE9;border-bottom:1px solid #EFEFE9}
+
+/* Suggestions / edit requests */
+.sugg-rail{position:sticky;top:24px}
+.sugg-list{border:1px solid var(--border-m);border-radius:12px;background:#fff;margin-top:12px;padding:16px}
+.sugg-card{border-radius:9px;padding:12px 13px}
+.sugg-who{display:flex;align-items:center;gap:7px}
+.sugg-av{width:20px;height:20px;border-radius:999px;background:#EDECE6;color:#55554E;display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:9px;font-weight:600;flex:none}
+.sugg-name{font-size:11.5px;font-weight:600;color:#383832}
+.sugg-acc{margin-left:auto;display:inline-flex;align-items:center;gap:4px;font-size:10.5px;font-weight:600;color:#2A2A26}
+.sugg-txt{font-size:12.5px;color:#4A4A44;line-height:1.5;margin-top:8px}
+.sugg-btns{display:flex;gap:8px;margin-top:11px}
+.s-accept{flex:1;font-size:12px;font-weight:600;color:#fff;background:var(--ink);border-radius:7px;padding:7px 0;cursor:pointer;border:none}
+.s-dismiss{flex:1;font-size:12px;font-weight:600;color:#6B6B63;background:#fff;border:1px solid #E2E2DA;border-radius:7px;padding:7px 0;cursor:pointer}
+.sugg-add{margin-top:14px;padding-top:14px;border-top:1px solid #EFEFE9}
+.sugg-ta{width:100%;border:1px solid #E2E2DA;border-radius:7px;padding:9px 11px;font-size:12.5px;color:var(--ink);resize:vertical;line-height:1.5}
+.sugg-ta:focus{border-color:var(--ink);outline:none}
+.sugg-add-btn{width:100%;margin-top:9px;font-size:12.5px;font-weight:600;color:#383832;background:#F4F4F0;border:1px solid #E2E2DA;border-radius:7px;padding:8px 0;cursor:pointer}
+.sugg-add-btn:hover{background:#EDEDE7}
+.share-note{font-size:11px;color:var(--ink-5);line-height:1.5;margin-top:10px}
+
+/* Listing */
+.listing-card{border:1px solid rgba(24,24,24,.10);border-radius:12px;background:#fff;padding:64px 40px;display:flex;flex-direction:column;align-items:center;text-align:center}
+.spinner{width:38px;height:38px;border:3px solid #ECECE6;border-top-color:var(--ink);border-radius:999px;animation:spin .8s linear infinite}
+.listing-t{font-family:var(--serif);font-size:21px;font-weight:400;letter-spacing:-.01em;color:var(--ink);margin-top:24px}
+.listing-s{font-size:13.5px;color:#6B6B63;margin-top:8px;max-width:400px;line-height:1.55}
+.listing-steps{display:flex;flex-direction:column;gap:10px;margin-top:28px;width:330px}
+.ls-step{display:flex;align-items:center;gap:10px;font-size:12.5px}
+.ls-dot{flex:none;width:17px;height:17px;border-radius:999px;display:flex;align-items:center;justify-content:center;font-size:9px}
+
+/* Exchange */
+.metrics{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid rgba(24,24,24,.10);border-radius:12px;overflow:hidden}
+.m-tile{padding:18px 20px}
+.m-tile:not(:last-child){border-right:1px solid rgba(24,24,24,.07)}
+.m-lbl{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;color:var(--ink-6)}
+.m-val{font-family:var(--mono);font-size:21px;font-weight:600;color:var(--ink);margin-top:8px;font-variant-numeric:tabular-nums}
+.m-sub{font-size:11px;color:#8A8A80;margin-top:4px}
+.chart-card{border:1px solid rgba(24,24,24,.10);border-radius:12px;background:#fff;margin-top:16px;padding:20px 24px}
+.chart-hd{display:flex;align-items:center;justify-content:space-between}
+.chart-t{font-size:13.5px;font-weight:600;color:var(--ink)}
+.live-ind{display:flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;font-weight:500;color:#8A8A80}
+.live-dot{width:7px;height:7px;border-radius:999px;background:var(--ink);animation:pulse 1.8s ease-in-out infinite}
+.ex-lower{display:grid;grid-template-columns:1fr 1.25fr;gap:16px;margin-top:16px;align-items:start}
+.ex-card{border:1px solid rgba(24,24,24,.10);border-radius:12px;background:#fff;padding:20px 22px}
+.ex-card-t{display:flex;align-items:center;gap:9px;font-size:13.5px;font-weight:600;color:var(--ink)}
+.rw-list{margin-top:14px}
+.rw-row{display:flex;align-items:center;justify-content:space-between;padding:10px 0;border-bottom:1px solid #F2F2EC}
+.rw-row:last-child{border-bottom:none}
+.rw-lbl{font-size:12.5px;color:#6B6B63}
+.rw-val{font-family:var(--mono);font-size:13px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.rw-val a{color:#171717}
+.exp-hd{display:flex;align-items:center;justify-content:space-between}
+.cons-lbl{font-family:var(--mono);font-size:9px;font-weight:600;letter-spacing:.1em;color:var(--ink-6);text-align:right}
+.cons-val{font-family:var(--mono);font-size:15px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums;text-align:right}
+.exp-list{margin-top:8px}
+.exp-row{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid #F2F2EC}
+.exp-av{width:30px;height:30px;border-radius:999px;background:#F0F0EC;color:var(--ink);display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-size:10.5px;font-weight:600;flex:none}
+.exp-nm{font-size:12.5px;font-weight:600;color:var(--ink)}
+.exp-pr{font-family:var(--mono);font-size:12.5px;font-weight:600;color:#383832;font-variant-numeric:tabular-nums}
+.exp-role{font-size:11px;color:#9A9A90;margin-top:1px}
+.exp-take{font-size:12px;color:#55554E;line-height:1.5;margin-top:6px}
+.exp-del{margin-left:8px;color:#C4C4BB;cursor:pointer;font-size:14px;line-height:1}
+.exp-del:hover{color:#8A8A80}
+.mini-form{display:flex;flex-direction:column;gap:8px;margin-top:14px;padding-top:14px;border-top:1px solid #EFEFE9}
+.mini-in{width:100%;border:1px solid #E2E2DA;border-radius:7px;padding:8px 10px;font-size:12.5px;color:var(--ink)}
+.mini-in:focus{border-color:var(--ink)}
+.mini-row{display:flex;gap:8px}
+.mini-btn{font-size:12px;font-weight:600;color:#383832;background:#F4F4F0;border:1px solid #E2E2DA;border-radius:7px;padding:8px 14px;cursor:pointer;white-space:nowrap}
+.mini-btn:hover{background:#ECECE5}
+
+/* Quoting */
+.rfq-hd{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.rfq-live{flex:none;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:10.5px;font-weight:600;letter-spacing:.08em;color:var(--ink);white-space:nowrap}
+.qt-tbl{border:1px solid rgba(24,24,24,.10);border-radius:12px;background:#fff;margin-top:12px;overflow:hidden}
+.qt-head{display:grid;grid-template-columns:2.4fr 1fr 1fr 50px;gap:14px;padding:12px 20px;border-bottom:1px solid #F0F0EA;font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.1em;color:var(--ink-6)}
+.qt-row{display:grid;grid-template-columns:2.4fr 1fr 1fr 50px;gap:14px;align-items:center;padding:14px 20px;border-bottom:1px solid #F4F4EE}
+.qt-row:last-child{border-bottom:none}
+.qt-nm{font-size:13.5px;font-weight:600;color:var(--ink)}
+.qt-pr{text-align:right;font-family:var(--mono);font-size:13px;font-weight:600;color:#171717;font-variant-numeric:tabular-nums}
+.qt-sz{text-align:right;font-family:var(--mono);font-size:12.5px;color:#3D3D38;font-variant-numeric:tabular-nums}
+.qt-del{text-align:right;color:#C4C4BB;cursor:pointer}
+.qt-del:hover{color:#8A8A80}
+.al-tbl{border:1px solid rgba(24,24,24,.10);border-radius:12px;background:#fff;margin-top:12px;overflow:hidden}
+.al-row{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:14px;align-items:center;padding:13px 20px;border-bottom:1px solid #F4F4EE}
+.al-nm{font-size:13px;color:var(--ink)}
+.al-lift{color:#A8A89F}
+.al-pr,.al-prem{text-align:right;font-family:var(--mono);font-size:12.5px;color:#3D3D38;font-variant-numeric:tabular-nums}
+.al-sz{text-align:right;font-family:var(--mono);font-size:12.5px;font-weight:600;color:var(--ink);font-variant-numeric:tabular-nums}
+.al-tot{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:16px 20px;background:#FAFAF7}
+.al-tot-lbl{font-size:13.5px;font-weight:600;color:var(--ink)}
+.al-tot-sub{font-size:11.5px;color:#7A7A70;margin-top:2px}
+.al-tot-val{font-family:var(--mono);font-weight:600;font-size:24px;color:var(--ink);font-variant-numeric:tabular-nums}
+
+/* Settled */
+.settled-banner{display:flex;align-items:center;gap:12px;background:#F5F5F2;border:1px solid #E6E6E0;border-radius:12px;padding:18px 22px}
+.settled-icon{flex:none;width:34px;height:34px;border-radius:999px;background:#2A2A26;display:flex;align-items:center;justify-content:center}
+.settled-t{font-size:14.5px;font-weight:600;color:var(--ink)}
+.settled-s{font-size:12.5px;color:#55554E;margin-top:2px;line-height:1.5}
+.set-stats{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid rgba(24,24,24,.10);border-radius:12px;overflow:hidden;margin-top:16px}
+.set-tile{padding:18px 20px}
+.set-tile:not(:last-child){border-right:1px solid rgba(24,24,24,.07)}
+
+/* Modal */
+.modal-bg{position:fixed;inset:0;z-index:50;background:rgba(24,24,22,.42);display:flex;align-items:flex-start;justify-content:center;padding:60px 20px;overflow-y:auto;animation:fadein .15s ease}
+.modal{width:100%;max-width:560px;background:#fff;border-radius:16px;box-shadow:0 24px 60px rgba(0,0,0,.28);overflow:hidden;animation:fadein .2s ease}
+.modal-hd{display:flex;align-items:flex-start;gap:12px;padding:22px 24px 0}
+.modal-kick{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.14em;color:var(--ink-6)}
+.modal-t{font-family:var(--serif);font-size:19px;font-weight:400;color:var(--ink);margin-top:5px;line-height:1.2}
+.modal-x{margin-left:auto;width:30px;height:30px;border-radius:8px;background:#F4F4F0;color:#6B6B63;display:flex;align-items:center;justify-content:center;cursor:pointer;font-size:16px;flex:none}
+.modal-x:hover{background:#ECECE5}
+.modal-body{padding:18px 24px 24px}
+.modal-sub{font-size:12.5px;color:var(--ink-4);line-height:1.55}
+.ho-block{position:relative;margin-top:14px;background:#FAFAF7;border:1px solid #E6E6DF;border-radius:10px;padding:14px;font-family:var(--mono);font-size:11.5px;line-height:1.65;color:#2C2C28;white-space:pre-wrap;word-break:break-word}
+.ho-copy{position:absolute;top:10px;right:10px;font-size:10.5px;font-weight:600;color:#383832;background:#fff;border:1px solid #E2E2DA;border-radius:6px;padding:5px 9px;cursor:pointer}
+.ho-copy:hover{background:#F4F4F0}
+.modal-section-lbl{font-family:var(--mono);font-size:9.5px;font-weight:600;letter-spacing:.12em;color:var(--ink-6);margin:20px 0 9px}
+.modal-actions{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap;align-items:center}
+.modal-link{display:inline-flex;align-items:center;gap:6px;font-size:12.5px;font-weight:600;color:var(--ink-3);text-decoration:none}
+.modal-link:hover{color:var(--ink)}
+
+/* Activity */
+.act-wrap{margin-top:36px;border-top:1px solid var(--border);padding-top:22px}
+.act-list{margin-top:12px}
+.act-row{display:flex;align-items:center;gap:12px;padding:11px 2px;border-bottom:1px solid var(--border-s)}
+.act-row:last-child{border-bottom:none}
+.act-dot{flex:none;width:6px;height:6px;border-radius:999px;background:#171717}
+.act-txt{font-size:12.5px;color:var(--ink-2);flex:1;line-height:1.45}
+.act-at{font-family:var(--mono);font-size:10.5px;color:var(--ink-5);white-space:nowrap}
+
+/* footer */
+.list-foot{margin-top:40px;display:flex;align-items:center;gap:14px;font-size:11.5px;color:var(--ink-5)}
+.reset-link{color:var(--ink-5);cursor:pointer;text-decoration:underline;text-underline-offset:2px}
+.reset-link:hover{color:var(--ink-3)}
+
+@media(max-width:900px){
+  .bar-in,.list-wrap,.det-wrap{padding-left:24px;padding-right:24px}
+  .ct-grid{grid-template-columns:1fr}
+  .ex-lower{grid-template-columns:1fr}
+  .metrics{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:680px){
+  .bar-in,.list-wrap,.det-wrap{padding-left:16px;padding-right:16px}
+  .tbl-head,.tbl-row{grid-template-columns:1fr 1fr 26px}
+  .col-ev,.col-imp{display:none}
+  .phase-nav{flex-wrap:wrap}
+  .ph-item{min-width:calc(50% - 1px)}
+  .tiles{display:none}
+}
+</style>
+
+<style>
+/* ── Castle Internal consistency layer: adopt the Customer-Research design system ── */
+:root{
+  --ink:#16201A; --ink-2:#3A443D; --ink-3:#5B655E; --ink-4:#5B655E; --ink-5:#8A938C; --ink-6:#A0A89F;
+  --border:#ECECE6; --border-m:#E4E4DD; --border-s:#F1F1EC;
+  --bg1:#FAFAF9; --bg2:#F2F2EC; --bg3:#FCFCFB;
+  --mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;
+  --serif:'Hedvig Letters Serif',Georgia,'Times New Roman',serif;
+}
+body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1A1D1B;background:#FAFAF9}
+::selection{background:rgba(20,81,47,.14)}
+::-webkit-scrollbar-thumb{background:#DEDED6;border-radius:0;border:3px solid #FAFAF9}
+/* Castle is a hard-edge system — zero radius on every surface (small status dots stay round) */
+.btn-out,.btn-solid,.btn-primary,.btn-ghost,.badge,.sent-pill,.tiles,.tile,.phase-nav,.ph-item,
+.fld-in,.fld-ta,.gdoc,.gdoc-inner,.sugg-list,.sugg-card,.s-accept,.s-dismiss,.sugg-ta,.sugg-add-btn,
+.listing-card,.metrics,.chart-card,.ex-card,.qt-tbl,.al-tbl,.set-stats,.settled-banner,.settled-icon,
+.modal,.modal-x,.ho-block,.ho-copy,.mini-in,.mini-btn,.empty,.doc-strikes,.exp-av,.sugg-av{border-radius:0 !important}
+.serif,.castle-word,.trade-name,.listing-t,.doc-q,.modal-t{font-family:'Hedvig Letters Serif',Georgia,serif;letter-spacing:-.012em;color:#16201A}
+.castle-word{letter-spacing:-.01em}
+/* forest-green primary actions + accents (matches the company CTA / lead-risk dot) */
+.btn-solid,.btn-primary,.s-accept{background:#16573A !important;color:#fff !important}
+.btn-primary:hover,.btn-solid:hover{opacity:1 !important;background:#0F4A30 !important}
+.live-dot,.act-dot{background:#16573A !important}
+.tab.on{color:#16201A !important;border-bottom-color:#16201A !important}
+.gdoc-link,.modal-link{color:#16573A}
+</style>
+
+<div id="app"></div>
+
+<script>
+// ════════════════════════════════════════════════════════════════════════════
+//  Castle Trade Book — operator console.
+//  The sandboxed page cannot call email / Drive / market APIs directly. Each
+//  integration produces a precise "handoff" instruction for Claude (operator),
+//  who executes it via MCP as lucas@castle.tech and returns the result, which
+//  is pasted back here. State persists in localStorage.
+// ════════════════════════════════════════════════════════════════════════════
+
+const TEAM='team@castle.tech'
+const STORE_KEY='castle_tradebook_v7'
+
+// ─── SEED DATA (from castle_wire.md, captured 2026-06-24) ─────────────────────
+function seed(){return {seq:0,
+  order:['t10','t1','t2','t3','t4','t5','t6','t7','t9'],
+  trades:{
+    t1:{id:'t1',ref:'TRD-2026-0481',title:'§48E Solar ITC Reinstatement',company:'Lumfar Solar',coverage:'$2M',prob:76,phase:'exchange',
+      status:'Negotiation · Likely Dead',
+      profile:'Buyer of the reinstatement leg; loses project economics if the ≥30% commercial solar ITC does not return.',
+      concern:'The client’s solar project pipeline is uneconomic without a ≥30% §48E credit. Current law sunsets new projects: those beginning construction after July 4, 2026 face a placed-in-service deadline of December 31, 2027.',
+      event:'Will the ≥30% commercial-solar Investment Tax Credit (§48E) be reinstated before December 31, 2029?',
+      docUrl:'https://castle-wire.onrender.com/contracts/48e-itc.pdf',
+      contract:[
+        {opener:'Resolution rules:',text:`if, on or before 11:59pm ET on December 31, 2029, federal legislation has been enacted into law that restores, extends, or otherwise provides for the availability of a Section 48E commercial Investment Tax Credit, or an equivalent credit, at a rate of 30% or greater of the solar value for commercial filers who own solar assets, the market resolves to Yes.`},
+        {text:`For purposes of this market, the credit will be considered "reinstated" if such legislation allows new commercial solar projects to newly qualify for a credit of 30% or greater under eligibility conditions that extend beyond the deadlines in effect under current law, defined as follows:`},
+        {bullets:[`Under current law, projects that begin construction on or before July 4, 2026 may qualify if placed in service within four years (implying a latest placed-in-service date of approximately July 4, 2030).`,`Projects that begin construction after July 4, 2026 must be placed in service no later than December 31, 2027.`]},
+        {text:`Accordingly, legislation will qualify as a "reinstatement" if it results in new projects being able to begin construction after December 31, 2027 and still qualify for a ≥30% credit; or new projects being able to be placed in service after July 4, 2030 and still qualify for a ≥30% credit; or a substantially equivalent federal credit replacing Section 48E that provides ≥30% support for new commercial solar projects beyond these respective deadlines.`},
+        {text:`Qualifying changes include, but are not limited to: extending or removing begin-construction deadlines; extending or removing placed-in-service deadlines; delaying, modifying, or eliminating phaseout schedules; replacing Section 48E with a substantially equivalent federal credit meeting the above criteria. The credit must be available to commercial filers who own solar assets at a rate of 30% or greater.`},
+        {text:`Non-qualifying actions include: legislation that does not extend eligibility beyond the dates specified above; administrative actions (including Treasury or IRS guidance) without new legislation; state-level credits; bills passed by only one chamber or not enacted into law.`},
+        {text:`Outcome will be verified using the U.S. Government Publishing Office and the Internal Revenue Code as codified, with supporting confirmation from the Joint Committee on Taxation, Congressional Research Service, Associated Press, Reuters, The New York Times, The Wall Street Journal, Bloomberg News, Politico, and Tax Notes.`},
+        {text:`If no qualifying legislation is enacted on or before 11:59pm ET on December 31, 2029, the market resolves to No.`}
+      ],
+      marketUrl:'https://kalshi.com/markets/kx48etaxcredit/will-the-48e-commercial-solar-investment-tax-credit-be-reinstated-before-december-31-2029/kx48etaxcredit-26may',
+      marketVenue:'Kalshi',market:{yes:76,no:24,vol:'$83'},marketAt:'wire 2026-06-10',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t2:{id:'t2',ref:'TRD-2026-0482',title:'Visa Interchange Rates',company:'Slash',coverage:'$10M',prob:null,phase:'contract',
+      status:'Negotiation · Dead',
+      profile:'Buyer of protection; revenue tracks Visa interchange and falls if Visa cuts commercial rates.',
+      concern:'Client revenue is directly tied to Visa Business Product 1 interchange rates. A rate cut below current levels (2.85%) would reduce revenue against committed cost structures.',
+      event:'Will Visa Business Product 1 commercial interchange fall below 2.85% (laddered to 2.55%) by October 31, 2026?',
+      docUrl:'https://castle-wire.onrender.com/contracts/visa-interchange.pdf',
+      contract:[
+        {opener:'Contract type:',text:`parametric put options on the average percentage component of Visa’s Business Product 1 interchange rates, with an expiration of October 31, 2026. Castle is requesting pricing on two strikes: 2.85% (Contract 1A) and 2.75% (Contract 1B).`},
+        {text:`The Reference Rate is the simple arithmetic mean of the percentage components (Spend Tier I through Tier V) listed for the Business Product 1 row in the Visa U.S.A. Business (excluding Prepaid) Interchange Reimbursement Fees table, taken from the version with the latest effective date on or before October 31, 2026. Fixed per-transaction components (for example, "+ $0.10") are excluded. If the Business Product 1 row contains a different number of Spend Tiers in the controlling version, the Reference Rate is the simple arithmetic mean across all percentage components in the row as published.`},
+        {text:`The current schedule, effective April 18, 2026, contains Business Product 1 percentage components of 2.65%, 2.80%, 2.85%, 2.95%, and 3.00%, producing a current Reference Rate of 2.85%. These were unchanged from the schedule effective October 18, 2025. The April 18, 2026 schedule is controlling unless Visa publishes a subsequent schedule with an effective date on or before October 31, 2026, in which case the most recent such schedule controls.`},
+        {text:`Each contract has a Tick Value of $100 per basis point. If the Reference Rate is less than the Strike, the contract pays the difference between the Strike and the Reference Rate, expressed in basis points, multiplied by the Tick Value. If the Reference Rate is greater than or equal to the Strike, the contract expires worthless.`},
+        {text:`If Visa has renamed, restructured, or reorganized the Business Product 1 row such that no row with that exact label appears, the Reference Rate is determined by reference to the successor row or rows, identified in order of priority by: first, the Visa U.S.A. Interchange Reimbursement Fees document and accompanying notes; second, Visa’s official program transition guidance, acquirer bulletins, or merchant communications; and third, industry reporting from recognized payments publications. If multiple successor rows are identified, the Reference Rate is the simple arithmetic mean of all percentage components across all successor rows and spend tiers.`},
+        {text:`If Visa has eliminated the Business Product 1 rate category entirely and no successor row can be identified through any of the sources listed above, the contract is voided and all premium paid by contract holders is returned to the original counterparties.`},
+        {text:`If Visa issues a correction on or before October 31, 2026 to the controlling schedule, the corrected figures control. Corrections issued after October 31, 2026 do not affect resolution. Outcome is verified from the Visa U.S.A. Interchange Reimbursement Fees document published at usa.visa.com or its successor location.`}
+      ],
+      marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t3:{id:'t3',ref:'TRD-2026-0483',title:'Prediction-Markets Tax',company:'XXX',coverage:'$5M',prob:12,phase:'exchange',
+      status:'Price Discovery · Likely Dead',
+      profile:'Buyer of protection; the client actively trades CFTC-regulated event markets and is exposed to adverse tax reclassification of winnings.',
+      concern:'If the IRS classifies CFTC-regulated sports event contracts as wagering under Section 165(d) (as amended by the One Big Beautiful Bill Act), the client’s losses face a 90% deduction cap, materially affecting after-tax P&L.',
+      event:'Will the IRS classify CFTC sports event contracts as wagering transactions subject to the 90% loss cap by April 15, 2027?',
+      docUrl:'https://castle-wire.onrender.com/contracts/prediction-markets-tax.pdf',
+      contract:[
+        {text:`This market resolves to Yes if, on or before 11:59pm ET on April 15, 2027, the U.S. Internal Revenue Service or U.S. Department of the Treasury publishes formal guidance providing that losses from CFTC-regulated sports event contracts are subject to the loss-deduction limitation of Section 165(d) of the Internal Revenue Code, as amended by Section 70114 of the One Big Beautiful Bill Act (Public Law 119-21).`},
+        {text:`For purposes of this market, sports event contracts are contracts whose payoff is determined by the outcome, score, or statistical result of an athletic competition and that are listed on a CFTC-designated contract market or swap execution facility. Guidance qualifies if it either expressly states that Section 165(d) applies to such contracts, or classifies them as wagering transactions for federal income tax purposes generally. Guidance classifying them as wagering solely for purposes of Section 4401, Section 6041, Section 3402(q), or other Code sections that do not bear on the deductibility of losses does not qualify.`},
+        {text:`Guidance qualifies only if published in the Internal Revenue Bulletin or the Federal Register as a Revenue Ruling, Revenue Procedure, IRS Notice, IRS Announcement, final or temporary Treasury Regulation, or proposed Treasury Regulation that remains published without withdrawal for at least 30 calendar days after its Federal Register publication date.`},
+        {text:`Resolution is determined based on the state of qualifying guidance as of 11:59pm ET on April 15, 2027. If qualifying guidance is in effect at that time, the market resolves to Yes. If qualifying guidance was published earlier but has been withdrawn, modified into non-qualifying form, or superseded before April 15, 2027, the market resolves to No.`},
+        {text:`Non-qualifying actions include Private Letter Rulings, Chief Counsel Advice, Technical Advice Memoranda, and other non-precedential guidance; decisions of the U.S. Tax Court and federal appellate courts; statements by officials; Congressional testimony; proposed legislation not enacted; and FAQs, press releases, or web publications not appearing in the Internal Revenue Bulletin or Federal Register. A final, non-appealable U.S. Supreme Court decision holding that such contracts are subject to Section 165(d) qualifies.`},
+        {text:`Outcome is verified using the Internal Revenue Bulletin at irs.gov/irb and the Federal Register at federalregister.gov, with supporting confirmation from the Joint Committee on Taxation, Congressional Research Service, Tax Notes, Bloomberg Tax, and Daily Tax Report. If no qualifying guidance is published on or before 11:59pm ET on April 15, 2027, the market resolves to No.`}
+      ],
+      marketUrl:'https://polymarket.com/event/sports-prediction-markets-taxed-as-gambling',
+      marketVenue:'Polymarket',market:{yes:12,no:89,vol:'$42,857'},marketAt:'wire 2026-06-10',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t4:{id:'t4',ref:'TRD-2026-0484',title:'§179D Reinstatement',company:'Realizse',coverage:'$10M',prob:null,phase:'intake',
+      status:'Drafting · Hot',
+      profile:'Buyer of the reinstatement leg; client operates a §179D deduction pipeline for energy-efficient building projects, exposed to the credit not returning for post-2025 construction.',
+      concern:'The client’s deduction pipeline only pays if §179D is reinstated for construction begun after June 30, 2026. Without reinstatement, the entire pipeline value is at risk.',
+      event:'Will the §179D energy-efficient-building deduction be reinstated for construction begun after June 30, 2026?',
+      docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t5:{id:'t5',ref:'TRD-2026-0485',title:'Nuevo León Unemployment',company:'XXX',coverage:'$5M',prob:null,phase:'contract',
+      status:'Drafting · Dead',
+      profile:'Buyer of protection; the client’s policy sales are depressed by rising unemployment in Nuevo León, Mexico. The ladder pays as quarterly INEGI ENOE prints breach 3.50% and above.',
+      concern:'Rising unemployment in Nuevo León directly reduces the client’s insurance / financial product sales there. The parametric ladder compensates as unemployment breaches successive 25bp thresholds.',
+      event:'Will the four-quarter average unemployment rate for Nuevo León (INEGI ENOE, Q3 2026–Q2 2027) equal or exceed laddered thresholds from 3.50% to 5.00%?',
+      docUrl:'https://castle-wire.onrender.com/contracts/nuevo-leon-unemployment.pdf',
+      contract:[
+        {text:`If the simple arithmetic mean of the four quarterly unemployment rates published by INEGI for the State of Nuevo León, Mexico covering Q3 2026, Q4 2026, Q1 2027, and Q2 2027 is greater than or equal to [STRIKE]%, the market resolves to Yes. Outcome is verified from the Encuesta Nacional de Ocupación y Empleo (ENOE) quarterly results published by Mexico’s Instituto Nacional de Estadística y Geografía (INEGI) at inegi.org.mx.`},
+        {text:`The Reference Rate is the simple arithmetic mean of the four quarterly state-level unemployment rates ("tasa de desocupación") for the population aged 15 and over in Nuevo León, as published in INEGI’s official ENOE quarterly results for the four quarters, expressed as a percentage to two decimal places. Seasonally adjusted figures are not used; the original (non-seasonally-adjusted) quarterly figures control.`},
+        {text:`If INEGI revises a previously published quarterly figure before the Expiration time, the most recently published figure at the Expiration time controls. Revisions issued after the Expiration time do not affect resolution.`},
+        {text:`If INEGI changes its ENOE methodology during the observation period such that the post-change rate is not directly comparable, resolution is determined by reference to the figures INEGI itself designates as the official continuation of the series for Nuevo León. If INEGI publishes both a legacy-methodology and a new-methodology figure for any quarter, the new-methodology figure controls.`},
+        {text:`If INEGI suspends, discontinues, or fails to publish the unemployment rate for Nuevo León for any of the four quarters before August 31, 2027, and no successor figure is published by INEGI or another official Mexican government statistical agency, the market is voided and all premium is returned to the original counterparties. If the calculated Reference Rate is less than [STRIKE]%, the market resolves to No.`}
+      ],
+      strikes:['3.50%','3.75%','4.00%','4.25%','4.50%','4.75%','5.00%'],
+      marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t6:{id:'t6',ref:'TRD-2026-0486',title:'Wind Tariffs + Permitting',company:'Linea Energy',coverage:'$20M',prob:null,phase:'intake',
+      status:'Validation · Active',
+      profile:'Buyer of protection; imports wind-turbine components and carries both §232 tariff exposure and USFWS permitting / biological-opinion risk.',
+      concern:'New §232 tariffs on imported turbine components would raise project costs. Separately, a USFWS biological-opinion adverse ruling could halt or delay permitting. Both threaten project economics.',
+      event:'Will §232 tariffs be imposed on imported wind-turbine components, and/or will USFWS permitting / biological-opinion risk materialize?',
+      docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t7:{id:'t7',ref:'TRD-2026-0487',title:'Strait of Hormuz Cable Sabotage',company:'XXX',coverage:'$25M',prob:null,phase:'intake',
+      status:'Validation · Active',
+      profile:'Buyer of protection introduced via broker; seeks coverage against Iran-linked sabotage of undersea cables near the Strait of Hormuz, and against vessels being trapped for more than 12 months.',
+      concern:'Material exposure to undersea cable infrastructure or maritime transit through the Strait of Hormuz. A sabotage event or extended vessel entrapment would trigger significant financial losses.',
+      event:'Will Iran conduct sabotage of undersea cables near the Strait of Hormuz, and/or will vessels be trapped for more than 12 months?',
+      docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t9:{id:'t9',ref:'TRD-2026-0489',title:'PG&E + CA Governor Race',company:'XXX',coverage:'$5M',prob:null,phase:'intake',
+      status:'Interest / Validation · Active',
+      profile:'Counterparty TBD; Castle is sourcing the party with natural PG&E / California utility exposure who would benefit from hedging governor-race outcome risk.',
+      concern:'PG&E’s regulatory environment, rate-case outcomes, and liability exposure are meaningfully affected by the California governor race. A position in PCG equity or California utility revenue is exposed to this political risk.',
+      event:'California utility risk tied to PG&E (PCG) and the California governor race outcome.',
+      docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
+      experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
+
+    t10:{id:'t10',ref:'TRD-2026-0490',title:'SEC Quarterly Reporting Requirement',company:'Killington Technologies',coverage:'$1M',prob:26,phase:'settled',approval:'approved',
+      status:'Settled · Bound',
+      profile:'Alternative-data provider delivering near-real-time retail sales, inventory, and margin intelligence to the investment community; demand scales with how thin official public-company disclosure becomes.',
+      concern:'A move to make quarterly (10-Q) reporting optional would widen the information gap Killington fills — a direct demand catalyst. Killington took YES exposure to monetize the swing if the SEC acts before the 2027 deadline.',
+      event:'Will the SEC announce a final rule making quarterly reporting optional for public companies before April 1, 2027?',
+      docUrl:'https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar',
+      contract:[
+        {opener:'Resolution rules:',text:`this market resolves to Yes if, on or before 11:59pm ET on April 1, 2027, the U.S. Securities and Exchange Commission announces the publication of a final rule (with any effective date) making quarterly reporting optional for public companies.`},
+        {text:`A "final rule" means a rule published in the Federal Register that amends the periodic-reporting requirements of the Securities Exchange Act of 1934 (including Form 10-Q under Rules 13a-13 and 15d-13) so that quarterly reports are no longer mandatory for some or all reporting companies. A proposed rule, concept release, request for comment, executive statement, or staff guidance does not qualify.`},
+        {text:`Outcome is verified using the Federal Register at federalregister.gov and the SEC rulemaking index at sec.gov, with supporting confirmation from The Wall Street Journal, Bloomberg News, Reuters, and the Associated Press. If no qualifying final rule is published on or before 11:59pm ET on April 1, 2027, the market resolves to No.`}
+      ],
+      marketUrl:'https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar?op_market_ticker=KXSECQUARTERLY-26MAR-27APR01',
+      marketVenue:'Kalshi',market:{yes:26,no:74,vol:'$8,140'},marketAt:'wire 2026-06-24',
+      history:[65,60,60,60,60,60,60,60,60,60,60,60,60,61,61,61,61,61,63,66,59,60,60,60,60,60,59,50,52,52,52,52,52,52,52,50,48,52,45,48,45,45,47,47,46,46,46,70,73,65,62,60,43,51,49,46,46,46,51,47,47,47,44,45,46,46,45,44,44,42,41,42,44,41,46,41,40,40,36,35,30,30,26,27],
+      experts:[],granolaUrl:'',
+      quotes:[
+        {id:'q1',name:'SIG',price:'21',size:'0.6'},
+        {id:'q2',name:'Jump Trading',price:'22',size:'0.6'}
+      ],
+      suggestions:[],emails:[{kind:'rfq'}],
+      activity:[
+        {text:'Contract drafted and shared for resolution review',at:'Jun 18'},
+        {text:'Listed on Kalshi for price discovery',at:'Jun 20'},
+        {text:'RFQ emailed to market makers',at:'Jun 23'},
+        {text:'Quotes received from SIG and Jump Trading',at:'Jun 24'},
+        {text:'Customer approved — protection bound at 21.4¢ weighted average',at:'Jun 24'}
+      ],
+      settled:true},
+  }}}
+
+// ─── STATE + PERSISTENCE ──────────────────────────────────────────────────────
+let S=load()
+function load(){
+  let data
+  try{const raw=localStorage.getItem(STORE_KEY);data=raw?JSON.parse(raw):seed()}catch(e){data=seed()}
+  if(!data||!data.trades||!data.order)data=seed()
+  return {view:'list',activeId:null,listTab:'active',viewPhase:null,listing:false,
+    suggestDraft:'',seq:data.seq||0,handoff:null,order:data.order,trades:data.trades}
+}
+function persist(){try{localStorage.setItem(STORE_KEY,JSON.stringify({seq:S.seq,order:S.order,trades:S.trades}))}catch(e){}}
+
+const PHASES=['intake','contract','exchange','quoting','settled']
+const PMETA={intake:{label:'Intake',sub:'RISK INPUT'},contract:{label:'Contract',sub:'DRAFTED'},exchange:{label:'On exchange',sub:'PRICE DISCOVERY'},quoting:{label:'Quoting',sub:'RFQ TO MAKERS'},settled:{label:'Settled',sub:'BOUND'}}
+const BADGE={intake:{label:'Intake',bg:'#F4F4F1',fg:'#8A8A80'},contract:{label:'Contract',bg:'#F2F2EE',fg:'#6B6B63'},exchange:{label:'On exchange',bg:'#ECECE7',fg:'#55554E'},quoting:{label:'Quoting',bg:'#E6E6E0',fg:'#383832'},settled:{label:'Settled',bg:'#2A2A26',fg:'#FFFFFF'}}
+
+// ─── HELPERS ──────────────────────────────────────────────────────────────────
+function phIdx(p){return PHASES.indexOf(p)}
+function covM(t){return parseFloat((t.coverage||'').replace(/[^0-9.]/g,''))||0}
+function covLabel(t){const c=(t.coverage||'').trim();return c&&c!=='$TBD'?c:'TBD'}
+function fmtM(x){const r=Math.round(x*10)/10;return '$'+(Number.isInteger(r)?r:r.toFixed(1))+'M'}
+function initials(n){const w=(n||'').trim().split(/\s+/);if(!w[0])return'—';return((w[0][0]||'')+(w[1]?w[1][0]:(w[0][1]||''))).toUpperCase()}
+function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
+function attr(s){return esc(s).replace(/'/g,'&#39;')}
+function badgeHtml(phase){const b=BADGE[phase];return`<span class="badge" style="color:${b.fg};background:${b.bg}">${b.label}</span>`}
+function impliedOf(t){return (t.market&&t.market.yes!=null)?t.market.yes+'%':(t.prob!=null?t.prob+'%':'—')}
+function tradeName(t){return (t.company||'').trim()||(t.title||'').trim()||'Untitled trade'}
+function tradeFull(t){const c=(t.company||'').trim(),ti=(t.title||'').trim();if(c&&ti)return c+' — '+ti;return ti||c||'Untitled trade'}
+
+// Parse pasted contract prose into renderable blocks: blank-line-separated paragraphs,
+// bullet lines (starting - • *) collapse into a bullet block, a short "Lead-in:" becomes an opener.
+function parseContractBody(raw){
+  const text=(raw||'').replace(/\r/g,'').trim();if(!text)return null
+  const out=[]
+  text.split(/\n\s*\n/).forEach(block=>{
+    const lines=block.split(/\n/).map(l=>l.trim()).filter(Boolean)
+    let buf=[],bul=[]
+    const flushText=()=>{if(!buf.length)return;const joined=buf.join(' ');const m=joined.match(/^([A-Z][A-Za-z0-9 ,()§\/'’-]{2,42}:)\s+(.+)$/);out.push(m?{opener:m[1],text:m[2]}:{text:joined});buf=[]}
+    const flushBul=()=>{if(!bul.length)return;out.push({bullets:bul.slice()});bul=[]}
+    lines.forEach(l=>{
+      if(/^[-•*]\s+/.test(l)){flushText();bul.push(l.replace(/^[-•*]\s+/,''))}
+      else{flushBul();buf.push(l)}
+    })
+    flushText();flushBul()
+  })
+  return out.length?out:null
+}
+
+function spark(prob,seed){
+  const n=22,W=640,H=150,pts=[]
+  let v=prob-9+((seed%5)-2)
+  for(let i=0;i<n;i++){
+    const drift=(prob-v)*0.18
+    const wob=Math.sin((i+seed)*.9)*2.1+Math.sin((i+seed)*.37)*1.3
+    v=v+drift+wob
+    if(i===n-1)v=prob
+    const x=(i/(n-1))*W,y=H-8-(Math.max(2,Math.min(96,v))/100)*(H-16)
+    pts.push([x.toFixed(1),y.toFixed(1)])
+  }
+  const line=pts.map(p=>p[0]+','+p[1]).join(' ')
+  return{line,area:'0,'+H+' '+line+' '+W+','+H}
+}
+// Plot a real price series (0-100 values) to the same chart geometry — mirrors the exchange graph.
+function seriesSpark(vals){
+  const W=640,H=150,n=vals.length
+  const pts=vals.map((v,i)=>{
+    const x=n>1?(i/(n-1))*W:0,y=H-8-(Math.max(2,Math.min(96,v))/100)*(H-16)
+    return[x.toFixed(1),y.toFixed(1)]
+  })
+  const line=pts.map(p=>p[0]+','+p[1]).join(' ')
+  return{line,area:'0,'+H+' '+line+' '+W+','+H}
+}
+
+// ─── ICONS / MARK ─────────────────────────────────────────────────────────────
+const ICO={
+  arrow:`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>`,
+  back:`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>`,
+  chevron:`<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"/></svg>`,
+  plus:`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>`,
+  download:`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>`,
+  mail:`<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><polyline points="3 7 12 13 21 7"/></svg>`,
+  check:`<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`,
+  checkSm:`<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>`,
+  link:`<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`,
+  users:`<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>`,
+  bolt:`<svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#171717" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>`,
+  gdoc:`<svg width="19" height="19" viewBox="0 0 24 24" fill="none"><path d="M6 2h8l4 4v16H6z" fill="#4285F4"/><path d="M14 2l4 4h-4z" fill="#A1C2FA"/><rect x="8.5" y="11" width="7" height="1.3" fill="#fff"/><rect x="8.5" y="14" width="7" height="1.3" fill="#fff"/><rect x="8.5" y="17" width="4.5" height="1.3" fill="#fff"/></svg>`,
+}
+const CASTLE_MARK=`<svg width="17" height="21" viewBox="0 0 87 107.79" fill="none" xmlns="http://www.w3.org/2000/svg" style="display:block;flex:none;color:#171717"><path d="M0 9C0 6.12 2.33 3.79 5.21 3.79h7.5c2.88 0 5.21 2.33 5.21 5.2v7.48c0 2.87-2.33 5.2-5.21 5.2H5.21C2.33 21.67 0 19.34 0 16.47V9z" fill="currentColor"/><path d="M17.27 26.22c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.47z" fill="currentColor"/><path d="M34.54 9c0-2.87 2.33-5.21 5.21-5.21h7.5c2.88 0 5.21 2.34 5.21 5.21v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2V9z" fill="currentColor"/><path d="M69.08 9c0-2.87 2.33-5.21 5.21-5.21H81.8C84.67 3.79 87 6.12 87 9v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2V9z" fill="currentColor"/><path d="M51.81 26.22c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.47z" fill="currentColor"/><path d="M34.54 43.44c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.48c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.48z" fill="currentColor"/><path d="M51.81 60.67c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.47c0 2.88-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.32-5.21-5.2v-7.47z" fill="currentColor"/><path d="M69.08 77.89c0-2.87 2.33-5.2 5.21-5.2H81.8c2.88 0 5.21 2.33 5.21 5.2v7.48c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.48z" fill="currentColor"/><path d="M17.27 60.67c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.47c0 2.88-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.32-5.21-5.2v-7.47z" fill="currentColor"/><path d="M34.54 77.89c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.48c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.48z" fill="currentColor"/><path d="M51.81 95.12c0-2.88 2.33-5.21 5.21-5.21h7.5c2.88 0 5.21 2.33 5.21 5.21v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.47z" fill="currentColor"/><path d="M0 77.89c0-2.87 2.33-5.2 5.21-5.2h7.5c2.88 0 5.21 2.33 5.21 5.2v7.48c0 2.87-2.33 5.2-5.21 5.2H5.21C2.33 90.57 0 88.24 0 85.37v-7.48z" fill="currentColor"/><path d="M17.27 95.12c0-2.88 2.33-5.21 5.21-5.21h7.5c2.88 0 5.21 2.33 5.21 5.21v7.47c0 2.87-2.33 5.2-5.21 5.2h-7.5c-2.88 0-5.21-2.33-5.21-5.2v-7.47z" fill="currentColor"/><path d="M17.27 26.05c0-3.74-.9-4.39-4.4-4.39l5.05-5.04c0 3.51 3.01 4.39 4.4 4.39l-5.05 5.04z" fill="currentColor"/><path d="M51.81 94.95c0-3.74-.9-4.39-4.4-4.39l5.05-5.04c0 3.51 3.01 4.39 4.4 4.39l-5.05 5.04z" fill="currentColor"/><path d="M69.08 77.73c0-3.74-.9-4.39-4.4-4.39l5.05-5.04c0 3.51 3.01 4.39 4.4 4.39l-5.05 5.04z" fill="currentColor"/><path d="M35.19 26.05c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M52.46 43.28c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M35.19 60.5c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M52.46 77.73c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M17.92 77.73c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M35.19 94.95c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/><path d="M69.73 26.05c0-3.74.9-4.39 4.4-4.39l-5.05-5.04c0 3.51-3.01 4.39-4.4 4.39l5.05 5.04z" fill="currentColor"/></svg>`
+
+// ─── STATE MUTATORS ───────────────────────────────────────────────────────────
+function upd(id,patch){S.trades={...S.trades,[id]:{...S.trades[id],...patch}};persist()}
+
+window.openTrade=function(id){const t=S.trades[id];S.view='detail';S.activeId=id;S.viewPhase=t.phase;S.listing=false;S.suggestDraft='';render();window.scrollTo(0,0)}
+window.backToList=function(){S.view='list';S.handoff=null;render();window.scrollTo(0,0)}
+window.setPhaseView=function(p){S.viewPhase=p;render()}
+window.setTab=function(tab){S.listTab=tab;render()}
+window.newTrade=function(){
+  const n=(S.seq||0)+1,id='new'+n
+  S.trades={...S.trades,[id]:{id,ref:'TRD-2026-05'+String(n).padStart(2,'0'),title:'',company:'',coverage:'',prob:null,phase:'intake',
+    status:'Intake · New',profile:'',concern:'',event:'',docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
+    experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false}}
+  S.order=[id,...S.order];S.seq=n;S.view='detail';S.activeId=id;S.viewPhase='intake';S.listing=false;S.suggestDraft='';persist();render();window.scrollTo(0,0)
+}
+window.resetData=function(){if(confirm('Reset the trade book to the original castle_wire data? This clears local edits.')){localStorage.removeItem(STORE_KEY);S=load();render();window.scrollTo(0,0)}}
+
+window.fldChange=function(id,field,el){S.trades[id][field]=el.value;persist()}
+window.draftChange=function(el){S.suggestDraft=el.value}
+
+window.acceptSugg=function(tid,sid){const t=S.trades[tid];upd(tid,{suggestions:(t.suggestions||[]).map(s=>s.id===sid?{...s,status:'accepted'}:s)});render()}
+window.dismissSugg=function(tid,sid){const t=S.trades[tid];upd(tid,{suggestions:(t.suggestions||[]).filter(s=>s.id!==sid)});render()}
+window.addSuggestion=function(){const txt=(S.suggestDraft||'').trim();if(!txt)return;const id=S.activeId,t=S.trades[id];S.seq=(S.seq||0)+1;upd(id,{suggestions:[...(t.suggestions||[]),{id:'u'+S.seq,who:'You',text:txt,status:'open'}]});S.suggestDraft='';render()}
+
+window.addExpert=function(){
+  const id=S.activeId,g=x=>(document.getElementById(x)||{}).value||''
+  const name=g('exp-name').trim();if(!name)return
+  S.seq=(S.seq||0)+1
+  const t=S.trades[id]
+  upd(id,{experts:[...(t.experts||[]),{id:'e'+S.seq,name,role:g('exp-role').trim(),take:g('exp-take').trim(),prob:g('exp-prob').trim()}]});render()
+}
+window.delExpert=function(eid){const id=S.activeId,t=S.trades[id];upd(id,{experts:(t.experts||[]).filter(e=>e.id!==eid)});render()}
+
+window.addQuote=function(){
+  const id=S.activeId,g=x=>(document.getElementById(x)||{}).value||''
+  const name=g('q-name').trim(),price=g('q-price').trim();if(!name||!price)return
+  S.seq=(S.seq||0)+1
+  const t=S.trades[id]
+  upd(id,{quotes:[...(t.quotes||[]),{id:'q'+S.seq,name,price,size:g('q-size').trim()}]});render()
+}
+window.delQuote=function(qid){const id=S.activeId,t=S.trades[id];upd(id,{quotes:(t.quotes||[]).filter(q=>q.id!==qid)});render()}
+
+window.saveMarket=function(){
+  const id=S.activeId,g=x=>(document.getElementById(x)||{}).value||''
+  const yes=parseFloat(g('mk-yes')),no=parseFloat(g('mk-no')),vol=g('mk-vol').trim(),liq=g('mk-liq').trim()
+  upd(id,{market:{yes:isNaN(yes)?null:yes,no:isNaN(no)?null:no,vol:vol||'—',liq},marketAt:'updated just now'})
+  logActivity(id,'market','Live market data pulled'+(isNaN(yes)?'':' · YES '+yes+'%')+(vol?' · vol '+vol:''))
+  closeHandoff();render()
+}
+window.saveDoc=function(){
+  const id=S.activeId
+  const url=((document.getElementById('ho-doc')||{}).value||'').trim()
+  const body=((document.getElementById('ho-contract')||{}).value||'')
+  const patch={phase:'contract'}
+  if(url)patch.docUrl=url
+  const parsed=parseContractBody(body)
+  if(parsed&&parsed.length)patch.contract=parsed
+  upd(id,patch)
+  logActivity(id,'contract','Contract generated as a Google Doc'+(parsed&&parsed.length?' · '+parsed.length+' clauses loaded':''))
+  logEmail(id,'contract','Contract generated — '+tradeName(S.trades[id]))
+  S.viewPhase='contract';closeHandoff();render();window.scrollTo(0,0)
+}
+window.saveComments=function(){
+  const id=S.activeId,raw=((document.getElementById('ho-comments')||{}).value||'').trim()
+  if(!raw){closeHandoff();return}
+  const t=S.trades[id]
+  const adds=raw.split(/\n/).map(l=>l.trim()).filter(Boolean).map(l=>{
+    S.seq=(S.seq||0)+1
+    const m=l.match(/^(.{1,40}?)\s*[:—]\s+(.+)$/)
+    return m?{id:'c'+S.seq,who:m[1].trim(),text:m[2].trim(),status:'open'}:{id:'c'+S.seq,who:'Reviewer',text:l,status:'open'}
+  })
+  upd(id,{suggestions:[...(t.suggestions||[]),...adds]})
+  logActivity(id,'comments',adds.length+' edit request'+(adds.length===1?'':'s')+' pulled from the Doc')
+  closeHandoff();render()
+}
+window.saveQuotesIn=function(){
+  const id=S.activeId,raw=((document.getElementById('ho-quotes')||{}).value||'').trim()
+  if(!raw){closeHandoff();return}
+  const t=S.trades[id],adds=[]
+  raw.split(/\n/).map(l=>l.trim()).filter(Boolean).forEach(l=>{
+    const p=l.split(/[,\t|]+/).map(x=>x.trim()).filter(Boolean)
+    const name=p[0],price=(p[1]||'').replace(/[^0-9.]/g,'')
+    if(!name||!price)return
+    S.seq=(S.seq||0)+1
+    adds.push({id:'q'+S.seq,name,price,size:p[2]||''})
+  })
+  if(adds.length){upd(id,{quotes:[...(t.quotes||[]),...adds]});logActivity(id,'quotes',adds.length+' quote'+(adds.length===1?'':'s')+' ingested from RFQ replies')}
+  closeHandoff();render()
+}
+window.saveGranola=function(){const id=S.activeId,url=((document.getElementById('ho-granola')||{}).value||'').trim();upd(id,{granolaUrl:url});if(url)logActivity(id,'granola','Granola meeting linked for expert pull');closeHandoff();render()}
+
+function logActivity(id,kind,text){const t=S.trades[id];upd(id,{activity:[...(t.activity||[]),{kind,text,at:'just now'}]})}
+function logEmail(id,kind,subject){const t=S.trades[id];upd(id,{emails:[...(t.emails||[]),{kind,subject,at:'just now'}]});logActivity(id,kind,'Email sent to '+TEAM+' — '+subject)}
+window.markExchange=function(){
+  const id=S.activeId;logEmail(id,'exchange','Sent to exchange — '+tradeName(S.trades[id]))
+  S.handoff=null;S.listing=true;render()
+  setTimeout(()=>{upd(id,{phase:'exchange'});S.listing=false;S.viewPhase='exchange';render();window.scrollTo(0,0)},1900)
+}
+window.markQuoting=function(){const id=S.activeId;logEmail(id,'rfq','RFQ open — '+tradeName(S.trades[id]));upd(id,{phase:'quoting'});S.viewPhase='quoting';closeHandoff();render();window.scrollTo(0,0)}
+window.markCustomerSent=function(){
+  const id=S.activeId;logEmail(id,'customer','Quote for approval — '+tradeName(S.trades[id]))
+  upd(id,{approval:'pending'});closeHandoff();render();window.scrollTo(0,0)
+}
+window.markDenied=function(){const id=S.activeId;upd(id,{approval:'denied'});logActivity(id,'customer','Customer declined the quote');render()}
+window.markSettled=function(){
+  const id=S.activeId
+  logEmail(id,'settle','Settlement confirmed — '+tradeName(S.trades[id]))
+  upd(id,{phase:'settled',settled:true,approval:'approved'});S.viewPhase='settled';closeHandoff();render();window.scrollTo(0,0)
+}
+
+// ─── HANDOFF SYSTEM ───────────────────────────────────────────────────────────
+function expertSummary(t){
+  const ex=(t.experts||[])
+  if(!ex.length)return 'No expert views recorded yet.'
+  const probs=ex.map(e=>parseFloat((e.prob||'').replace(/[^0-9.]/g,''))).filter(x=>!isNaN(x))
+  const cons=probs.length?Math.round(probs.reduce((a,b)=>a+b,0)/probs.length)+'%':'n/a'
+  const lines=ex.map(e=>`- ${e.name}${e.role?' ('+e.role+')':''}${e.prob?' — '+e.prob:''}${e.take?': '+e.take:''}`).join('\n')
+  return `Consensus: ${cons}\n${lines}`
+}
+function emailDraft(kind,t){
+  const cov=covLabel(t),nm=tradeFull(t)
+  if(kind==='contract')return{subject:`[Castle] Contract generated — ${nm} (${t.ref})`,
+    body:`Team,\n\nContract has been generated for ${nm} (${t.ref}).\n\nResolution:\n${t.event}\n\nGoogle Doc (comment access): ${t.docUrl||'(link)'}\n\nOpen the Doc to review and leave edit requests as comments.\n\n— Castle Trade Book`}
+  if(kind==='exchange')return{subject:`[Castle] Send to exchange — ${nm} (${t.ref})`,
+    body:`Team,\n\nThe contract for ${nm} (${t.ref}) is approved and ready to list for price discovery.\n\nResolution / terms:\n${t.event}\n\nCoverage: ${cov}\n\nPlease list it on the price-discovery venue and confirm the market URL.\n\n— Castle Trade Book`}
+  if(kind==='rfq')return{subject:`[Castle] RFQ open — ${nm} (${t.ref})`,
+    body:`Team,\n\nRequesting quotes from market makers on ${nm} (${t.ref}).\n\nResolution:\n${t.event}\n\nCoverage sought: ${cov}\nImplied (last): ${impliedOf(t)}\nExchange / market link: ${t.marketUrl||'(market link)'}\n\nCastle expert-network feedback:\n${expertSummary(t)}\n\nReply with maker name, offer (in cents), and size.\n\n— Castle Trade Book`}
+  const v=quotesVM(t)
+  if(kind==='customer')return{subject:`[Castle] Quote for your approval — ${nm} (${t.ref})`,
+    body:`Hi,\n\nThe quote for ${nm} (${t.ref}) is ready for your approval.\n\nResolution:\n${t.event}\n\nCoverage: ${cov}\nWeighted-average premium: ${v.wavg}\nTotal premium: ${v.totalPremium}\nMakers allocated: ${v.alloc.length}\n\nTo bind the trade, reply APPROVE. To decline, reply DENY.\n\n— Castle`}
+  return{subject:`[Castle] Settlement confirmed — ${nm} (${t.ref})`,
+    body:`Team,\n\n${nm} (${t.ref}) has been approved by the customer and is bound.\n\nCoverage: ${cov}\nWeighted-average fill: ${v.wavg}\nTotal premium: ${v.totalPremium}\nMakers allocated: ${v.alloc.length}\n\nSettles on event resolution.\n\n— Castle Trade Book`}
+}
+function mailto(subject,body){return `mailto:${TEAM}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`}
+
+window.openHandoff=function(kind){S.handoff=kind;render()}
+window.closeHandoff=function(){S.handoff=null;render()}
+window.copyHO=function(){
+  const el=document.getElementById('ho-text');if(!el)return
+  const txt=el.getAttribute('data-raw')||el.textContent
+  const done=()=>{const b=document.getElementById('ho-copy-btn');if(b){b.textContent='Copied';setTimeout(()=>{const bb=document.getElementById('ho-copy-btn');if(bb)bb.textContent='Copy'},1400)}}
+  if(navigator.clipboard&&navigator.clipboard.writeText){navigator.clipboard.writeText(txt).then(done).catch(()=>{fallbackCopy(txt);done()})}
+  else{fallbackCopy(txt);done()}
+}
+function fallbackCopy(txt){const ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy')}catch(e){}document.body.removeChild(ta)}
+
+function handoffSpec(kind,t){
+  const cov=covLabel(t)
+  if(kind==='contract')return{kick:'HANDOFF · CONTRACT',title:'Generate the contract as a Google Doc',
+    sub:'Claude drafts the contract per the create-contract conventions and creates a Google Doc (as lucas@castle.tech), shared so anyone with the link can comment / request edits. Paste the returned link and the contract body below — the body fills the in-app preview.',
+    instruction:`Create a Castle contract for "${tradeFull(t)}" (${t.ref}) and publish it as a Google Doc, then email the link to the team.\n\n1) Use the create-contract skill's drafting conventions (airtight resolution criteria, no em dashes, prose, named sources of truth, void provision, default-to-No backstop). Create the doc via the Google Drive MCP as lucas@castle.tech and set link-sharing to "anyone with the link can comment".\n2) Send an email via Gmail (as lucas) to ${TEAM} — subject "[Castle] Contract generated — ${tradeFull(t)} (${t.ref})", body "Contract has been generated." with the Doc link.\n3) Return to paste below: (a) the Doc URL, and (b) the full contract body as plain text — paragraphs separated by a blank line, bullet lines starting with "- ".\n\nRisk event: ${t.event}\nCoverage: ${cov}\nProfile: ${t.profile}\nWhy concerned: ${t.concern}`,
+    result:{kind:'doc'}}
+  if(kind==='comments')return{kick:'HANDOFF · EDIT REQUESTS',title:'Pull edit requests from the Doc',
+    sub:'Claude reads the comments on the shared Google Doc via the Drive MCP (as lucas@castle.tech) and returns each as "Commenter: requested change". Paste them below to load into the edit-request queue.',
+    instruction:`Read all open comments on this Google Doc via the Google Drive MCP and return each one on its own line formatted as "Commenter name: the requested change".\n\nDoc: ${t.docUrl||'(generate the contract Doc first)'}\nContract: ${tradeFull(t)} (${t.ref})`,
+    result:{kind:'comments'}}
+  if(kind==='quotes-in')return{kick:'HANDOFF · QUOTES',title:'Pull quotes from RFQ replies',
+    sub:'Claude reads replies to the RFQ thread in Gmail (as lucas@castle.tech) and returns each maker quote. Paste them below, one per line as "Maker, offer¢, size$M".',
+    instruction:`Read replies to the RFQ email thread for ${tradeFull(t)} (${t.ref}) in Gmail via MCP. For each market-maker reply, return one line formatted as "Maker name, offer in cents, size in $M".\n\nRFQ subject was: [Castle] RFQ open — ${tradeFull(t)} (${t.ref})\nResolution: ${t.event}`,
+    result:{kind:'quotes'}}
+  if(kind==='market')return{kick:'HANDOFF · LIVE DATA',title:'Pull live market data',
+    sub:'Claude fetches the live YES price, volume, and any liquidity incentives from the market link via the Kalshi / Polymarket API (needs api.elections.kalshi.com and gamma-api.polymarket.com on the egress allowlist). Paste the returned values below.',
+    instruction:`Fetch live market data for this contract and return: YES % (implied probability), total traded volume, and any liquidity incentives (maker rebate / rewards-pool / liquidity-provider program details, or "none").\n\nMarket: ${t.marketUrl||'(no link set — add the Kalshi/Polymarket URL on the page first)'}\nVenue: ${t.marketVenue||'unknown'}\n\nUse the public API (Kalshi: api.elections.kalshi.com/trade-api/v2 ; Polymarket: gamma-api.polymarket.com).`,
+    result:{kind:'market'}}
+  if(kind==='granola')return{kick:'HANDOFF · GRANOLA',title:'Pull expert notes from Granola',
+    sub:'Claude reads the linked Granola meeting via MCP and returns expert name(s), role, their probability/view on the event, and a one-line take. Add them to the expert network below. Set the Granola link first.',
+    instruction:`From the Granola meeting linked below, extract each expert's name, role/affiliation, their probability or directional view on the event, and a one-line take. Return them so they can be added to the expert network.\n\nGranola meeting: ${t.granolaUrl||'(set the Granola link on the page first)'}\nEvent: ${t.event}`,
+    result:{kind:'granola'}}
+  const ed=emailDraft(kind,t)
+  const titleMap={exchange:'Email team@castle.tech — send to exchange',rfq:'Email team@castle.tech — open RFQ to makers',customer:'Email team@castle.tech — quote for customer approval',settle:'Email team@castle.tech — settlement'}
+  const subMap={
+    exchange:'Claude sends this email to team@castle.tech via Gmail (as lucas). team@castle.tech acts for the exchange. Then mark the trade as listed.',
+    rfq:'Claude sends this RFQ to team@castle.tech via Gmail. It carries the exchange link and Castle expert-network feedback. team@castle.tech acts for the market makers and replies with quotes, which you ingest on the Quoting page.',
+    customer:'Claude sends this quote to team@castle.tech via Gmail. team@castle.tech acts for the customer and replies APPROVE or DENY. Reflect their decision on the trade book — only APPROVE binds and settles the trade.',
+    settle:'Claude sends this settlement confirmation to team@castle.tech via Gmail.'}
+  return{kick:'HANDOFF · EMAIL',title:titleMap[kind],sub:subMap[kind],
+    instruction:`Send an email via Gmail as lucas@castle.tech.\n\nTo: ${TEAM}\nSubject: ${ed.subject}\n\n${ed.body}`,
+    result:{kind:'email-'+kind},mailtoUrl:mailto(ed.subject,ed.body)}
+}
+
+function renderHandoff(){
+  if(!S.handoff)return''
+  const t=S.trades[S.activeId];if(!t)return''
+  const spec=handoffSpec(S.handoff,t),rk=spec.result.kind
+  let resultHtml=''
+  if(rk==='doc'){
+    resultHtml=`<div class="modal-section-lbl">PASTE RESULT — GOOGLE DOC LINK</div>
+      <input id="ho-doc" class="mini-in" placeholder="https://docs.google.com/document/d/…" value="${attr(t.docUrl)}">
+      <div class="modal-section-lbl">PASTE RESULT — CONTRACT BODY <span style="font-weight:500;letter-spacing:0;text-transform:none;color:#A0A096">(fills the in-app preview)</span></div>
+      <textarea id="ho-contract" class="sugg-ta" rows="6" placeholder="Paste the drafted contract prose.\nSeparate paragraphs with a blank line.\nStart bullet lines with '- '."></textarea>
+      <div class="modal-actions"><button class="btn-primary" onclick="saveDoc()">Save &amp; advance to Contract ${ICO.arrow}</button><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>`
+  }else if(rk==='comments'){
+    resultHtml=`<div class="modal-section-lbl">PASTE RESULT — EDIT REQUESTS (ONE PER LINE)</div>
+      <textarea id="ho-comments" class="sugg-ta" rows="4" placeholder="Sarah Chen: Tighten the void provision to name a backup source.\nDan R: Confirm the placed-in-service date math in clause 3."></textarea>
+      <div class="modal-actions"><button class="btn-primary" onclick="saveComments()">Load edit requests</button><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>`
+  }else if(rk==='quotes'){
+    resultHtml=`<div class="modal-section-lbl">PASTE RESULT — MAKER QUOTES (ONE PER LINE)</div>
+      <textarea id="ho-quotes" class="sugg-ta" rows="4" placeholder="SIG, 12, 5\nJump Trading, 13, 3\nCitadel Securities, 11.5, 4"></textarea>
+      <div class="modal-actions"><button class="btn-primary" onclick="saveQuotesIn()">Ingest quotes</button><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>`
+  }else if(rk==='market'){
+    const m=t.market||{}
+    resultHtml=`<div class="modal-section-lbl">PASTE RESULT — LIVE DATA</div>
+      <div class="mini-row"><input id="mk-yes" class="mini-in" placeholder="YES %" value="${m.yes!=null?attr(m.yes):''}"><input id="mk-no" class="mini-in" placeholder="NO %" value="${m.no!=null?attr(m.no):''}"><input id="mk-vol" class="mini-in" placeholder="Volume e.g. $42,857" value="${attr(m.vol||'')}"></div>
+      <input id="mk-liq" class="mini-in" style="margin-top:8px" placeholder="Liquidity incentives (e.g. maker rebate, rewards pool)" value="${attr(m.liq||'')}">
+      <div class="modal-actions"><button class="btn-primary" onclick="saveMarket()">Save live data</button><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>`
+  }else if(rk==='granola'){
+    resultHtml=`<div class="modal-section-lbl">GRANOLA MEETING LINK</div>
+      <input id="ho-granola" class="mini-in" placeholder="https://notes.granola.ai/…" value="${attr(t.granolaUrl)}">
+      <div class="modal-actions"><button class="btn-primary" onclick="saveGranola()">Save link</button><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>
+      <div class="share-note">After Claude returns the experts, add them in the Expert network panel.</div>`
+  }else{
+    const kind=rk.replace('email-','')
+    const advBtn=kind==='exchange'?`<button class="btn-primary" onclick="markExchange()">Mark listed → On exchange ${ICO.arrow}</button>`
+      :kind==='rfq'?`<button class="btn-primary" onclick="markQuoting()">Mark RFQ sent → Quoting ${ICO.arrow}</button>`
+      :`<button class="btn-primary" onclick="markCustomerSent()">Mark sent → Awaiting approval ${ICO.arrow}</button>`
+    resultHtml=`<div class="modal-actions">${advBtn}<a class="modal-link" href="${attr(spec.mailtoUrl)}">${ICO.mail} Open in mail client</a><button class="btn-ghost" onclick="closeHandoff()">Close</button></div>`
+  }
+  return`<div class="modal-bg" onclick="if(event.target===this)closeHandoff()"><div class="modal">
+    <div class="modal-hd"><div><div class="modal-kick">${spec.kick}</div><div class="modal-t">${esc(spec.title)}</div></div><div class="modal-x" onclick="closeHandoff()">×</div></div>
+    <div class="modal-body">
+      <div class="modal-sub">${esc(spec.sub)}</div>
+      <div class="modal-section-lbl">INSTRUCTION FOR CLAUDE — COPY INTO CHAT</div>
+      <div class="ho-block"><button id="ho-copy-btn" class="ho-copy" onclick="copyHO()">Copy</button><span id="ho-text" data-raw="${attr(spec.instruction)}">${esc(spec.instruction)}</span></div>
+      ${resultHtml}
+    </div>
+  </div></div>`
+}
+
+// ─── VIEW MODELS ──────────────────────────────────────────────────────────────
+function quotesVM(t){
+  // Cost-minimizing allocation: the customer buys `cov` of protection, so we fill
+  // from the cheapest offers upward until coverage is met (cheapest premium possible).
+  const cov=covM(t)
+  const qs=(t.quotes||[]).map(q=>{
+    const pr=parseFloat((q.price||'').replace(/[^0-9.]/g,''))||0
+    const sz=parseFloat((q.size||'').replace(/[^0-9.]/g,''))
+    return{...q,_pr:pr,_sz:isNaN(sz)?null:sz}
+  }).sort((a,b)=>a._pr-b._pr)
+  let alloc=[],remaining=cov
+  for(const q of qs){
+    if(cov&&remaining<=1e-9)break
+    const avail=q._sz!=null?q._sz:(cov?remaining:0)
+    const take=cov?Math.min(avail,remaining):(q._sz!=null?q._sz:0)
+    if(take<=0)continue
+    const sz=Math.round(take*10)/10
+    alloc.push({name:q.name,price:q._pr+'¢',size:fmtM(sz),premium:fmtM(sz*q._pr/100),_sz:sz,_pr:q._pr})
+    if(cov)remaining-=take
+  }
+  const totSize=alloc.reduce((a,b)=>a+(b._sz||0),0)
+  const totPrem=alloc.reduce((a,b)=>a+(b._sz?b._sz*b._pr/100:0),0)
+  const wavg=totSize?(totPrem/totSize*100).toFixed(1)+'¢':'—'
+  const shortfall=cov&&remaining>1e-9?Math.round(remaining*10)/10:0
+  return{quotes:qs,alloc,wavg,totalPremium:totPrem?fmtM(totPrem):'—',respIn:qs.length,shortfall}
+}
+
+// ─── RENDER: TOP BAR + LIST ───────────────────────────────────────────────────
+function renderTopBar(){
+  return`<div class="bar"><div class="bar-in">
+    ${CASTLE_MARK}<span class="castle-word">Castle</span><span class="bar-sep"></span><span class="bar-label">TRADE BOOK</span>
+    <div class="bar-actions"><button class="btn-out">${ICO.download}Export</button><button class="btn-solid" onclick="newTrade()">${ICO.plus}New trade</button></div>
+  </div></div>`
+}
+function renderList(){
+  const tab=S.listTab
+  const ids=S.order.filter(id=>{const ph=S.trades[id].phase;return tab==='settled'?ph==='settled':ph!=='settled'})
+  if(tab!=='settled')ids.sort((a,b)=>phIdx(S.trades[b].phase)-phIdx(S.trades[a].phase))
+  const activeCt=S.order.filter(id=>S.trades[id].phase!=='settled').length
+  const settledCt=S.order.filter(id=>S.trades[id].phase==='settled').length
+  const rows=ids.map(id=>{
+    const t=S.trades[id],ev=(t.event||'').trim()
+    const evShort=ev?(ev.length>76?ev.slice(0,76).replace(/\s+\S*$/,'')+'…':ev):'New intake — not yet structured'
+    return`<div class="tbl-row" onclick="openTrade('${id}')">
+      <div><div class="row-co">${esc(tradeName(t))}</div><div class="row-ref">${esc(t.ref)}</div></div>
+      <div class="row-ev col-ev">${esc(evShort)}</div>
+      <div class="row-cov">${esc(covLabel(t))}</div>
+      <div class="row-imp col-imp">${impliedOf(t)}</div>
+      <div>${badgeHtml(t.phase)}</div>
+      <div style="display:flex;justify-content:flex-end;color:#C4C4BB">${ICO.chevron}</div>
+    </div>`
+  }).join('')
+  return`<div class="list-wrap">
+    <div class="tabs"><div class="tab ${tab==='active'?'on':''}" onclick="setTab('active')">Active <span class="tab-ct">${activeCt}</span></div><div class="tab ${tab==='settled'?'on':''}" onclick="setTab('settled')">Settled <span class="tab-ct">${settledCt}</span></div></div>
+    <div style="margin-top:8px">
+      <div class="tbl-head"><div>TRADE</div><div class="col-ev">RISK EVENT</div><div style="text-align:right">COVERAGE</div><div style="text-align:right" class="col-imp">IMPLIED</div><div>STATUS</div><div></div></div>
+      ${rows||'<div class="empty" style="margin-top:18px">No trades in this tab.</div>'}
+    </div>
+  </div>`
+}
+
+// ─── RENDER: PHASE NAV ────────────────────────────────────────────────────────
+function renderPhaseNav(t,vp){
+  const cur=phIdx(t.phase)
+  return`<div class="phase-nav">${PHASES.map((p,i)=>{
+    const done=i<cur,isCur=i===cur,locked=i>cur,viewing=p===vp
+    const dotCls=done?'done':isCur?'cur':'locked',mark=done?'✓':String(i+1)
+    const titleColor=locked?'#B0B0A6':'#171717',subColor=locked?'#C4C4BB':(isCur?'#171717':'#A0A096'),clickable=!locked
+    return`<div class="ph-item${viewing?' viewing':''}${clickable?' clickable':''}" ${clickable?`onclick="setPhaseView('${p}')"`:''}><div class="ph-dot ${dotCls}">${mark}</div><div><div class="ph-label" style="color:${titleColor}">${PMETA[p].label}</div><div class="ph-sub" style="color:${subColor}">${PMETA[p].sub}</div></div></div>`
+  }).join('')}</div>`
+}
+
+// ─── RENDER: INTAKE ───────────────────────────────────────────────────────────
+function renderIntake(t,cur){
+  const id=t.id,isCurrent=cur===0,isPast=cur>0
+  return`<div class="panel">
+    <div class="p-label">RISK INTAKE</div>
+    <div>
+      <div style="display:grid;grid-template-columns:1fr 180px;gap:18px">
+        <div><label class="fld-lbl">COMPANY / COUNTERPARTY</label><input class="fld-in" value="${attr(t.company)}" placeholder="Customer name" oninput="fldChange('${id}','company',this)"></div>
+        <div><label class="fld-lbl">TOTAL COVERAGE</label><input class="fld-in" style="font-family:var(--mono);font-weight:600" value="${attr(t.coverage)}" placeholder="$25M" oninput="fldChange('${id}','coverage',this)"></div>
+      </div>
+      <div style="margin-top:16px"><label class="fld-lbl">TRADE</label><input class="fld-in" value="${attr(t.title)}" placeholder="Short descriptor, e.g. §48E Solar ITC Reinstatement" oninput="fldChange('${id}','title',this)"></div>
+      <div style="margin-top:16px"><label class="fld-lbl">COMPANY PROFILE</label><textarea class="fld-ta" rows="3" placeholder="Sector, business model, what drives revenue…" oninput="fldChange('${id}','profile',this)">${esc(t.profile)}</textarea></div>
+      <div style="margin-top:16px"><label class="fld-lbl">WHY THEY'RE CONCERNED</label><textarea class="fld-ta" rows="3" placeholder="The exposure and why it matters now…" oninput="fldChange('${id}','concern',this)">${esc(t.concern)}</textarea></div>
+      <div style="margin-top:16px"><label class="fld-lbl">THE RISK / EVENT</label><textarea class="fld-ta" rows="2" placeholder="The resolvable event, phrased as a question…" oninput="fldChange('${id}','event',this)">${esc(t.event)}</textarea></div>
+    </div>
+    ${isCurrent?`<button class="btn-primary" onclick="openHandoff('contract')" style="margin-top:24px">Generate contract ${ICO.arrow}</button>`:''}
+    ${isPast?`<button class="btn-ghost" onclick="setPhaseView('contract')" style="margin-top:22px">View generated contract ${ICO.arrow}</button>`:''}
+  </div>`
+}
+
+// ─── RENDER: CONTRACT ─────────────────────────────────────────────────────────
+function renderContractDoc(t){
+  const cov=covLabel(t)
+  const blocks=(t.contract||[]).map(b=>{
+    if(b.bullets)return`<ul class="doc-ul">${b.bullets.map(x=>`<li>${esc(x)}</li>`).join('')}</ul>`
+    return`<p class="doc-p">${b.opener?`<em>${esc(b.opener)}</em> `:''}${esc(b.text)}</p>`
+  }).join('')
+  const strikes=t.strikes?`<p class="doc-p" style="margin-top:16px"><em>Suggested strikes (25bp intervals):</em></p><div class="doc-strikes">${t.strikes.map(s=>`<div class="doc-strike">${esc(s)}</div>`).join('')}</div>`:''
+  return`<div class="gdoc">
+    <div class="gdoc-bar">${ICO.gdoc}<div class="gdoc-title">Castle parametric contract — ${esc(t.title)}</div><div style="margin-left:auto;font-family:var(--mono);font-size:10px;color:#8A8A80">${t.docUrl?'shared · comments on':'draft'}</div></div>
+    <div class="gdoc-body"><div class="gdoc-inner">
+      <div class="doc-kicker">CASTLE EXCHANGE · MARKET RESOLUTION SPEC</div>
+      <div class="doc-q">${esc(t.event||'—')}</div>
+      <div class="doc-meta">Working draft · ${esc(t.title)} · Contract size ${cov}</div>
+      ${blocks}${strikes}
+    </div></div>
+  </div>`
+}
+function renderContract(t,cur){
+  const id=t.id,isCurrent=cur===1,hasContract=(t.contract||[]).length>0
+  const suggestions=(t.suggestions||[]).map(s=>{
+    const isOpen=s.status==='open',isAcc=s.status==='accepted'
+    return`<div class="sugg-card" style="border:1px solid ${isAcc?'#E6E6E0':'#EDEDE7'};background:${isAcc?'#F7F7F4':'#FCFCFA'}"><div class="sugg-who"><div class="sugg-av">${initials(s.who)}</div><span class="sugg-name">${esc(s.who)}</span>${isAcc?`<span class="sugg-acc" style="margin-left:auto">${ICO.checkSm}Accepted</span>`:''}</div><div class="sugg-txt">${esc(s.text)}</div>${isOpen?`<div class="sugg-btns"><button class="s-accept" onclick="acceptSugg('${id}','${s.id}')">Accept</button><button class="s-dismiss" onclick="dismissSugg('${id}','${s.id}')">Dismiss</button></div>`:''}</div>`
+  }).join('')
+  const docSide=hasContract?renderContractDoc(t):`<div class="empty">Contract in drafting.<br>Use <b>Generate contract</b> on the Intake step to draft it and create the Google Doc.</div>`
+  return`<div class="panel"><div class="ct-grid">
+    <div>
+      <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:12px"><div class="p-label" style="margin:0">GENERATED CONTRACT</div></div>
+      ${docSide}
+      ${isCurrent&&hasContract?`<button class="btn-primary" onclick="openHandoff('exchange')" style="margin-top:24px">Send to exchange ${ICO.arrow}</button>`:''}
+    </div>
+    <div class="sugg-rail">
+      <div class="p-label">EDIT REQUESTS</div>
+      <div class="sugg-list">
+        <div style="display:flex;flex-direction:column;gap:11px">${suggestions||'<div style="font-size:12px;color:#9A9A90;line-height:1.5">No edit requests yet. Anyone with the shared link can request a change; they appear here.</div>'}</div>
+        ${t.docUrl?`<button class="sugg-add-btn" style="margin-top:14px" onclick="openHandoff('comments')">Pull edit requests from Doc →</button>`:''}
+        <div class="sugg-add"><textarea class="sugg-ta" rows="2" placeholder="Request a change to the contract…" oninput="draftChange(this)">${esc(S.suggestDraft)}</textarea><button class="sugg-add-btn" onclick="addSuggestion()">Add manually</button></div>
+        <div class="share-note">Reviewers comment on the shared Google Doc; pull those comments here for accept / dismiss.</div>
+      </div>
+    </div>
+  </div></div>`
+}
+
+// ─── RENDER: LISTING ANIMATION ────────────────────────────────────────────────
+function renderListing(){
+  const steps=[{label:'Emailing '+TEAM,done:true},{label:'Listing for price discovery',done:true},{label:'Opening order book',done:false}]
+  const stepsHtml=steps.map(s=>{
+    const dotStyle=s.done?'background:#171717;color:#fff':'border:2px solid #ECECE6;border-top-color:#171717;animation:spin .8s linear infinite'
+    return`<div class="ls-step" style="color:${s.done?'#383832':'#A0A096'}"><div class="ls-dot" style="${dotStyle}">${s.done?'✓':''}</div>${esc(s.label)}</div>`
+  }).join('')
+  return`<div class="panel"><div class="listing-card"><div class="spinner"></div><div class="listing-t">Sending to the exchange</div><div class="listing-s">Notifying ${TEAM} with the contract resolution and listing the market for price discovery.</div><div class="listing-steps">${stepsHtml}</div></div></div>`
+}
+
+// ─── RENDER: EXCHANGE ─────────────────────────────────────────────────────────
+function renderExchange(t,cur){
+  const isCurrent=cur===2,m=t.market||{}
+  const yes=m.yes!=null?m.yes:(t.prob!=null?t.prob:50)
+  const sp=(t.history&&t.history.length>1)?seriesSpark(t.history):spark(yes,(t.ref||'').length||7)
+  const metrics=[{lbl:'IMPLIED YES',val:m.yes!=null?m.yes+'%':'—',sub:t.marketAt||'last'},{lbl:'VOLUME',val:m.vol||'—',sub:'traded'},{lbl:'VENUE',val:t.marketVenue||'—',sub:'price discovery'}]
+  const metricsHtml=metrics.map(x=>`<div class="m-tile"><div class="m-lbl">${x.lbl}</div><div class="m-val">${esc(x.val)}</div><div class="m-sub">${esc(x.sub)}</div></div>`).join('')
+  const experts=(t.experts||[])
+  const probs=experts.map(e=>parseFloat((e.prob||'').replace(/[^0-9.]/g,''))).filter(x=>!isNaN(x))
+  const consensus=probs.length?Math.round(probs.reduce((a,b)=>a+b,0)/probs.length)+'%':'—'
+  const expertsHtml=experts.length?experts.map(e=>`<div class="exp-row"><div class="exp-av">${initials(e.name)}</div><div style="min-width:0;flex:1"><div style="display:flex;align-items:baseline;justify-content:space-between;gap:10px"><span class="exp-nm">${esc(e.name)}</span><span style="display:flex;align-items:center"><span class="exp-pr">${esc(e.prob||'—')}</span><span class="exp-del" onclick="delExpert('${e.id}')" title="Remove">×</span></span></div>${e.role?`<div class="exp-role">${esc(e.role)}</div>`:''}${e.take?`<div class="exp-take">${esc(e.take)}</div>`:''}</div></div>`).join(''):`<div style="font-size:12px;color:#9A9A90;line-height:1.5;padding:10px 0">No experts yet. Add names manually, or pull views from a Granola meeting.</div>`
+  return`<div class="panel">
+    <div class="metrics">${metricsHtml}</div>
+    <div class="chart-card">
+      <div class="chart-hd"><div class="chart-t">Implied probability — YES</div><div class="live-ind"><span class="live-dot"></span>${m.yes!=null?'LIVE':'NO DATA'}</div></div>
+      <svg viewBox="0 0 640 150" preserveAspectRatio="none" style="width:100%;height:150px;margin-top:16px;display:block"><line x1="0" y1="37.5" x2="640" y2="37.5" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="75" x2="640" y2="75" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="112.5" x2="640" y2="112.5" stroke="#F0F0EA" stroke-width="1"/><polyline points="${sp.area}" fill="rgba(24,24,24,0.06)" stroke="none"/><polyline points="${sp.line}" fill="none" stroke="#171717" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="m-sub" style="margin-top:8px">Illustrative path to the current implied level${m.yes!=null?'':' (awaiting live data)'}.</div>
+    </div>
+    <div class="ex-lower">
+      <div class="ex-card">
+        <div class="ex-card-t">${ICO.bolt}Live market</div>
+        <div class="rw-list"><div class="rw-row"><span class="rw-lbl">Venue</span><span class="rw-val">${esc(t.marketVenue||'—')}</span></div><div class="rw-row"><span class="rw-lbl">Market link</span><span class="rw-val">${t.marketUrl?`<a href="${attr(t.marketUrl)}" target="_blank" rel="noopener">Open ${ICO.link}</a>`:'—'}</span></div><div class="rw-row"><span class="rw-lbl">Liquidity incentives</span><span class="rw-val">${esc((m.liq&&m.liq.trim())||'—')}</span></div><div class="rw-row"><span class="rw-lbl">Last update</span><span class="rw-val">${esc(t.marketAt||'—')}</span></div></div>
+        <div class="mini-form"><label class="fld-lbl">CONTRACT LINK (KALSHI / POLYMARKET)</label><input class="mini-in" value="${attr(t.marketUrl)}" placeholder="Paste market URL…" oninput="fldChange('${t.id}','marketUrl',this)"><button class="mini-btn" onclick="openHandoff('market')" style="margin-top:2px">Pull live data →</button></div>
+      </div>
+      <div class="ex-card">
+        <div class="exp-hd"><div class="ex-card-t">${ICO.users}Expert network</div><div><div class="cons-lbl">CONSENSUS</div><div class="cons-val">${consensus}</div></div></div>
+        <div class="exp-list">${expertsHtml}</div>
+        <div class="mini-form"><div class="mini-row"><input id="exp-name" class="mini-in" placeholder="Name"><input id="exp-prob" class="mini-in" placeholder="View % (e.g. 30%)" style="max-width:140px"></div><input id="exp-role" class="mini-in" placeholder="Role / affiliation"><input id="exp-take" class="mini-in" placeholder="One-line take (optional)"><div class="mini-row"><button class="mini-btn" onclick="addExpert()">Add expert</button><button class="mini-btn" onclick="openHandoff('granola')">Pull from Granola →</button></div>${t.granolaUrl?`<div class="share-note">Granola: <a href="${attr(t.granolaUrl)}" target="_blank" rel="noopener">linked ${ICO.link}</a></div>`:''}</div>
+      </div>
+    </div>
+    ${isCurrent?`<button class="btn-primary" onclick="openHandoff('rfq')" style="margin-top:24px">Send to market makers ${ICO.arrow}</button>`:''}
+  </div>`
+}
+
+// ─── RENDER: QUOTING ──────────────────────────────────────────────────────────
+function renderQuoting(t,cur){
+  const isCurrent=cur===3,vm=quotesVM(t),cov=covLabel(t)
+  const sent=(t.emails||[]).some(e=>e.kind==='rfq')
+  const quotesHtml=vm.quotes.length?vm.quotes.map(q=>`<div class="qt-row"><div class="qt-nm">${esc(q.name)}</div><div class="qt-pr">${esc((q.price||'').replace(/[^0-9.]/g,''))}¢</div><div class="qt-sz">${esc(q.size||'—')}</div><div class="qt-del" onclick="delQuote('${q.id}')" title="Remove">×</div></div>`).join(''):`<div style="padding:22px 20px;font-size:12.5px;color:#9A9A90;line-height:1.5">No quotes yet. ${TEAM} (acting for the makers) replies to the RFQ; enter each synthetic quote below and it populates here.</div>`
+  const allocHtml=vm.alloc.map(a=>`<div class="al-row"><div class="al-nm">${esc(a.name)} <span class="al-lift">· lift offer</span></div><div class="al-pr">${esc(a.price)}</div><div class="al-sz">${esc(a.size)}</div><div class="al-prem">${esc(a.premium)}</div></div>`).join('')
+  return`<div class="panel">
+    <div class="rfq-hd"><div>${sent?`<span class="sent-pill">${ICO.checkSm} RFQ emailed to ${TEAM}</span>`:`<button class="btn-ghost" onclick="openHandoff('rfq')">${ICO.mail} Email RFQ to ${TEAM}</button>`}</div><div class="rfq-live"><span class="live-dot"></span>RFQ LIVE · ${vm.respIn} IN</div></div>
+    <div class="p-label" style="margin-top:24px">INBOUND QUOTES</div>
+    <div class="qt-tbl"><div class="qt-head"><div>MARKET MAKER</div><div style="text-align:right">OFFER</div><div style="text-align:right">SIZE</div><div></div></div>${quotesHtml}</div>
+    <div class="mini-form" style="border-top:none;margin-top:12px"><div class="mini-row"><input id="q-name" class="mini-in" placeholder="Market maker (e.g. SIG, Jump)"><input id="q-price" class="mini-in" placeholder="Offer ¢" style="max-width:110px"><input id="q-size" class="mini-in" placeholder="Size $M" style="max-width:120px"><button class="mini-btn" onclick="addQuote()">Add quote</button></div>${sent?`<button class="mini-btn" style="margin-top:2px;align-self:flex-start" onclick="openHandoff('quotes-in')">Pull quotes from RFQ replies →</button>`:''}</div>
+    ${vm.alloc.length?`<div class="p-label" style="margin-top:26px">SUGGESTED ALLOCATION · LOWEST COST TO CUSTOMER</div><div class="al-tbl">${allocHtml}<div class="al-tot"><div><div class="al-tot-lbl">Total premium to be paid</div><div class="al-tot-sub">Cheapest fill: weighted average ${vm.wavg} across ${cov} of protection${vm.shortfall?` · ${fmtM(vm.shortfall)} unfilled (need more quotes)`:''}</div></div><div class="al-tot-val">${vm.totalPremium}</div></div></div>`:''}
+    ${isCurrent?renderApprovalCta(t,vm):''}
+  </div>`
+}
+function renderApprovalCta(t,vm){
+  if(t.approval==='pending')return`<div class="settled-banner" style="margin-top:24px"><div class="settled-icon" style="background:#6B6B63">${ICO.mail}</div><div><div class="settled-t">Quote sent to customer — awaiting approval</div><div class="settled-s">${TEAM} (acting as the customer) replies APPROVE or DENY. Reflect their decision:</div></div></div>
+    <div class="modal-actions" style="margin-top:14px"><button class="btn-primary" onclick="markSettled()">${ICO.checkSm} Customer approved → Settle</button><button class="btn-ghost" onclick="markDenied()">Customer denied</button></div>`
+  if(t.approval==='denied')return`<div class="empty" style="margin-top:24px;text-align:left;border-color:#E6D6D0">Customer declined the quote. Revise the quotes / allocation, then re-send.</div>
+    <button class="btn-primary" onclick="openHandoff('customer')" style="margin-top:14px" ${vm.quotes.length?'':'disabled'}>Re-send quote to customer ${ICO.arrow}</button>`
+  return`<button class="btn-primary" onclick="openHandoff('customer')" style="margin-top:24px" ${vm.quotes.length?'':'disabled'}>Send quote to customer ${ICO.arrow}</button>`
+}
+
+// ─── RENDER: SETTLED ──────────────────────────────────────────────────────────
+function renderSettled(t){
+  const vm=quotesVM(t),cov=covLabel(t)
+  const stats=[{lbl:'PREMIUM PAID',val:vm.totalPremium,sub:'to makers'},{lbl:'WEIGHTED AVG',val:vm.wavg,sub:'fill price'},{lbl:'COVERAGE',val:cov,sub:'bound'},{lbl:'MAKERS',val:String(vm.alloc.length),sub:'allocated'}]
+  const statsHtml=stats.map(s=>`<div class="set-tile"><div class="m-lbl">${s.lbl}</div><div style="font-family:var(--mono);font-size:20px;font-weight:600;color:#171717;margin-top:8px;font-variant-numeric:tabular-nums">${esc(s.val)}</div><div class="m-sub">${s.sub}</div></div>`).join('')
+  const allocHtml=vm.alloc.map(a=>`<div class="al-row"><div class="al-nm">${esc(a.name)}</div><div class="al-pr">${esc(a.price)}</div><div class="al-sz">${esc(a.size)}</div><div class="al-prem">${esc(a.premium)}</div></div>`).join('')
+  return`<div class="panel">
+    <div class="settled-banner"><div class="settled-icon">${ICO.check}</div><div><div class="settled-t">Quote accepted — protection bound</div><div class="settled-s">${esc(tradeFull(t))} executed ${cov} of coverage. ${TEAM} confirmed settlement. Settles on event resolution.</div></div></div>
+    <div class="set-stats">${statsHtml}</div>
+    ${vm.alloc.length?`<div class="p-label" style="margin-top:26px">FINAL ALLOCATION</div><div class="al-tbl">${allocHtml}</div>`:''}
+  </div>`
+}
+
+// ─── RENDER: ACTIVITY ─────────────────────────────────────────────────────────
+function renderActivity(t){
+  const a=(t.activity||[])
+  if(!a.length)return''
+  const rows=a.slice().reverse().map(x=>`<div class="act-row"><span class="act-dot"></span><div class="act-txt">${esc(x.text)}</div><span class="act-at">${esc(x.at)}</span></div>`).join('')
+  return`<div class="act-wrap"><div class="p-label" style="margin:0">ACTIVITY</div><div class="act-list">${rows}</div></div>`
+}
+
+// ─── RENDER: DETAIL ───────────────────────────────────────────────────────────
+function renderDetail(){
+  const t=S.trades[S.activeId];if(!t)return''
+  const cur=phIdx(t.phase),vp=S.viewPhase||t.phase
+  let panel=''
+  if(S.listing)panel=renderListing()
+  else if(vp==='intake')panel=renderIntake(t,cur)
+  else if(vp==='contract')panel=renderContract(t,cur)
+  else if(vp==='exchange')panel=renderExchange(t,cur)
+  else if(vp==='quoting')panel=renderQuoting(t,cur)
+  else if(vp==='settled')panel=renderSettled(t)
+  return`<div class="det-wrap">
+    <button class="back-btn" onclick="backToList()">${ICO.back}Trade book</button>
+    <div class="det-hd"><div style="min-width:0"><div class="trade-name">${esc(tradeName(t))}</div><div class="det-meta"><span class="det-ref">${esc(t.ref)}</span>${badgeHtml(t.phase)}${t.status?`<span class="det-status">${esc(t.status)}</span>`:''}</div></div>
+      <div class="tiles"><div class="tile"><div class="tile-lbl">COVERAGE</div><div class="tile-val">${esc(covLabel(t))}</div></div><div class="tile"><div class="tile-lbl">IMPLIED</div><div class="tile-val">${impliedOf(t)}</div></div></div>
+    </div>
+    ${renderPhaseNav(t,vp)}
+    ${panel}
+    ${S.listing?'':renderActivity(t)}
+  </div>`
+}
+
+// ─── MAIN RENDER ──────────────────────────────────────────────────────────────
+function render(){
+  document.getElementById('app').innerHTML=renderTopBar()+(S.view==='list'?renderList():renderDetail())+renderHandoff()
+}
+render()
+</script>
