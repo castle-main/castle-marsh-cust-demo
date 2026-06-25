@@ -1,17 +1,17 @@
 <title>Trade Book — Castle</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&family=Geist:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{overflow-y:scroll}
-body{font-family:system-ui,-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;font-size:14px;color:#171717;background:#fff;-webkit-font-smoothing:antialiased}
+body{font-family:'Geist',sans-serif;font-size:14px;color:#171717;background:#fff;-webkit-font-smoothing:antialiased}
 :root{
   --ink:#171717;--ink-2:#383832;--ink-3:#55554E;--ink-4:#6B6B63;--ink-5:#9A9A90;--ink-6:#A0A096;
   --border:rgba(24,24,24,0.09);--border-m:rgba(24,24,24,0.11);--border-s:rgba(24,24,24,0.06);
   --bg1:#FAFAF8;--bg2:#F5F5F2;--bg3:#F0F0EC;
-  --mono:ui-monospace,'SF Mono','Cascadia Mono',Consolas,monospace;
-  --serif:Georgia,'Cambria','Times New Roman',serif;
+  --mono:'Geist',sans-serif;
+  --serif:'Hedvig Letters Serif',serif;
 }
 @keyframes spin{to{transform:rotate(360deg)}}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
@@ -269,10 +269,10 @@ button{font-family:inherit;cursor:pointer;border:none}
   --ink:#16201A; --ink-2:#3A443D; --ink-3:#5B655E; --ink-4:#5B655E; --ink-5:#8A938C; --ink-6:#A0A89F;
   --border:#ECECE6; --border-m:#E4E4DD; --border-s:#F1F1EC;
   --bg1:#FAFAF9; --bg2:#F2F2EC; --bg3:#FCFCFB;
-  --mono:'Geist Mono',ui-monospace,'SF Mono',Menlo,monospace;
-  --serif:'Hedvig Letters Serif',Georgia,'Times New Roman',serif;
+  --mono:'Geist',sans-serif;
+  --serif:'Hedvig Letters Serif',serif;
 }
-body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;color:#1A1D1B;background:#FAFAF9}
+body{font-family:'Geist',sans-serif;color:#1A1D1B;background:#FAFAF9;font-variant-numeric:tabular-nums}
 ::selection{background:rgba(20,81,47,.14)}
 ::-webkit-scrollbar-thumb{background:#DEDED6;border-radius:0;border:3px solid #FAFAF9}
 /* Castle is a hard-edge system — zero radius on every surface (small status dots stay round) */
@@ -280,7 +280,7 @@ body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .fld-in,.fld-ta,.gdoc,.gdoc-inner,.sugg-list,.sugg-card,.s-accept,.s-dismiss,.sugg-ta,.sugg-add-btn,
 .listing-card,.metrics,.chart-card,.ex-card,.qt-tbl,.al-tbl,.set-stats,.settled-banner,.settled-icon,
 .modal,.modal-x,.ho-block,.ho-copy,.mini-in,.mini-btn,.empty,.doc-strikes,.exp-av,.sugg-av{border-radius:0 !important}
-.serif,.castle-word,.trade-name,.listing-t,.doc-q,.modal-t{font-family:'Hedvig Letters Serif',Georgia,serif;letter-spacing:-.012em;color:#16201A}
+.serif,.castle-word,.trade-name,.listing-t,.doc-q,.modal-t{font-family:'Hedvig Letters Serif',serif;letter-spacing:-.012em;color:#16201A}
 .castle-word{letter-spacing:-.01em}
 /* forest-green primary actions + accents (matches the company CTA / lead-risk dot) */
 .btn-solid,.btn-primary,.s-accept{background:#16573A !important;color:#fff !important}
@@ -288,6 +288,14 @@ body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 .live-dot,.act-dot{background:#16573A !important}
 .tab.on{color:#16201A !important;border-bottom-color:#16201A !important}
 .gdoc-link,.modal-link{color:#16573A}
+/* price chart — axes */
+.chart-body{display:flex;gap:10px;margin-top:14px}
+.y-ax{position:relative;width:38px;flex:none;height:150px}
+.y-ax span{position:absolute;right:0;transform:translateY(-50%);font-size:10px;color:#8A938C;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.plot-col{flex:1;min-width:0}
+.x-ax{display:flex;justify-content:space-between;margin-top:8px;font-size:10px;color:#8A938C;font-variant-numeric:tabular-nums;letter-spacing:.02em}
+/* TRADE picker — native select styled as a hard-edge field */
+select.fld-in{appearance:none;-webkit-appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%235B655E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 12px center;background-size:14px;padding-right:36px;cursor:pointer}
 </style>
 
 <div id="app"></div>
@@ -302,7 +310,7 @@ body{font-family:'Geist',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
 // ════════════════════════════════════════════════════════════════════════════
 
 const TEAM='team@castle.tech'
-const STORE_KEY='castle_tradebook_v7'
+const STORE_KEY='castle_tradebook_v8'
 
 // ─── SEED DATA (from castle_wire.md, captured 2026-06-24) ─────────────────────
 function seed(){return {seq:0,
@@ -429,16 +437,15 @@ function seed(){return {seq:0,
       history:[65,60,60,60,60,60,60,60,60,60,60,60,60,61,61,61,61,61,63,66,59,60,60,60,60,60,59,50,52,52,52,52,52,52,52,50,48,52,45,48,45,45,47,47,46,46,46,70,73,65,62,60,43,51,49,46,46,46,51,47,47,47,44,45,46,46,45,44,44,42,41,42,44,41,46,41,40,40,36,35,30,30,26,27],
       experts:[],granolaUrl:'',
       quotes:[
-        {id:'q1',name:'SIG',price:'21',size:'0.6'},
-        {id:'q2',name:'Jump Trading',price:'22',size:'0.6'}
+        {id:'q1',name:'SIG',price:'21',size:'1'}
       ],
       suggestions:[],emails:[{kind:'rfq'}],
       activity:[
         {text:'Contract drafted and shared for resolution review',at:'Jun 18'},
         {text:'Listed on Kalshi for price discovery',at:'Jun 20'},
         {text:'RFQ emailed to market makers',at:'Jun 23'},
-        {text:'Quotes received from SIG and Jump Trading',at:'Jun 24'},
-        {text:'Customer approved — protection bound at 21.4¢ weighted average',at:'Jun 24'}
+        {text:'Quote received from SIG',at:'Jun 24'},
+        {text:'Customer approved — protection bound at 21¢',at:'Jun 24'}
       ],
       settled:true},
   }}}
@@ -462,7 +469,7 @@ const BADGE={intake:{label:'Intake',bg:'#F4F4F1',fg:'#8A8A80'},contract:{label:'
 function phIdx(p){return PHASES.indexOf(p)}
 function covM(t){return parseFloat((t.coverage||'').replace(/[^0-9.]/g,''))||0}
 function covLabel(t){const c=(t.coverage||'').trim();return c&&c!=='$TBD'?c:'TBD'}
-function fmtM(x){const r=Math.round(x*10)/10;return '$'+(Number.isInteger(r)?r:r.toFixed(1))+'M'}
+function fmtM(x){if(x>0&&x<0.9995)return '$'+Math.round(x*1000)+'K';const r=Math.round(x*10)/10;return '$'+(Number.isInteger(r)?r:r.toFixed(1))+'M'}
 function initials(n){const w=(n||'').trim().split(/\s+/);if(!w[0])return'—';return((w[0][0]||'')+(w[1]?w[1][0]:(w[0][1]||''))).toUpperCase()}
 function esc(s){return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;')}
 function attr(s){return esc(s).replace(/'/g,'&#39;')}
@@ -470,6 +477,15 @@ function badgeHtml(phase){const b=BADGE[phase];return`<span class="badge" style=
 function impliedOf(t){return (t.market&&t.market.yes!=null)?t.market.yes+'%':(t.prob!=null?t.prob+'%':'—')}
 function tradeName(t){return (t.company||'').trim()||(t.title||'').trim()||'Untitled trade'}
 function tradeFull(t){const c=(t.company||'').trim(),ti=(t.title||'').trim();if(c&&ti)return c+' — '+ti;return ti||c||'Untitled trade'}
+// Available contracts the desk can write — drives the TRADE picker on intake.
+const CONTRACT_CATALOG=['SEC Quarterly Reporting Requirement','SEC §204A Alt-Data MNPI Liability','CPPA Data-Broker Enforcement','Reddit v. SerpApi — Web-Scraping Ruling','Amazon robots.txt Bot-Blocking','§48E Solar ITC Reinstatement','§179D Deduction Reinstatement','Visa Interchange Rates','Prediction-Market Tax Treatment','Section 232 Copper Tariffs','IIJA Reauthorization','IRA Tax-Credit Phaseout','Data-Center Permitting Moratorium','Nuevo León Unemployment Ladder']
+function tradeOptions(cur){
+  cur=(cur||'').trim()
+  const list=CONTRACT_CATALOG.slice()
+  if(cur&&!list.includes(cur))list.unshift(cur)
+  const opts=list.map(c=>`<option value="${attr(c)}"${c===cur?' selected':''}>${esc(c)}</option>`).join('')
+  return (cur?'':`<option value="" selected disabled>Select a contract…</option>`)+opts
+}
 
 // Parse pasted contract prose into renderable blocks: blank-line-separated paragraphs,
 // bullet lines (starting - • *) collapse into a bullet block, a short "Lead-in:" becomes an opener.
@@ -513,6 +529,20 @@ function seriesSpark(vals){
   })
   const line=pts.map(p=>p[0]+','+p[1]).join(' ')
   return{line,area:'0,'+H+' '+line+' '+W+','+H}
+}
+// X-axis date ticks for the price chart — assumes daily points ending at the trade's last-update date.
+function chartDates(t){
+  const n=(t.history&&t.history.length)||30
+  let end=new Date()
+  const mm=String(t.marketAt||'').match(/(\d{4})-(\d{2})-(\d{2})/)
+  if(mm)end=new Date(+mm[1],+mm[2]-1,+mm[3])
+  const ticks=4,out=[]
+  for(let i=0;i<ticks;i++){
+    const daysAgo=Math.round((n-1)*(1-i/(ticks-1)))
+    const d=new Date(end.getTime());d.setDate(d.getDate()-daysAgo)
+    out.push(d.toLocaleDateString('en-US',{month:'short',day:'numeric'}))
+  }
+  return out
 }
 
 // ─── ICONS / MARK ─────────────────────────────────────────────────────────────
@@ -841,7 +871,7 @@ function renderIntake(t,cur){
         <div><label class="fld-lbl">COMPANY / COUNTERPARTY</label><input class="fld-in" value="${attr(t.company)}" placeholder="Customer name" oninput="fldChange('${id}','company',this)"></div>
         <div><label class="fld-lbl">TOTAL COVERAGE</label><input class="fld-in" style="font-family:var(--mono);font-weight:600" value="${attr(t.coverage)}" placeholder="$25M" oninput="fldChange('${id}','coverage',this)"></div>
       </div>
-      <div style="margin-top:16px"><label class="fld-lbl">TRADE</label><input class="fld-in" value="${attr(t.title)}" placeholder="Short descriptor, e.g. §48E Solar ITC Reinstatement" oninput="fldChange('${id}','title',this)"></div>
+      <div style="margin-top:16px"><label class="fld-lbl">TRADE</label><select class="fld-in" onchange="fldChange('${id}','title',this)">${tradeOptions(t.title)}</select></div>
       <div style="margin-top:16px"><label class="fld-lbl">COMPANY PROFILE</label><textarea class="fld-ta" rows="3" placeholder="Sector, business model, what drives revenue…" oninput="fldChange('${id}','profile',this)">${esc(t.profile)}</textarea></div>
       <div style="margin-top:16px"><label class="fld-lbl">WHY THEY'RE CONCERNED</label><textarea class="fld-ta" rows="3" placeholder="The exposure and why it matters now…" oninput="fldChange('${id}','concern',this)">${esc(t.concern)}</textarea></div>
       <div style="margin-top:16px"><label class="fld-lbl">THE RISK / EVENT</label><textarea class="fld-ta" rows="2" placeholder="The resolvable event, phrased as a question…" oninput="fldChange('${id}','event',this)">${esc(t.event)}</textarea></div>
@@ -909,6 +939,7 @@ function renderExchange(t,cur){
   const isCurrent=cur===2,m=t.market||{}
   const yes=m.yes!=null?m.yes:(t.prob!=null?t.prob:50)
   const sp=(t.history&&t.history.length>1)?seriesSpark(t.history):spark(yes,(t.ref||'').length||7)
+  const xd=chartDates(t)
   const metrics=[{lbl:'IMPLIED YES',val:m.yes!=null?m.yes+'%':'—',sub:t.marketAt||'last'},{lbl:'VOLUME',val:m.vol||'—',sub:'traded'},{lbl:'VENUE',val:t.marketVenue||'—',sub:'price discovery'}]
   const metricsHtml=metrics.map(x=>`<div class="m-tile"><div class="m-lbl">${x.lbl}</div><div class="m-val">${esc(x.val)}</div><div class="m-sub">${esc(x.sub)}</div></div>`).join('')
   const experts=(t.experts||[])
@@ -919,7 +950,13 @@ function renderExchange(t,cur){
     <div class="metrics">${metricsHtml}</div>
     <div class="chart-card">
       <div class="chart-hd"><div class="chart-t">Implied probability — YES</div><div class="live-ind"><span class="live-dot"></span>${m.yes!=null?'LIVE':'NO DATA'}</div></div>
-      <svg viewBox="0 0 640 150" preserveAspectRatio="none" style="width:100%;height:150px;margin-top:16px;display:block"><line x1="0" y1="37.5" x2="640" y2="37.5" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="75" x2="640" y2="75" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="112.5" x2="640" y2="112.5" stroke="#F0F0EA" stroke-width="1"/><polyline points="${sp.area}" fill="rgba(24,24,24,0.06)" stroke="none"/><polyline points="${sp.line}" fill="none" stroke="#171717" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+      <div class="chart-body">
+        <div class="y-ax"><span style="top:8px">100%</span><span style="top:41.5px">75%</span><span style="top:75px">50%</span><span style="top:108.5px">25%</span><span style="top:142px">0%</span></div>
+        <div class="plot-col">
+          <svg viewBox="0 0 640 150" preserveAspectRatio="none" style="width:100%;height:150px;display:block"><line x1="0" y1="41.5" x2="640" y2="41.5" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="75" x2="640" y2="75" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="108.5" x2="640" y2="108.5" stroke="#F0F0EA" stroke-width="1"/><line x1="0" y1="142" x2="640" y2="142" stroke="#E2E2DA" stroke-width="1"/><polyline points="${sp.area}" fill="rgba(24,24,24,0.06)" stroke="none"/><polyline points="${sp.line}" fill="none" stroke="#171717" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></svg>
+          <div class="x-ax">${xd.map(d=>`<span>${esc(d)}</span>`).join('')}</div>
+        </div>
+      </div>
       <div class="m-sub" style="margin-top:8px">Illustrative path to the current implied level${m.yes!=null?'':' (awaiting live data)'}.</div>
     </div>
     <div class="ex-lower">
@@ -1000,7 +1037,6 @@ function renderDetail(){
     </div>
     ${renderPhaseNav(t,vp)}
     ${panel}
-    ${S.listing?'':renderActivity(t)}
   </div>`
 }
 

@@ -28,9 +28,11 @@
   --radius-sm: 0;
   --radius-pill: 0;
 
-  --font-body: "Geist", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-serif: "Hedvig Letters Serif", Georgia, "Times New Roman", serif;
-  --font-mono: "Geist Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  /* Two-typeface system: Hedvig Letters Serif (display) + Geist (everything else). */
+  /* --font-mono kept as a name for labels/figures but resolves to Geist — no third font. */
+  --font-body: "Geist", sans-serif;
+  --font-serif: "Hedvig Letters Serif", serif;
+  --font-mono: "Geist", sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -96,3 +98,41 @@ button { font-family: inherit; }
 
 .source-link { transition: color 0.15s ease; }
 .source-link:hover { color: var(--forest); }
+
+/* ── Research Index directory ───────────────────────────────────── */
+.ri-kicker { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.16em; color: var(--muted); margin: 0 0 12px; }
+.ri-head { display: flex; align-items: flex-end; justify-content: space-between; padding-bottom: 22px; border-bottom: 2px solid var(--ink-head); }
+.ri-title { font-family: var(--font-serif); font-weight: 400; font-size: 46px; line-height: 0.95; letter-spacing: -0.012em; color: var(--ink-head); margin: 0; }
+.ri-search { position: relative; width: 460px; max-width: 48%; }
+.ri-search input { width: 100%; font-family: var(--font-body); font-size: 14px; letter-spacing: -0.005em; color: var(--ink); background: var(--surface); border: 1px solid var(--hair); border-bottom: 1px solid var(--faint-2); padding: 12px 14px 12px 40px; outline: none; }
+.ri-search input::placeholder { color: var(--faint); }
+.ri-search input:focus { border-color: var(--forest); }
+.ri-mag { position: absolute; left: 15px; top: 50%; transform: translateY(-50%); width: 15px; height: 15px; pointer-events: none; display: block; }
+.ri-meta { display: flex; align-items: center; justify-content: space-between; padding: 13px 0 0; }
+.ri-legend { display: flex; align-items: center; gap: 22px; }
+.ri-leg { display: inline-flex; align-items: center; gap: 7px; font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--text-2); }
+.ri-tick { width: 14px; height: 3px; display: inline-block; }
+.ri-colhead { display: flex; font-family: var(--font-mono); font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--faint); }
+.ri-colhead span { text-align: right; display: inline-block; }
+.ri-c-risk { width: 72px; } .ri-c-mkt { width: 78px; } .ri-c-upd { width: 96px; }
+.ri-list { margin-top: 6px; border-top: 1px solid var(--hair); }
+.ri-row { position: relative; display: grid; grid-template-columns: 1fr 248px; column-gap: 36px; align-items: center; padding: 21px 0 21px 26px; border-bottom: 1px solid var(--hair); transition: background 0.15s ease; }
+.ri-row:hover { background: linear-gradient(90deg, rgba(22, 87, 58, 0.04), rgba(22, 87, 58, 0) 60%); }
+.ri-row::before { content: ""; position: absolute; left: 0; top: 18px; bottom: 18px; width: 3px; background: var(--cat, #ccc); }
+.ri-eyebrow { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+.ri-ind { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.15em; color: var(--muted); }
+.ri-chip { display: inline-flex; align-items: center; gap: 5px; font-family: var(--font-mono); font-size: 9px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.13em; padding: 3px 7px 3px 6px; border: 1px solid var(--cat); color: var(--cat); background: var(--cat-tint); line-height: 1; }
+.ri-chip .ri-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--cat); }
+.ri-name { font-family: var(--font-serif); font-weight: 400; font-size: 26px; line-height: 1.05; letter-spacing: -0.013em; color: var(--ink-head); margin: 0 0 7px; }
+.ri-row:hover .ri-name { color: #0E3B27; }
+.ri-thesis { font-family: var(--font-body); font-size: 13.5px; line-height: 1.5; letter-spacing: -0.004em; color: var(--text-2); max-width: 640px; margin: 0; }
+.ri-figs { display: flex; align-items: center; justify-content: flex-end; }
+.ri-fig { text-align: right; }
+.ri-fig.r { width: 72px; } .ri-fig.m { width: 78px; } .ri-fig.u { width: 96px; }
+.ri-n { display: block; font-family: var(--font-body); font-size: 18px; font-weight: 600; letter-spacing: -0.01em; color: var(--ink-head); line-height: 1; }
+.ri-n.lead { color: var(--cat, var(--ink-head)); }
+.ri-d { display: block; font-family: var(--font-body); font-size: 13px; font-weight: 500; letter-spacing: -0.005em; color: var(--text-2); line-height: 1; }
+.ri-k { display: block; margin-top: 6px; font-family: var(--font-mono); font-size: 8.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: var(--faint); }
+.ri-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; }
+.ri-foot-l { font-family: var(--font-body); font-size: 11px; color: var(--muted); }
+.ri-foot-r { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--faint); }
