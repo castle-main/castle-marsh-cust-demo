@@ -110,8 +110,10 @@ function marketsOf(linked: RawContract[]): MarketLink[] {
 function driversOf(linked: RawContract[], fallback: string): string[] {
   const seen = new Set<string>();
   const out: string[] = [];
+  let noteUsed = false; // the first rationale is shown as the exposure note — don't repeat it as a driver
   for (const c of sortLinked(linked)) {
     if (!c.rationale || isBookkeeping(c.rationale)) continue; // skip internal hedge-book notes
+    if (!noteUsed) { noteUsed = true; continue; } // this one is the note; drivers are the rest
     const phrase = scrubIds(firstSentence(c.rationale, 240)); // full sentence, not a mid-clause cutoff
     const key = phrase.toLowerCase().slice(0, 40);
     if (phrase.length > 8 && !seen.has(key)) {
@@ -120,7 +122,7 @@ function driversOf(linked: RawContract[], fallback: string): string[] {
     }
     if (out.length >= 4) break;
   }
-  if (out.length === 0 && fallback) out.push(firstSentence(fallback, 120));
+  if (out.length === 0 && fallback) out.push(scrubIds(firstSentence(fallback, 200)));
   return out;
 }
 
@@ -195,6 +197,8 @@ function buildExposures(
     const linked = byEvent[e.event_key];
     const modeledRaw = (programTotal * weightOf(e)) / totalAlloc;
     const primary = primaryOf(linked);
+    const note = noteOf(linked, e.description);
+    const nkey = note.toLowerCase().slice(0, 40);
     return {
       id: e.event_key,
       name: nameByEvent?.[e.event_key] || cleanText(e.title),
@@ -209,8 +213,8 @@ function buildExposures(
       summary: cleanText(e.description),
       whereItHits: whereItHitsOf(linked, industry, e.category),
       window: cleanText(e.timeframe),
-      note: noteOf(linked, e.description),
-      drivers: driversOf(linked, e.description),
+      note,
+      drivers: driversOf(linked, e.description).filter((d) => d.toLowerCase().slice(0, 40) !== nkey),
       markets: marketsOf(linked),
       sources: sourcesOf(e, primary),
     } as ExposureVM;

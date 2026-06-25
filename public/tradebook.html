@@ -421,16 +421,16 @@ function seed(){return {seq:0,
       docUrl:'',contract:[],marketUrl:'',marketVenue:'',market:null,marketAt:'',
       experts:[],granolaUrl:'',quotes:[],suggestions:[],emails:[],activity:[],settled:false},
 
-    t10:{id:'t10',ref:'TRD-2026-0490',title:'SEC Quarterly Reporting Requirement',company:'Killington Technologies',coverage:'$1M',prob:26,phase:'settled',approval:'approved',
+    t10:{id:'t10',ref:'TRD-2026-0490',title:'SEC Quarterly Reporting Requirement',company:'Killington Technologies',coverage:'$1M',prob:26,phase:'settled',approval:'approved',resolution:'Jan 1, 2027',
       status:'Settled · Bound',
       profile:'Alternative-data provider delivering near-real-time retail sales, inventory, and margin intelligence to the investment community; demand scales with how thin official public-company disclosure becomes.',
-      concern:'A move to make quarterly (10-Q) reporting optional would widen the information gap Killington fills — a direct demand catalyst. Killington took YES exposure to monetize the swing if the SEC acts before the 2027 deadline.',
-      event:'Will the SEC announce a final rule making quarterly reporting optional for public companies before April 1, 2027?',
+      concern:'A move to make quarterly (10-Q) reporting optional would widen the information gap Killington fills — a direct demand catalyst. Killington took YES exposure to monetize the swing if the SEC acts before the Jan 1, 2027 deadline.',
+      event:'Will the SEC announce a final rule making quarterly reporting optional for public companies before January 1, 2027?',
       docUrl:'https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar',
       contract:[
-        {opener:'Resolution rules:',text:`this market resolves to Yes if, on or before 11:59pm ET on April 1, 2027, the U.S. Securities and Exchange Commission announces the publication of a final rule (with any effective date) making quarterly reporting optional for public companies.`},
+        {opener:'Resolution rules:',text:`this market resolves to Yes if, on or before 11:59pm ET on January 1, 2027, the U.S. Securities and Exchange Commission announces the publication of a final rule (with any effective date) making quarterly reporting optional for public companies.`},
         {text:`A "final rule" means a rule published in the Federal Register that amends the periodic-reporting requirements of the Securities Exchange Act of 1934 (including Form 10-Q under Rules 13a-13 and 15d-13) so that quarterly reports are no longer mandatory for some or all reporting companies. A proposed rule, concept release, request for comment, executive statement, or staff guidance does not qualify.`},
-        {text:`Outcome is verified using the Federal Register at federalregister.gov and the SEC rulemaking index at sec.gov, with supporting confirmation from The Wall Street Journal, Bloomberg News, Reuters, and the Associated Press. If no qualifying final rule is published on or before 11:59pm ET on April 1, 2027, the market resolves to No.`}
+        {text:`Outcome is verified using the Federal Register at federalregister.gov and the SEC rulemaking index at sec.gov, with supporting confirmation from The Wall Street Journal, Bloomberg News, Reuters, and the Associated Press. If no qualifying final rule is published on or before 11:59pm ET on January 1, 2027, the market resolves to No.`}
       ],
       marketUrl:'https://kalshi.com/markets/kxsecquarterly/will-the-sec-eliminate-the-quarterly-reporting-requirement/kxsecquarterly-26mar?op_market_ticker=KXSECQUARTERLY-26MAR-27APR01',
       marketVenue:'Kalshi',market:{yes:26,no:74,vol:'$8,140'},marketAt:'wire 2026-06-24',
@@ -977,9 +977,9 @@ function renderExchange(t,cur){
 
 // ─── RENDER: QUOTING ──────────────────────────────────────────────────────────
 function renderQuoting(t,cur){
-  const isCurrent=cur===3,vm=quotesVM(t),cov=covLabel(t)
+  const isCurrent=cur===3,vm=quotesVM(t),cov=covLabel(t),covNum=covM(t)
   const sent=(t.emails||[]).some(e=>e.kind==='rfq')
-  const quotesHtml=vm.quotes.length?vm.quotes.map(q=>`<div class="qt-row"><div class="qt-nm">${esc(q.name)}</div><div class="qt-pr">${esc((q.price||'').replace(/[^0-9.]/g,''))}¢</div><div class="qt-sz">${esc(q.size||'—')}</div><div class="qt-del" onclick="delQuote('${q.id}')" title="Remove">×</div></div>`).join(''):`<div style="padding:22px 20px;font-size:12.5px;color:#9A9A90;line-height:1.5">No quotes yet. ${TEAM} (acting for the makers) replies to the RFQ; enter each synthetic quote below and it populates here.</div>`
+  const quotesHtml=vm.quotes.length?vm.quotes.map(q=>`<div class="qt-row"><div class="qt-nm">${esc(q.name)}</div><div class="qt-pr">${esc((q.price||'').replace(/[^0-9.]/g,''))}¢</div><div class="qt-sz">${q._sz!=null&&covNum?Math.round(q._sz/covNum*100)+'%':esc(q.size||'—')}</div><div class="qt-del" onclick="delQuote('${q.id}')" title="Remove">×</div></div>`).join(''):`<div style="padding:22px 20px;font-size:12.5px;color:#9A9A90;line-height:1.5">No quotes yet. ${TEAM} (acting for the makers) replies to the RFQ; enter each synthetic quote below and it populates here.</div>`
   const allocHtml=vm.alloc.map(a=>`<div class="al-row"><div class="al-nm">${esc(a.name)} <span class="al-lift">· lift offer</span></div><div class="al-pr">${esc(a.price)}</div><div class="al-sz">${esc(a.size)}</div><div class="al-prem">${esc(a.premium)}</div></div>`).join('')
   return`<div class="panel">
     <div class="rfq-hd"><div>${sent?`<span class="sent-pill">${ICO.checkSm} RFQ emailed to ${TEAM}</span>`:`<button class="btn-ghost" onclick="openHandoff('rfq')">${ICO.mail} Email RFQ to ${TEAM}</button>`}</div><div class="rfq-live"><span class="live-dot"></span>RFQ LIVE · ${vm.respIn} IN</div></div>
@@ -1005,7 +1005,7 @@ function renderSettled(t){
   const statsHtml=stats.map(s=>`<div class="set-tile"><div class="m-lbl">${s.lbl}</div><div style="font-family:var(--mono);font-size:20px;font-weight:600;color:#171717;margin-top:8px;font-variant-numeric:tabular-nums">${esc(s.val)}</div><div class="m-sub">${s.sub}</div></div>`).join('')
   const allocHtml=vm.alloc.map(a=>`<div class="al-row"><div class="al-nm">${esc(a.name)}</div><div class="al-pr">${esc(a.price)}</div><div class="al-sz">${esc(a.size)}</div><div class="al-prem">${esc(a.premium)}</div></div>`).join('')
   return`<div class="panel">
-    <div class="settled-banner"><div class="settled-icon">${ICO.check}</div><div><div class="settled-t">Quote accepted — protection bound</div><div class="settled-s">${esc(tradeFull(t))} executed ${cov} of coverage. ${TEAM} confirmed settlement. Settles on event resolution.</div></div></div>
+    <div class="settled-banner"><div class="settled-icon">${ICO.check}</div><div><div class="settled-t">Quote accepted — protection bound</div><div class="settled-s">${esc(tradeFull(t))} executed ${cov} of coverage. ${TEAM} confirmed settlement. Settles on event resolution${t.resolution?` · ${esc(t.resolution)}`:''}.</div></div></div>
     <div class="set-stats">${statsHtml}</div>
     ${vm.alloc.length?`<div class="p-label" style="margin-top:26px">FINAL ALLOCATION</div><div class="al-tbl">${allocHtml}</div>`:''}
   </div>`
