@@ -349,7 +349,7 @@ function Exposures({ co, onSelect }: { co: CompanyVM; onSelect: (id: string) => 
                     lineHeight: 1.55,
                     marginTop: 7,
                     display: "-webkit-box",
-                    WebkitLineClamp: 2,
+                    WebkitLineClamp: 1,
                     WebkitBoxOrient: "vertical",
                     overflow: "hidden",
                   }}
