@@ -136,3 +136,10 @@ button { font-family: inherit; }
 .ri-foot { display: flex; align-items: center; justify-content: space-between; padding-top: 16px; }
 .ri-foot-l { font-family: var(--font-body); font-size: 11px; color: var(--muted); }
 .ri-foot-r { font-family: var(--font-mono); font-size: 9.5px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.14em; color: var(--faint); }
+
+/* ── Reading Room (master–detail directory) ─────────────────────── */
+.rr-row { width: 100%; display: flex; align-items: center; gap: 14px; padding: 13px 18px 13px 16px; background: none; border: none; border-bottom: 1px solid var(--hair-3); cursor: pointer; text-align: left; transition: background 0.12s ease; }
+.rr-row:hover { background: var(--hair-3); }
+.rr-row.on { background: var(--fill); }
+.rr-search input:focus { border-color: var(--forest); }
+.rr-search input::placeholder { color: var(--faint); }

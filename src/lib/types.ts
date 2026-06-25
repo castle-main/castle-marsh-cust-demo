@@ -114,6 +114,7 @@ export interface CardVM {
   mono: string;
   monoBg: string;
   monoFg: string;
+  watch: { label: string; tag: string }[];
 }
 
 export interface ProfileRow {

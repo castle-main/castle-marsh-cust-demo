@@ -193,4 +193,5 @@ export const lineaCard: CardVM = {
   mono: "LE",
   monoBg: "#EDF1ED",
   monoFg: "#395938",
+  watch: lineaView.exposures.slice(0, 3).map((e) => ({ label: e.name, tag: e.type })),
 };
