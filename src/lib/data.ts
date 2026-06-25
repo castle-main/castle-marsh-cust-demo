@@ -32,12 +32,12 @@ const entries = [
 
 type Row = { ts: number; card: CardVM; view: CompanyVM };
 const rows: Row[] = entries.map((e) => {
-  // Killington is the featured prospect — pinned to the very top; the rest get a recent cadence.
-  const ts = e.company.name === "Killington Technologies" ? ANCHOR : reviewTs(e.company.name);
+  // Anon is the featured prospect — pinned to the very top; the rest get a recent cadence.
+  const ts = e.company.name === "Anon Technologies" ? ANCHOR : reviewTs(e.company.name);
   const card = transformCard(e);
   return { ts, card: { ...card, updated: fmtDate(ts) }, view: transformCompany(e) };
 });
-const lineaTs = reviewTs(lineaView.name, true); // ANCHOR - 1 day → just below Killington
+const lineaTs = reviewTs(lineaView.name, true); // ANCHOR - 1 day → just below Anon
 rows.push({ ts: lineaTs, card: { ...lineaCard, updated: fmtDate(lineaTs) }, view: lineaView });
 rows.sort((a, b) => b.ts - a.ts);
 

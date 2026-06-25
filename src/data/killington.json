@@ -1,10 +1,10 @@
 {
  "company": {
   "id": "b870f402-d89f-42c4-b00e-684afa7b821f",
-  "name": "Killington Technologies",
-  "website": "https://www.killingtontechnologies.com/",
+  "name": "Anon Technologies",
+  "website": "https://www.anontechnologies.com/",
   "industry": "Financial Services",
-  "description": "Killington Technologies is a San Francisco-based, early-stage (seed-funded) alternative data and market intelligence company founded in 2021. The company aggregates and analyzes millions of public data points in near real-time to deliver granular sales, inventory, and margin intelligence across hundreds of retailers, primarily serving institutional investors such as hedge funds and financial analysts seeking an informational edge ahead of earnings. The company is a very small outfit (1–10 employees) with approximately $640K–$1.94M in total funding raised across multiple seed rounds, and operates with no known government contracts or lobbying activity.",
+  "description": "Anon Technologies is a San Francisco-based, early-stage (seed-funded) alternative data and market intelligence company founded in 2021. The company aggregates and analyzes millions of public data points in near real-time to deliver granular sales, inventory, and margin intelligence across hundreds of retailers, primarily serving institutional investors such as hedge funds and financial analysts seeking an informational edge ahead of earnings. The company is a very small outfit (1–10 employees) with approximately $640K–$1.94M in total funding raised across multiple seed rounds, and operates with no known government contracts or lobbying activity.",
   "revenue_range": "Under $1M",
   "employee_count": "1-10",
   "regions": [
@@ -33,16 +33,16 @@
    "Buy-side analysts at investment banks"
   ],
   "risk_factors": [
-   "SEC MNPI/Alternative Data Scrutiny: The SEC's Office of Compliance Inspections has flagged alternative data vendors as an exam priority, investigating whether data providers inadvertently supply material non-public information (MNPI) to investment managers — a legal risk that could disrupt Killington's client relationships or expose it to enforcement action under Section 10(b) and Rule 10b-5 of the Securities Exchange Act.",
-   "Web Scraping Legal Uncertainty: Federal court precedents on web scraping remain unsettled. Website terms-of-service violations, Computer Fraud and Abuse Act (CFAA) exposure, and potential platform-level blocking by major retailers pose ongoing operational and legal risks to Killington's core data collection methodology.",
-   "California CCPA/CPRA Compliance Burden: Headquartered in San Francisco, Killington is directly subject to the California Consumer Privacy Act (CCPA) and its strengthened successor CPRA, which impose strict obligations on companies that collect, process, or sell consumer-related data — with enforcement by the California Privacy Protection Agency (CPPA).",
-   "Federal Privacy Legislation Risk: Congress is actively debating a federal consumer data privacy law, which could impose sweeping new obligations on data brokers and alternative data providers — potentially requiring opt-in consent, data minimization, and new liability exposure that could fundamentally alter Killington's data acquisition model.",
-   "DOJ Bulk Data Rule (Jan 2025): The Department of Justice's January 2025 rule restricting bulk sensitive data transfers to foreign adversaries could affect data vendors operating internationally or with foreign-linked investors, adding compliance complexity to Killington's current and future operations.",
-   "Seed-Stage Capital & Runway Risk: With only ~$640K–$1.94M in total funding and a very small team, Killington faces existential risk from inability to raise additional capital. Rising interest rates, tighter VC markets, and competition from well-capitalized incumbents (YipitData, M Science, Earnest Analytics) increase this risk.",
+   "SEC MNPI/Alternative Data Scrutiny: The SEC's Office of Compliance Inspections has flagged alternative data vendors as an exam priority, investigating whether data providers inadvertently supply material non-public information (MNPI) to investment managers — a legal risk that could disrupt Anon's client relationships or expose it to enforcement action under Section 10(b) and Rule 10b-5 of the Securities Exchange Act.",
+   "Web Scraping Legal Uncertainty: Federal court precedents on web scraping remain unsettled. Website terms-of-service violations, Computer Fraud and Abuse Act (CFAA) exposure, and potential platform-level blocking by major retailers pose ongoing operational and legal risks to Anon's core data collection methodology.",
+   "California CCPA/CPRA Compliance Burden: Headquartered in San Francisco, Anon is directly subject to the California Consumer Privacy Act (CCPA) and its strengthened successor CPRA, which impose strict obligations on companies that collect, process, or sell consumer-related data — with enforcement by the California Privacy Protection Agency (CPPA).",
+   "Federal Privacy Legislation Risk: Congress is actively debating a federal consumer data privacy law, which could impose sweeping new obligations on data brokers and alternative data providers — potentially requiring opt-in consent, data minimization, and new liability exposure that could fundamentally alter Anon's data acquisition model.",
+   "DOJ Bulk Data Rule (Jan 2025): The Department of Justice's January 2025 rule restricting bulk sensitive data transfers to foreign adversaries could affect data vendors operating internationally or with foreign-linked investors, adding compliance complexity to Anon's current and future operations.",
+   "Seed-Stage Capital & Runway Risk: With only ~$640K–$1.94M in total funding and a very small team, Anon faces existential risk from inability to raise additional capital. Rising interest rates, tighter VC markets, and competition from well-capitalized incumbents (YipitData, M Science, Earnest Analytics) increase this risk.",
    "Market Concentration / Client Dependency: As a very small company likely serving a handful of institutional clients, loss of even one or two key accounts could materially impair revenues. Hedge fund industry consolidation and cost-cutting on data subscriptions increase this vulnerability.",
-   "Retail Sector Volatility: Killington's core data product tracks retail sales, inventory, and margins. A prolonged contraction in U.S. consumer spending — driven by tariffs, inflation, or recession — could reduce investor interest in granular retail intelligence, shrinking the addressable market for Killington's services.",
-   "Competitive Displacement by Larger Alt-Data Providers: Competitors such as YipitData, Earnest Analytics, Bloomberg Second Measure, and M Science have substantially more funding, broader datasets, and established institutional client relationships — threatening Killington's ability to differentiate and grow.",
-   "AI and Automation Disruption: Large financial institutions and hedge funds are building in-house AI/ML capabilities to directly scrape and analyze public data, potentially disintermediating third-party alt-data vendors like Killington over the medium term."
+   "Retail Sector Volatility: Anon's core data product tracks retail sales, inventory, and margins. A prolonged contraction in U.S. consumer spending — driven by tariffs, inflation, or recession — could reduce investor interest in granular retail intelligence, shrinking the addressable market for Anon's services.",
+   "Competitive Displacement by Larger Alt-Data Providers: Competitors such as YipitData, Earnest Analytics, Bloomberg Second Measure, and M Science have substantially more funding, broader datasets, and established institutional client relationships — threatening Anon's ability to differentiate and grow.",
+   "AI and Automation Disruption: Large financial institutions and hedge funds are building in-house AI/ML capabilities to directly scrape and analyze public data, potentially disintermediating third-party alt-data vendors like Anon over the medium term."
   ],
   "regulatory_agencies": [
    "SEC (Securities and Exchange Commission) — primary regulator of investment adviser clients; oversees MNPI and alternative data use policies",
@@ -56,29 +56,29 @@
    "House Financial Services Committee — oversees SEC, investment adviser regulation, and market structure",
    "House Energy and Commerce Committee — leads federal privacy legislation (American Privacy Rights Act)"
   ],
-  "political_exposure_notes": "Killington Technologies has no identified lobbying activity, PAC contributions, or government contracts. It is a private, seed-stage company with no known federal funding dependencies. However, it operates in a politically sensitive space: (1) The SEC's ongoing focus on alternative data vendors and MNPI enforcement directly impacts Killington's customers (hedge funds) and indirectly shapes demand for its services; (2) Federal consumer data privacy legislation (e.g., the American Privacy Rights Act, under active debate in Congress) could impose new obligations on data intelligence companies; (3) The DOJ's January 2025 bulk data rule adds compliance complexity for companies handling aggregated consumer data; (4) California's CCPA/CPRA framework — administered by the CPPA — is the most directly applicable regulatory framework given Killington's San Francisco HQ; (5) The SEC's Regulation S-P amendments (effective December 2025 for large firms, June 2026 for smaller firms) heighten data protection and cybersecurity obligations for the hedge fund clients Killington serves. No evidence of political spending, registered lobbying, or government contract revenue was found.",
-  "raw_research": "COMPANY IDENTITY: Killington Technologies Inc. is a for-profit, seed-stage alternative data company headquartered at 548 Market Street, San Francisco, CA (per CB Insights). Founded in 2021 by Gil Patrice Zamfirescu (MIT-educated; formerly a CTO). The company operates at killingtontechnologies.com. A secondary domain killington.tech describes it as \"an MIT and Stanford founded competitive intelligence firm.\"\n\nPRODUCT/SERVICE: Delivers near real-time sales, inventory, and margin data across hundreds of retailers, helping institutional investors reach data-driven conclusions faster. Intelligence is derived from millions of public data points gathered daily. Coverage reportedly spans over 100 major corporations. Use cases demonstrated on website include: predicting iPhone 16 demand for Apple investors, detecting early weakness in Victoria's Secret's Q1 2025 guidance quarter, and forecasting Arhaus Q1 2025 revenue misses.\n\nSIZE: Estimated 1–10 employees (per Prospeo, SignalHire). Total funding: $600K–$1.94M across 2 rounds (sources vary: Tracxn cites $600K; CB Insights cites $1.94M; FormDs confirms a $400K equity raise on May 24, 2024; Crunchbase shows last round was a Seed in May 2024). Ranked 48th among 479 active alt-data competitors by Tracxn. No revenue figures publicly available; company is pre-revenue or very early revenue.\n\nLEADERSHIP: Gil Patrice Zamfirescu — Co-Founder & CEO. MIT-educated. Previously worked as a CTO. Has been with Killington for approximately 4 years 9 months (as of early 2026).\n\nGEOGRAPHY: HQ in San Francisco, CA. Operations appear entirely US-based. No international offices, manufacturing, or data centers identified. Customers appear to be U.S.-based institutional investors.\n\nSUPPLY CHAIN: No physical manufacturing. Core supply chain consists of: (1) Public web data from retailer websites and e-commerce platforms; (2) Cloud computing infrastructure (provider not confirmed, but typical for startups of this type — AWS, GCP, Azure); (3) Open-sou",
+  "political_exposure_notes": "Anon Technologies has no identified lobbying activity, PAC contributions, or government contracts. It is a private, seed-stage company with no known federal funding dependencies. However, it operates in a politically sensitive space: (1) The SEC's ongoing focus on alternative data vendors and MNPI enforcement directly impacts Anon's customers (hedge funds) and indirectly shapes demand for its services; (2) Federal consumer data privacy legislation (e.g., the American Privacy Rights Act, under active debate in Congress) could impose new obligations on data intelligence companies; (3) The DOJ's January 2025 bulk data rule adds compliance complexity for companies handling aggregated consumer data; (4) California's CCPA/CPRA framework — administered by the CPPA — is the most directly applicable regulatory framework given Anon's San Francisco HQ; (5) The SEC's Regulation S-P amendments (effective December 2025 for large firms, June 2026 for smaller firms) heighten data protection and cybersecurity obligations for the hedge fund clients Anon serves. No evidence of political spending, registered lobbying, or government contract revenue was found.",
+  "raw_research": "COMPANY IDENTITY: Anon Technologies Inc. is a for-profit, seed-stage alternative data company headquartered at 548 Market Street, San Francisco, CA (per CB Insights). Founded in 2021 by Gil Patrice Zamfirescu (MIT-educated; formerly a CTO). The company operates at anontechnologies.com. A secondary domain anon.tech describes it as \"an MIT and Stanford founded competitive intelligence firm.\"\n\nPRODUCT/SERVICE: Delivers near real-time sales, inventory, and margin data across hundreds of retailers, helping institutional investors reach data-driven conclusions faster. Intelligence is derived from millions of public data points gathered daily. Coverage reportedly spans over 100 major corporations. Use cases demonstrated on website include: predicting iPhone 16 demand for Apple investors, detecting early weakness in Victoria's Secret's Q1 2025 guidance quarter, and forecasting Arhaus Q1 2025 revenue misses.\n\nSIZE: Estimated 1–10 employees (per Prospeo, SignalHire). Total funding: $600K–$1.94M across 2 rounds (sources vary: Tracxn cites $600K; CB Insights cites $1.94M; FormDs confirms a $400K equity raise on May 24, 2024; Crunchbase shows last round was a Seed in May 2024). Ranked 48th among 479 active alt-data competitors by Tracxn. No revenue figures publicly available; company is pre-revenue or very early revenue.\n\nLEADERSHIP: Gil Patrice Zamfirescu — Co-Founder & CEO. MIT-educated. Previously worked as a CTO. Has been with Anon for approximately 4 years 9 months (as of early 2026).\n\nGEOGRAPHY: HQ in San Francisco, CA. Operations appear entirely US-based. No international offices, manufacturing, or data centers identified. Customers appear to be U.S.-based institutional investors.\n\nSUPPLY CHAIN: No physical manufacturing. Core supply chain consists of: (1) Public web data from retailer websites and e-commerce platforms; (2) Cloud computing infrastructure (provider not confirmed, but typical for startups of this type — AWS, GCP, Azure); (3) Open-sou",
   "citations": [
-   "https://www.killingtontechnologies.com/",
-   "https://tracxn.com/d/companies/killingtontechnologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0",
-   "https://www.cbinsights.com/company/killington-technologies",
-   "https://www.privco.com/company/killington-technologies",
-   "https://www.crunchbase.com/organization/killington-technologies",
-   "https://www.killington.tech/",
-   "https://www.signalhire.com/companies/killington-technologies",
-   "https://www.linkedin.com/company/killington-technologies",
+   "https://www.anontechnologies.com/",
+   "https://tracxn.com/d/companies/anontechnologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0",
+   "https://www.cbinsights.com/company/anon-technologies",
+   "https://www.privco.com/company/anon-technologies",
+   "https://www.crunchbase.com/organization/anon-technologies",
+   "https://www.anon.tech/",
+   "https://www.signalhire.com/companies/anon-technologies",
+   "https://www.linkedin.com/company/anon-technologies",
    "https://pitchbook.com/profiles/company/533571-22",
-   "https://tracxn.com/d/companies/killington-technologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0"
+   "https://tracxn.com/d/companies/anon-technologies/__kVI64mF60gPJBzwOckO5byDLj9eeSTpPPzum4SMM_C0"
   ]
  },
  "dashboard": {
   "id": "910c2811-6022-4bd6-ab10-d20cc64d8672",
-  "brief_headline": "**SEC MNPI enforcement and CPPA data broker crackdown** put Killington's client base and operating license at risk",
+  "brief_headline": "**SEC MNPI enforcement and CPPA data broker crackdown** put Anon's client base and operating license at risk",
   "brief_summary": null,
   "brief_points": [
-   "**SEC 2026 exam cycle targeting alt-data MNPI controls** could force hedge fund clients to suspend Killington vendor contracts immediately",
-   "**CPPA Delete Act Strike Force** is actively pursuing financial intelligence companies; $200/day fines could exceed Killington's entire seed funding",
-   "**Federal appellate CFAA ruling on anti-bot bypass** could criminalize Killington's core scraping infrastructure and trigger retailer litigation",
+   "**SEC 2026 exam cycle targeting alt-data MNPI controls** could force hedge fund clients to suspend Anon vendor contracts immediately",
+   "**CPPA Delete Act Strike Force** is actively pursuing financial intelligence companies; $200/day fines could exceed Anon's entire seed funding",
+   "**Federal appellate CFAA ruling on anti-bot bypass** could criminalize Anon's core scraping infrastructure and trigger retailer litigation",
    "**AI bubble deflation and fintech seed contraction** threaten Series A runway precisely when compliance buildout demands peak capital"
   ],
   "dominant_risk_label": "Regulatory Actions",
@@ -256,7 +256,7 @@
    "id": "205bd793-719d-4be1-b9bb-ca4c161e7944",
    "event_key": "evt-7",
    "title": "Meta v. Bright Data – Logged-Off Public Scraping Precedent Stabilized (N.D. Cal. 2024)",
-   "description": "Meta dismissed its remaining claims against Bright Data after a federal court ruled that logged-off scraping of public data does not violate platform terms of service, stabilizing legal protection for scrapers of publicly accessible content—a favorable precedent for Killington.",
+   "description": "Meta dismissed its remaining claims against Bright Data after a federal court ruled that logged-off scraping of public data does not violate platform terms of service, stabilizing legal protection for scrapers of publicly accessible content—a favorable precedent for Anon.",
    "category": "regulatory_actions",
    "severity": "low",
    "timeframe": "Ongoing (precedent established)",
@@ -300,7 +300,7 @@
    "id": "17e84ebd-208c-476c-a9ed-ed4b15543995",
    "event_key": "evt-9",
    "title": "SEC FY2026 Exam Priorities — MNPI & Alternative Data Vendor Due Diligence Focus",
-   "description": "SEC Division of Examinations' FY2026 priorities continue scrutinizing hedge fund advisers' MNPI handling and alternative data vendor due diligence under Section 204A of the Investment Advisers Act, increasing compliance burdens on Killington's clients.",
+   "description": "SEC Division of Examinations' FY2026 priorities continue scrutinizing hedge fund advisers' MNPI handling and alternative data vendor due diligence under Section 204A of the Investment Advisers Act, increasing compliance burdens on Anon's clients.",
    "category": "regulatory_actions",
    "severity": "high",
    "timeframe": "Q3 2026 – Q2 2027",
@@ -702,7 +702,7 @@
    "title": "Will the SEC Division of Examinations issue a deficiency letter or refer a registered investment adviser to enforcement for inadequate MNPI policies specifically addressing alternative data vendor usage (under Exchange Act Section 204A) before December 31, 2026?",
    "short_title": "SEC Alt-Data MNPI Enforcement",
    "display_title": "Will the SEC cite a hedge fund for inadequate alternative data MNPI policies by end of 2026?",
-   "description": "Tracks whether the SEC takes a formal enforcement step targeting a hedge fund's failure to tailor MNPI compliance policies to its use of third-party alternative data vendors, which would directly threaten Killington's client relationships.",
+   "description": "Tracks whether the SEC takes a formal enforcement step targeting a hedge fund's failure to tailor MNPI compliance policies to its use of third-party alternative data vendors, which would directly threaten Anon's client relationships.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.62,
@@ -718,7 +718,7 @@
     "enforcement"
    ],
    "event_title": "SEC Alt-Data Vendor Liability",
-   "rationale": "A formal SEC deficiency letter or enforcement referral citing MNPI policy failures at a hedge fund using alternative data would trigger immediate client contract reviews, pause new sales cycles, and force Killington to bear indemnification and due-diligence costs that a seed-stage company cannot absorb.",
+   "rationale": "A formal SEC deficiency letter or enforcement referral citing MNPI policy failures at a hedge fund using alternative data would trigger immediate client contract reviews, pause new sales cycles, and force Anon to bear indemnification and due-diligence costs that a seed-stage company cannot absorb.",
    "is_major": true,
    "sort_order": 0,
    "allocation_pct": 22,
@@ -739,7 +739,7 @@
     },
     {
      "n": 2,
-     "text": "Killington loses active subscriptions and pipeline deals; seed-stage runway collapses."
+     "text": "Anon loses active subscriptions and pipeline deals; seed-stage runway collapses."
     }
    ],
    "sources": [
@@ -785,7 +785,7 @@
     "CFAA"
    ],
    "event_title": "Reddit Scraping Lawsuit Precedent",
-   "rationale": "An adverse SDNY merits ruling on DMCA §1201 anti-circumvention for scraping intermediaries could create persuasive precedent directly threatening Killington's technical collection architecture, but the 2027 expiry and 0.35 probability reduce urgency relative to the CFAA appellate contract.",
+   "rationale": "An adverse SDNY merits ruling on DMCA §1201 anti-circumvention for scraping intermediaries could create persuasive precedent directly threatening Anon's technical collection architecture, but the 2027 expiry and 0.35 probability reduce urgency relative to the CFAA appellate contract.",
    "is_major": false,
    "sort_order": 0,
    "allocation_pct": 1,
@@ -817,13 +817,13 @@
   },
   {
    "id": "a659fcd3-b7d2-4df0-8c9a-5f1596013e9f",
-   "contract_key": "synthetic-cppa-killington-data-broker-registration",
+   "contract_key": "synthetic-cppa-anon-data-broker-registration",
    "event_key": "evt-16",
    "event_id": "7ae31a56-1ac7-48c8-a401-0c40972fb15c",
    "title": "Will the California Privacy Protection Agency's Data Broker Enforcement Strike Force issue a formal notice of violation or civil penalty against a financial intelligence or alternative data analytics company for failure to register under the California DELETE Act (Cal. Civ. Code §1798.99.80) by December 31, 2026?",
    "short_title": "CPPA Alt-Data Broker Penalty",
    "display_title": "Will the CPPA penalize a financial intelligence or alt-data company for failing to register as a data broker by end of 2026?",
-   "description": "Tracks whether the CPPA Strike Force extends DELETE Act enforcement to financial intelligence or alt-data analytics companies, creating direct compliance risk for Killington.",
+   "description": "Tracks whether the CPPA Strike Force extends DELETE Act enforcement to financial intelligence or alt-data analytics companies, creating direct compliance risk for Anon.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.62,
@@ -839,7 +839,7 @@
     "enforcement"
    ],
    "event_title": "California Data Broker Fines Escalate",
-   "rationale": "A CPPA Strike Force civil penalty against a financial intelligence or alt-data company would establish direct enforcement precedent for Killington as a San Francisco-headquartered data broker, creating immediate fine liability and mandatory compliance buildout costs that could exceed the company's current funding.",
+   "rationale": "A CPPA Strike Force civil penalty against a financial intelligence or alt-data company would establish direct enforcement precedent for Anon as a San Francisco-headquartered data broker, creating immediate fine liability and mandatory compliance buildout costs that could exceed the company's current funding.",
    "is_major": true,
    "sort_order": 1,
    "allocation_pct": 20,
@@ -856,11 +856,11 @@
     },
     {
      "n": 1,
-     "text": "Precedent directly implicates Killington; regulators demand registration and DROP system compliance."
+     "text": "Precedent directly implicates Anon; regulators demand registration and DROP system compliance."
     },
     {
      "n": 2,
-     "text": "Killington faces $200/day fines per request plus legal costs exceeding its $400K equity raise."
+     "text": "Anon faces $200/day fines per request plus legal costs exceeding its $400K equity raise."
     }
    ],
    "sources": [
@@ -890,7 +890,7 @@
    "title": "AWS service disrupted by June 30?",
    "short_title": "AWS Service Disruption",
    "display_title": "AWS service disrupted by June 30?",
-   "description": "Tracks whether AWS suffers a major service disruption by June 30, 2026, relevant to Killington's cloud infrastructure dependency.",
+   "description": "Tracks whether AWS suffers a major service disruption by June 30, 2026, relevant to Anon's cloud infrastructure dependency.",
    "platform": "polymarket",
    "category": "regulatory_actions",
    "probability": 0.095,
@@ -906,7 +906,7 @@
     "Big Tech"
    ],
    "event_title": "Reddit Scraping Lawsuit Precedent",
-   "rationale": "An AWS major outage would disrupt Killington's cloud-dependent data pipeline and product delivery, but low volume ($8K) and only 0.10 probability make this a thin supplementary hedge with limited portfolio impact.",
+   "rationale": "An AWS major outage would disrupt Anon's cloud-dependent data pipeline and product delivery, but low volume ($8K) and only 0.10 probability make this a thin supplementary hedge with limited portfolio impact.",
    "is_major": false,
    "sort_order": 1,
    "allocation_pct": 1,
@@ -960,7 +960,7 @@
     "DROP-system"
    ],
    "event_title": "California Data Broker Deletion Platform",
-   "rationale": "The DROP platform going live operationalizes penalty exposure for Killington as a registered California data broker, but the hedge is redundant with the higher-priority CPPA enforcement contract already capturing this risk vector.",
+   "rationale": "The DROP platform going live operationalizes penalty exposure for Anon as a registered California data broker, but the hedge is redundant with the higher-priority CPPA enforcement contract already capturing this risk vector.",
    "is_major": false,
    "sort_order": 2,
    "allocation_pct": 1,
@@ -1014,7 +1014,7 @@
     "alternative-data"
    ],
    "event_title": "Amazon Blocks AI Web Crawlers",
-   "rationale": "Amazon product pricing, inventory, and sales rank data are core inputs to Killington's retail intelligence product; expanded bot-blocking targeting commercial scrapers would directly destroy data coverage for one of its most strategically important retailer sources, degrading product quality and triggering customer churn.",
+   "rationale": "Amazon product pricing, inventory, and sales rank data are core inputs to Anon's retail intelligence product; expanded bot-blocking targeting commercial scrapers would directly destroy data coverage for one of its most strategically important retailer sources, degrading product quality and triggering customer churn.",
    "is_major": true,
    "sort_order": 2,
    "allocation_pct": 20,
@@ -1031,7 +1031,7 @@
     },
     {
      "n": 1,
-     "text": "Killington's Amazon-derived pricing and inventory signals become inaccessible or unreliable."
+     "text": "Anon's Amazon-derived pricing and inventory signals become inaccessible or unreliable."
     },
     {
      "n": 2,
@@ -1057,7 +1057,7 @@
    "title": "Will any federal appellate court issue a published opinion holding that automated bypass of anti-bot measures on publicly accessible websites constitutes a violation of the Computer Fraud and Abuse Act (18 U.S.C. §1030) by December 31, 2026?",
    "short_title": "CFAA Anti-Bot Appellate Ruling",
    "display_title": "Will a federal appeals court rule that bypassing anti-bot measures on public websites violates the CFAA by end of 2026?",
-   "description": "Tracks whether any federal circuit court establishes new CFAA liability for bypassing anti-bot defenses on publicly accessible websites, which would directly criminalize core elements of Killington's scraping infrastructure.",
+   "description": "Tracks whether any federal circuit court establishes new CFAA liability for bypassing anti-bot defenses on publicly accessible websites, which would directly criminalize core elements of Anon's scraping infrastructure.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.12,
@@ -1073,7 +1073,7 @@
     "anti-bot"
    ],
    "event_title": "Reddit Scraping Lawsuit Precedent",
-   "rationale": "A federal appellate ruling establishing CFAA liability for bypassing anti-bot measures would criminalize core elements of Killington's web-scraping infrastructure, forcing an immediate product shutdown or costly re-architecture while exposing the company to private litigation from targeted retailers.",
+   "rationale": "A federal appellate ruling establishing CFAA liability for bypassing anti-bot measures would criminalize core elements of Anon's web-scraping infrastructure, forcing an immediate product shutdown or costly re-architecture while exposing the company to private litigation from targeted retailers.",
    "is_major": true,
    "sort_order": 3,
    "allocation_pct": 18,
@@ -1094,7 +1094,7 @@
     },
     {
      "n": 2,
-     "text": "Killington must halt scraping pipeline; product delivery ceases and company faces existential shutdown."
+     "text": "Anon must halt scraping pipeline; product delivery ceases and company faces existential shutdown."
     }
    ],
    "sources": [
@@ -1140,7 +1140,7 @@
     "California"
    ],
    "event_title": "California Data Broker Deletion Platform",
-   "rationale": "A CPPA civil penalty against any data broker for DROP non-compliance signals enforcement escalation that could reach Killington, but the 0.05 probability and December expiry limit near-term hedge value.",
+   "rationale": "A CPPA civil penalty against any data broker for DROP non-compliance signals enforcement escalation that could reach Anon, but the 0.05 probability and December expiry limit near-term hedge value.",
    "is_major": false,
    "sort_order": 3,
    "allocation_pct": 1,
@@ -1194,7 +1194,7 @@
     "enforcement"
    ],
    "event_title": "California Data Broker Deletion Platform",
-   "rationale": "The CPPA's first formal enforcement action against a data broker signals the agency's enforcement posture and near-term threat to Killington, but this contract is closely correlated with the major CPPA alt-data penalty contract already in the portfolio.",
+   "rationale": "The CPPA's first formal enforcement action against a data broker signals the agency's enforcement posture and near-term threat to Anon, but this contract is closely correlated with the major CPPA alt-data penalty contract already in the portfolio.",
    "is_major": false,
    "sort_order": 4,
    "allocation_pct": 1,
@@ -1247,7 +1247,7 @@
     "Big Tech"
    ],
    "event_title": "Hedge Fund In-House AI Threat",
-   "rationale": "An AI investment bubble burst by end-2026 would trigger broad VC pullback from AI-adjacent fintech startups like Killington, simultaneously shrinking hedge fund technology budgets and collapsing Killington's Series A fundraising prospects at the precise moment it needs growth capital.",
+   "rationale": "An AI investment bubble burst by end-2026 would trigger broad VC pullback from AI-adjacent fintech startups like Anon, simultaneously shrinking hedge fund technology budgets and collapsing Anon's Series A fundraising prospects at the precise moment it needs growth capital.",
    "is_major": true,
    "sort_order": 4,
    "allocation_pct": 10,
@@ -1268,7 +1268,7 @@
     },
     {
      "n": 2,
-     "text": "Killington fails to close Series A; runway exhausted before next product milestone."
+     "text": "Anon fails to close Series A; runway exhausted before next product milestone."
     }
    ],
    "sources": [
@@ -1314,7 +1314,7 @@
     "automated-decision-making"
    ],
    "event_title": "California Automated Decision Rules",
-   "rationale": "ADMT regulations taking effect on schedule would impose risk assessment and opt-out obligations on Killington's AI-powered analytics pipeline, but the 0.30 probability and indirect applicability to B2B institutional tools reduce hedge priority.",
+   "rationale": "ADMT regulations taking effect on schedule would impose risk assessment and opt-out obligations on Anon's AI-powered analytics pipeline, but the 0.30 probability and indirect applicability to B2B institutional tools reduce hedge priority.",
    "is_major": false,
    "sort_order": 5,
    "allocation_pct": 1,
@@ -1348,7 +1348,7 @@
    "title": "Will the California Privacy Protection Agency extend the January 1, 2027 ADMT compliance deadline by at least 6 months?",
    "short_title": "CPPA ADMT Deadline Extension",
    "display_title": "Will California extend the ADMT compliance deadline by at least 6 months past January 2027?",
-   "description": "Tracks whether the CPPA grants at least a 6-month extension to the January 1, 2027 ADMT compliance deadline, which would give Killington additional runway to build required opt-out and risk assessment infrastructure.",
+   "description": "Tracks whether the CPPA grants at least a 6-month extension to the January 1, 2027 ADMT compliance deadline, which would give Anon additional runway to build required opt-out and risk assessment infrastructure.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.35,
@@ -1364,7 +1364,7 @@
     "compliance-deadline"
    ],
    "event_title": "California Automated Decision Rules",
-   "rationale": "A NO outcome (no extension granted) means ADMT compliance hits on schedule, imposing immediate obligations on Killington; this serves as a low-allocation trigger hedge for accelerated compliance costs.",
+   "rationale": "A NO outcome (no extension granted) means ADMT compliance hits on schedule, imposing immediate obligations on Anon; this serves as a low-allocation trigger hedge for accelerated compliance costs.",
    "is_major": false,
    "sort_order": 6,
    "allocation_pct": 1,
@@ -1398,7 +1398,7 @@
    "title": "Will the California Privacy Protection Agency publish formal guidance or an enforcement advisory before January 1, 2027 clarifying that AI-powered institutional credit underwriting and deal analysis tools used by B2B financial platforms (serving California-licensed lenders) constitute 'automated decision-making technology' subject to 11 CCR §7150 risk assessment and opt-out requirements?",
    "short_title": "CPPA B2B ADMT Guidance",
    "display_title": "Will the CPPA clarify that AI-powered B2B financial analysis tools are subject to ADMT opt-out rules before January 2027?",
-   "description": "Tracks whether the CPPA issues formal guidance confirming that AI-driven institutional analytics tools serving financial industry clients fall within the ADMT regulations' scope, directly implicating Killington's hedge-fund-facing product.",
+   "description": "Tracks whether the CPPA issues formal guidance confirming that AI-driven institutional analytics tools serving financial industry clients fall within the ADMT regulations' scope, directly implicating Anon's hedge-fund-facing product.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.04,
@@ -1414,7 +1414,7 @@
     "financial-data"
    ],
    "event_title": "California Automated Decision Rules",
-   "rationale": "Formal CPPA guidance confirming that institutional analytics tools are within ADMT scope would directly expand Killington's compliance obligations, but the 0.04 base probability makes this a very low-priority satellite hedge.",
+   "rationale": "Formal CPPA guidance confirming that institutional analytics tools are within ADMT scope would directly expand Anon's compliance obligations, but the 0.04 base probability makes this a very low-priority satellite hedge.",
    "is_major": false,
    "sort_order": 7,
    "allocation_pct": 1,
@@ -1464,7 +1464,7 @@
     "risk-alert"
    ],
    "event_title": "SEC Data Breach Rules for Fund Clients",
-   "rationale": "SEC guidance directing RIAs to audit alternative data vendors' cybersecurity posture under Reg S-P would force Killington's clients to impose onerous diligence requirements or terminate vendor relationships with sub-scale providers.",
+   "rationale": "SEC guidance directing RIAs to audit alternative data vendors' cybersecurity posture under Reg S-P would force Anon's clients to impose onerous diligence requirements or terminate vendor relationships with sub-scale providers.",
    "is_major": false,
    "sort_order": 8,
    "allocation_pct": 1,
@@ -1510,7 +1510,7 @@
     "data-breach"
    ],
    "event_title": "SEC Data Breach Rules for Fund Clients",
-   "rationale": "A formal SEC Reg S-P enforcement action against a hedge fund for vendor oversight failures would create sector-wide chilling effect on alt-data procurement, indirectly threatening Killington's customer base.",
+   "rationale": "A formal SEC Reg S-P enforcement action against a hedge fund for vendor oversight failures would create sector-wide chilling effect on alt-data procurement, indirectly threatening Anon's customer base.",
    "is_major": false,
    "sort_order": 9,
    "allocation_pct": 1,
@@ -1556,7 +1556,7 @@
     "data-security"
    ],
    "event_title": "SEC Data Breach Rules for Fund Clients",
-   "rationale": "A NO outcome (no extension) means smaller RIA clients must comply immediately with Reg S-P vendor oversight obligations by June 3, 2026, accelerating scrutiny of Killington as a third-party data provider.",
+   "rationale": "A NO outcome (no extension) means smaller RIA clients must comply immediately with Reg S-P vendor oversight obligations by June 3, 2026, accelerating scrutiny of Anon as a third-party data provider.",
    "is_major": false,
    "sort_order": 10,
    "allocation_pct": 1,
@@ -1652,7 +1652,7 @@
     "investment-advisers"
    ],
    "event_title": "SEC Alternative Data Exam Focus",
-   "rationale": "A new SEC risk alert on alternative data MNPI compliance would raise the compliance bar for Killington's hedge fund clients and increase scrutiny of their vendor relationships, indirectly threatening contract renewals.",
+   "rationale": "A new SEC risk alert on alternative data MNPI compliance would raise the compliance bar for Anon's hedge fund clients and increase scrutiny of their vendor relationships, indirectly threatening contract renewals.",
    "is_major": false,
    "sort_order": 12,
    "allocation_pct": 1,
@@ -1752,7 +1752,7 @@
     "alternative-data"
    ],
    "event_title": "Appeals Court Scraping Precedent",
-   "rationale": "A Second Circuit ruling applying DMCA §1201 to commercial bot-bypass scrapers would create binding appellate precedent with direct criminal implications for Killington's data collection infrastructure.",
+   "rationale": "A Second Circuit ruling applying DMCA §1201 to commercial bot-bypass scrapers would create binding appellate precedent with direct criminal implications for Anon's data collection infrastructure.",
    "is_major": false,
    "sort_order": 14,
    "allocation_pct": 1,
@@ -1798,7 +1798,7 @@
     "SDNY"
    ],
    "event_title": "Appeals Court Scraping Precedent",
-   "rationale": "An adverse SDNY ruling finding DMCA anti-circumvention liability in Reddit v. Perplexity would establish persuasive precedent directly applicable to Killington's scraping practices, even without binding appellate force.",
+   "rationale": "An adverse SDNY ruling finding DMCA anti-circumvention liability in Reddit v. Perplexity would establish persuasive precedent directly applicable to Anon's scraping practices, even without binding appellate force.",
    "is_major": false,
    "sort_order": 15,
    "allocation_pct": 1,
@@ -1838,7 +1838,7 @@
    "relevance_score": 0.72,
    "tags": [],
    "event_title": "Appeals Court Scraping Precedent",
-   "rationale": "SCOTUS granting cert on an AI copyright case would signal judicial appetite to tighten digital data access rules, creating systemic legal risk across the web-scraping industry that affects Killington.",
+   "rationale": "SCOTUS granting cert on an AI copyright case would signal judicial appetite to tighten digital data access rules, creating systemic legal risk across the web-scraping industry that affects Anon.",
    "is_major": false,
    "sort_order": 16,
    "allocation_pct": 1,
@@ -1884,7 +1884,7 @@
     "California-privacy"
    ],
    "event_title": "California Browser Opt-Out Signals Rule",
-   "rationale": "CPPA formalizing opt-out preference signal requirements would expand data collection restrictions applicable to Killington's browser-accessible public data sources, adding compliance friction to its supply chain.",
+   "rationale": "CPPA formalizing opt-out preference signal requirements would expand data collection restrictions applicable to Anon's browser-accessible public data sources, adding compliance friction to its supply chain.",
    "is_major": false,
    "sort_order": 17,
    "allocation_pct": 1,
@@ -1914,7 +1914,7 @@
    "title": "Will any federal appellate court issue a ruling reversing or materially limiting the N.D. Cal. holding in Meta Platforms v. Bright Data (Case 3:23-cv-00077) that logged-off scraping of publicly accessible platform data does not violate platform Terms of Service by December 31, 2026?",
    "short_title": "Bright Data Precedent Reversal",
    "display_title": "Will a federal appeals court reverse the ruling that publicly accessible data scraping does not violate platform terms of service?",
-   "description": "Tracks whether the favorable Bright Data precedent protecting logged-off public scraping is overturned or narrowed by a federal appellate court, which would undermine Killington's primary legal defense for its data collection practices.",
+   "description": "Tracks whether the favorable Bright Data precedent protecting logged-off public scraping is overturned or narrowed by a federal appellate court, which would undermine Anon's primary legal defense for its data collection practices.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.05,
@@ -1930,7 +1930,7 @@
     "CFAA"
    ],
    "event_title": "Public Data Scraping Legal Shield",
-   "rationale": "Reversal of the Bright Data precedent would eliminate Killington's primary legal defense for logged-off public website scraping, immediately exposing its core data collection methodology to ToS-based civil liability from major retailers.",
+   "rationale": "Reversal of the Bright Data precedent would eliminate Anon's primary legal defense for logged-off public website scraping, immediately exposing its core data collection methodology to ToS-based civil liability from major retailers.",
    "is_major": false,
    "sort_order": 18,
    "allocation_pct": 1,
@@ -1964,7 +1964,7 @@
    "title": "Will any U.S. Circuit Court of Appeals outside the Ninth Circuit issue a ruling holding that commercial automated scraping of publicly accessible websites without authorization violates the Computer Fraud and Abuse Act (18 U.S.C. §1030) by December 31, 2026?",
    "short_title": "CFAA Scraping Circuit Split",
    "display_title": "Will a federal appeals court outside the Ninth Circuit rule that scraping public websites without authorization violates federal computer fraud law?",
-   "description": "Tracks whether a circuit split emerges on CFAA applicability to commercial web scraping, which could expose Killington to federal criminal and civil liability in jurisdictions outside the Ninth Circuit.",
+   "description": "Tracks whether a circuit split emerges on CFAA applicability to commercial web scraping, which could expose Anon to federal criminal and civil liability in jurisdictions outside the Ninth Circuit.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.12,
@@ -1980,7 +1980,7 @@
     "alternative-data"
    ],
    "event_title": "Public Data Scraping Legal Shield",
-   "rationale": "A circuit split on CFAA applicability to commercial scraping would expose Killington to federal criminal and civil liability in jurisdictions outside the protective Ninth Circuit Bright Data precedent.",
+   "rationale": "A circuit split on CFAA applicability to commercial scraping would expose Anon to federal criminal and civil liability in jurisdictions outside the protective Ninth Circuit Bright Data precedent.",
    "is_major": false,
    "sort_order": 19,
    "allocation_pct": 1,
@@ -2014,7 +2014,7 @@
    "title": "Will Amazon.com, Inc. file or join a federal lawsuit against a commercial alternative data or market intelligence firm specifically for unauthorized scraping of product pricing, inventory, or sales rank data from Amazon's public-facing pages by December 31, 2026?",
    "short_title": "Amazon Data Scraping Lawsuit",
    "display_title": "Will Amazon sue a commercial data firm for scraping its product pricing or inventory data?",
-   "description": "Tracks whether Amazon initiates or joins federal litigation against a commercial alternative data provider for scraping publicly accessible product data, which would signal an aggressive legal posture that could target Killington directly.",
+   "description": "Tracks whether Amazon initiates or joins federal litigation against a commercial alternative data provider for scraping publicly accessible product data, which would signal an aggressive legal posture that could target Anon directly.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.08,
@@ -2030,7 +2030,7 @@
     "alternative-data"
    ],
    "event_title": "Amazon Blocks AI Web Crawlers",
-   "rationale": "Amazon filing a federal lawsuit against a commercial alternative data firm for scraping product data would create sector-wide legal shock and directly threaten Killington's core Amazon data collection operations.",
+   "rationale": "Amazon filing a federal lawsuit against a commercial alternative data firm for scraping product data would create sector-wide legal shock and directly threaten Anon's core Amazon data collection operations.",
    "is_major": false,
    "sort_order": 20,
    "allocation_pct": 1,
@@ -2060,7 +2060,7 @@
    "title": "Will the SEC Division of Examinations issue a risk alert or enforcement referral specifically citing alternative data vendor due diligence deficiencies under Section 204A of the Investment Advisers Act (15 U.S.C. §80b-4a) at a registered investment adviser by December 31, 2026?",
    "short_title": "SEC Alternative Data Risk Alert",
    "display_title": "Will the SEC issue a risk alert or enforcement referral citing alternative data vendor due diligence failures at an investment adviser by end of 2026?",
-   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal risk alert or enforcement referral specifically targeting hedge fund alternative data practices, which would directly increase compliance scrutiny on Killington's clients and their vendor relationships.",
+   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal risk alert or enforcement referral specifically targeting hedge fund alternative data practices, which would directly increase compliance scrutiny on Anon's clients and their vendor relationships.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.2,
@@ -2076,7 +2076,7 @@
     "Investment-Advisers-Act"
    ],
    "event_title": "SEC Alternative Data Scrutiny",
-   "rationale": "An SEC risk alert or enforcement referral targeting alternative data due diligence deficiencies would force hedge fund clients to impose stringent vendor vetting requirements that Killington, as a seed-stage company, may fail to satisfy.",
+   "rationale": "An SEC risk alert or enforcement referral targeting alternative data due diligence deficiencies would force hedge fund clients to impose stringent vendor vetting requirements that Anon, as a seed-stage company, may fail to satisfy.",
    "is_major": false,
    "sort_order": 21,
    "allocation_pct": 1,
@@ -2124,7 +2124,7 @@
    "relevance_score": 0.7,
    "tags": [],
    "event_title": "SEC Alternative Data Scrutiny",
-   "rationale": "Deregulatory posture signal only; the 0.01 probability and negligible volume make this effectively zero-allocation as a standalone hedge for Killington's risk profile.",
+   "rationale": "Deregulatory posture signal only; the 0.01 probability and negligible volume make this effectively zero-allocation as a standalone hedge for Anon's risk profile.",
    "is_major": false,
    "sort_order": 22,
    "allocation_pct": 0,
@@ -2162,7 +2162,7 @@
    "title": "Will the California Privacy Protection Agency's DELETE Act DROP platform be fully operational and begin imposing $200/day/request civil penalties on non-compliant registered data brokers (Cal. Civ. Code §1798.99.80) by August 1, 2026?",
    "short_title": "CPPA DELETE Act Penalty Activation",
    "display_title": "Will the CPPA begin imposing DELETE Act penalties on data brokers by August 1, 2026?",
-   "description": "Tracks whether the CPPA activates mandatory penalty enforcement under SB 362 on the statutory August 1, 2026 deadline, directly determining Killington's financial exposure for non-compliance with deletion request processing.",
+   "description": "Tracks whether the CPPA activates mandatory penalty enforcement under SB 362 on the statutory August 1, 2026 deadline, directly determining Anon's financial exposure for non-compliance with deletion request processing.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.62,
@@ -2178,7 +2178,7 @@
     "California privacy"
    ],
    "event_title": "California Delete Act Compliance",
-   "rationale": "The CPPA activating mandatory $200/day penalties under the DELETE Act on August 1, 2026 directly triggers Killington's fine exposure as a registered California data broker with no compliance infrastructure in place.",
+   "rationale": "The CPPA activating mandatory $200/day penalties under the DELETE Act on August 1, 2026 directly triggers Anon's fine exposure as a registered California data broker with no compliance infrastructure in place.",
    "is_major": false,
    "sort_order": 23,
    "allocation_pct": 1,
@@ -2216,7 +2216,7 @@
    "title": "Will the CPPA Data Broker Enforcement Strike Force issue a civil penalty or consent order against a retail-sector or financial data intelligence company (distinct from S&P Global) for DELETE Act violations (Cal. Civ. Code §1798.99.80) before December 31, 2026?",
    "short_title": "CPPA Financial Data Broker Fine",
    "display_title": "Will the CPPA Strike Force fine a financial data company for DELETE Act violations before end of 2026?",
-   "description": "Tracks whether CPPA enforcement expands beyond its initial S&P Global action to target financial intelligence or alt-data companies, directly signaling enforcement risk for Killington Technologies.",
+   "description": "Tracks whether CPPA enforcement expands beyond its initial S&P Global action to target financial intelligence or alt-data companies, directly signaling enforcement risk for Anon Technologies.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.35,
@@ -2286,7 +2286,7 @@
     "data broker"
    ],
    "event_title": "Federal Data Privacy Bill Hearing",
-   "rationale": "SECURE Data Act clearing committee would signal imminent federal data broker registration and minimization requirements, materially increasing Killington's compliance obligations and restructuring its business model.",
+   "rationale": "SECURE Data Act clearing committee would signal imminent federal data broker registration and minimization requirements, materially increasing Anon's compliance obligations and restructuring its business model.",
    "is_major": false,
    "sort_order": 25,
    "allocation_pct": 1,
@@ -2324,7 +2324,7 @@
    "title": "Will the SECURE Data Act (HR 8413), which establishes a federal FTC data broker registry, opt-out deletion rights, and data minimization rules while preempting CCPA/CPRA, be signed into law before December 31, 2027?",
    "short_title": "SECURE Data Act Enactment",
    "display_title": "Will the SECURE Data Act become federal law by end of 2027?",
-   "description": "Tracks full enactment of the SECURE Data Act through House passage, Senate approval, and presidential signature, determining whether federal preemption of CCPA replaces Killington's current California compliance regime.",
+   "description": "Tracks full enactment of the SECURE Data Act through House passage, Senate approval, and presidential signature, determining whether federal preemption of CCPA replaces Anon's current California compliance regime.",
    "platform": "synthetic",
    "category": "federal_legislation",
    "probability": 0.03,
@@ -2340,7 +2340,7 @@
     "data broker"
    ],
    "event_title": "Federal Data Privacy Bill Hearing",
-   "rationale": "Full enactment of the SECURE Data Act would impose federal data broker registration and data minimization requirements on Killington while potentially preempting the CCPA regime it has partially adapted to.",
+   "rationale": "Full enactment of the SECURE Data Act would impose federal data broker registration and data minimization requirements on Anon while potentially preempting the CCPA regime it has partially adapted to.",
    "is_major": false,
    "sort_order": 26,
    "allocation_pct": 1,
@@ -2388,7 +2388,7 @@
    "relevance_score": 0.71,
    "tags": [],
    "event_title": "Federal Data Privacy Bill Hearing",
-   "rationale": "FISA reauthorization failure would signal congressional gridlock on data-related legislation, but the link to Killington's risk profile is too indirect for meaningful allocation.",
+   "rationale": "FISA reauthorization failure would signal congressional gridlock on data-related legislation, but the link to Anon's risk profile is too indirect for meaningful allocation.",
    "is_major": false,
    "sort_order": 27,
    "allocation_pct": 0,
@@ -2426,7 +2426,7 @@
    "title": "Will the DOJ National Security Division issue its first civil or criminal enforcement action under the Data Security Program (28 CFR Part 202, implemented under EO 14117) against a U.S. data vendor for bulk sensitive personal data transfers to a country of concern before December 31, 2026?",
    "short_title": "DOJ Data Security Program Enforcement",
    "display_title": "Will the DOJ bring its first enforcement action under the Data Security Program against a data vendor by end of 2026?",
-   "description": "Tracks whether DOJ escalates the Data Security Program from compliance guidance to active prosecution of a data vendor, directly signaling enforcement risk for companies like Killington handling aggregated consumer data.",
+   "description": "Tracks whether DOJ escalates the Data Security Program from compliance guidance to active prosecution of a data vendor, directly signaling enforcement risk for companies like Anon handling aggregated consumer data.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.25,
@@ -2442,7 +2442,7 @@
     "EO 14117"
    ],
    "event_title": "DOJ Bulk Data Transfer Rule",
-   "rationale": "DOJ's first DSP enforcement action against a data vendor would signal active prosecution risk under the bulk data rule for companies like Killington that aggregate consumer data, potentially triggering compliance restructuring costs.",
+   "rationale": "DOJ's first DSP enforcement action against a data vendor would signal active prosecution risk under the bulk data rule for companies like Anon that aggregate consumer data, potentially triggering compliance restructuring costs.",
    "is_major": false,
    "sort_order": 28,
    "allocation_pct": 1,
@@ -2480,7 +2480,7 @@
    "title": "Will the DOJ National Security Division issue formal compliance guidance or a frequently-asked-questions document under 28 CFR Part 202 (Data Security Program) specifically addressing data aggregators, alternative data vendors, or commercial analytics companies by September 30, 2026?",
    "short_title": "DOJ Bulk Data Rule Guidance",
    "display_title": "Will the DOJ issue compliance guidance targeting data aggregators under the Data Security Program by Q3 2026?",
-   "description": "Tracks whether DOJ narrows regulatory uncertainty for alternative data companies by publishing sector-specific compliance guidance under the bulk data transfer rule, which would clarify Killington's obligations.",
+   "description": "Tracks whether DOJ narrows regulatory uncertainty for alternative data companies by publishing sector-specific compliance guidance under the bulk data transfer rule, which would clarify Anon's obligations.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.05,
@@ -2496,7 +2496,7 @@
     "28 CFR Part 202"
    ],
    "event_title": "DOJ Bulk Data Transfer Rule",
-   "rationale": "If DOJ does NOT publish alt-data sector guidance (NO outcome), regulatory uncertainty persists and compliance costs remain elevated for Killington with no clear safe harbor; useful as a low-allocation uncertainty hedge.",
+   "rationale": "If DOJ does NOT publish alt-data sector guidance (NO outcome), regulatory uncertainty persists and compliance costs remain elevated for Anon with no clear safe harbor; useful as a low-allocation uncertainty hedge.",
    "is_major": false,
    "sort_order": 29,
    "allocation_pct": 1,
@@ -2550,7 +2550,7 @@
     "foreign adversary"
    ],
    "event_title": "FTC Foreign Data Transfer Enforcement",
-   "rationale": "An FTC PADFAA enforcement action against a named data broker would demonstrate the agency's willingness to prosecute data transfer violations, raising compliance costs and reputational risk for Killington's data aggregation business.",
+   "rationale": "An FTC PADFAA enforcement action against a named data broker would demonstrate the agency's willingness to prosecute data transfer violations, raising compliance costs and reputational risk for Anon's data aggregation business.",
    "is_major": false,
    "sort_order": 30,
    "allocation_pct": 1,
@@ -2588,7 +2588,7 @@
    "title": "Will the FTC publish a Notice of Proposed Rulemaking (NPRM) under Section 18 of the FTC Act establishing mandatory data broker registration, opt-out deletion rights, or data minimization requirements applicable to commercial data intelligence companies before December 31, 2026?",
    "short_title": "FTC Data Broker Rulemaking NPRM",
    "display_title": "Will the FTC issue a formal rulemaking proposal on data broker registration or deletion rights by end of 2026?",
-   "description": "Tracks whether the FTC initiates formal rulemaking on data broker obligations beyond PADFAA, which would impose new structural compliance obligations on Killington's data aggregation business.",
+   "description": "Tracks whether the FTC initiates formal rulemaking on data broker obligations beyond PADFAA, which would impose new structural compliance obligations on Anon's data aggregation business.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.06,
@@ -2604,7 +2604,7 @@
     "data minimization"
    ],
    "event_title": "FTC Foreign Data Transfer Enforcement",
-   "rationale": "An FTC NPRM on data broker registration would begin the rulemaking clock on mandatory federal compliance obligations for Killington, creating multi-year compliance cost uncertainty during its critical growth phase.",
+   "rationale": "An FTC NPRM on data broker registration would begin the rulemaking clock on mandatory federal compliance obligations for Anon, creating multi-year compliance cost uncertainty during its critical growth phase.",
    "is_major": false,
    "sort_order": 31,
    "allocation_pct": 1,
@@ -2661,7 +2661,7 @@
     "Humphrey's Executor"
    ],
    "event_title": "FTC Foreign Data Transfer Enforcement",
-   "rationale": "If SCOTUS rules AGAINST executive removal of FTC commissioners (NO), FTC retains enforcement independence, sustaining aggressive data broker enforcement posture that threatens Killington; low allocation given indirect relationship.",
+   "rationale": "If SCOTUS rules AGAINST executive removal of FTC commissioners (NO), FTC retains enforcement independence, sustaining aggressive data broker enforcement posture that threatens Anon; low allocation given indirect relationship.",
    "is_major": false,
    "sort_order": 32,
    "allocation_pct": 1,
@@ -2699,7 +2699,7 @@
    "title": "Will the SEC Division of Examinations conduct targeted examinations of Regulation S-P (17 CFR §248.30) incident response program compliance at registered investment advisers who use third-party alternative data vendors during Q3-Q4 2026, as flagged in the 2026 Exam Priorities report?",
    "short_title": "SEC Reg S-P Alt-Data Vendor Exams",
    "display_title": "Will the SEC conduct targeted Reg S-P exams of investment advisers using alternative data vendors in H2 2026?",
-   "description": "Tracks whether the SEC's 2026 exam cycle specifically scrutinizes the vendor oversight and incident response obligations of RIAs that purchase alternative data, directly putting Killington's customer relationships under examination scope.",
+   "description": "Tracks whether the SEC's 2026 exam cycle specifically scrutinizes the vendor oversight and incident response obligations of RIAs that purchase alternative data, directly putting Anon's customer relationships under examination scope.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.1,
@@ -2715,7 +2715,7 @@
     "vendor oversight"
    ],
    "event_title": "SEC Client Data Protection Deadline",
-   "rationale": "SEC examinations specifically targeting Reg S-P vendor oversight at alternative-data-using RIAs would put Killington's client relationships under direct examination scope, triggering client-imposed due diligence demands that could disqualify a seed-stage vendor.",
+   "rationale": "SEC examinations specifically targeting Reg S-P vendor oversight at alternative-data-using RIAs would put Anon's client relationships under direct examination scope, triggering client-imposed due diligence demands that could disqualify a seed-stage vendor.",
    "is_major": false,
    "sort_order": 33,
    "allocation_pct": 1,
@@ -2753,7 +2753,7 @@
    "title": "Will the SEC issue a formal deficiency letter or enforcement action citing Amended Regulation S-P (incident response program and 30-day breach notification requirements) failures against any registered investment adviser with AUM below $1.5B before September 30, 2026?",
    "short_title": "SEC Reg S-P Small RIA Action",
    "display_title": null,
-   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal Regulation S-P deficiency letter or enforcement action against a smaller RIA, establishing precedent that would force Killington's hedge fund clients to scrutinize their third-party data vendor relationships.",
+   "description": "Tracks whether the SEC's 2026 exam cycle produces a formal Regulation S-P deficiency letter or enforcement action against a smaller RIA, establishing precedent that would force Anon's hedge fund clients to scrutinize their third-party data vendor relationships.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.3,
@@ -2769,7 +2769,7 @@
     "cybersecurity"
    ],
    "event_title": "SEC Client Data Protection Deadline",
-   "rationale": "An SEC deficiency letter against a smaller RIA for Reg S-P failures would set precedent that directly forces Killington's hedge fund clients to scrutinize and potentially terminate data vendor relationships lacking robust cybersecurity programs.",
+   "rationale": "An SEC deficiency letter against a smaller RIA for Reg S-P failures would set precedent that directly forces Anon's hedge fund clients to scrutinize and potentially terminate data vendor relationships lacking robust cybersecurity programs.",
    "is_major": false,
    "sort_order": 34,
    "allocation_pct": 1,
@@ -2807,7 +2807,7 @@
    "title": "Will the SEC's Division of Examinations publish formal written guidance or a risk alert specifically addressing alternative data vendor due diligence and MNPI controls for registered investment advisers before December 31, 2026?",
    "short_title": "SEC Alt-Data Risk Alert",
    "display_title": "Will the SEC publish a risk alert on alternative data vendor MNPI controls before end of 2026?",
-   "description": "Tracks whether the SEC issues formal examinations-level guidance on alternative data MNPI risk, which would directly shape compliance obligations for Killington's hedge fund clients.",
+   "description": "Tracks whether the SEC issues formal examinations-level guidance on alternative data MNPI risk, which would directly shape compliance obligations for Anon's hedge fund clients.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.2,
@@ -2823,7 +2823,7 @@
     "enforcement"
    ],
    "event_title": "SEC Enforcement Staff Reduction",
-   "rationale": "Formal SEC guidance on alternative data MNPI risk would raise compliance costs for Killington's hedge fund clients and increase the documentation burden placed on Killington as a data vendor.",
+   "rationale": "Formal SEC guidance on alternative data MNPI risk would raise compliance costs for Anon's hedge fund clients and increase the documentation burden placed on Anon as a data vendor.",
    "is_major": false,
    "sort_order": 35,
    "allocation_pct": 1,
@@ -2873,7 +2873,7 @@
     "fintech"
    ],
    "event_title": "SEC Enforcement Staff Reduction",
-   "rationale": "Reduced SEC enforcement staffing would decrease enforcement pressure on alt-data practices, making this contract beneficial rather than a downside hedge for Killington; excluded from meaningful allocation under downside-only principles.",
+   "rationale": "Reduced SEC enforcement staffing would decrease enforcement pressure on alt-data practices, making this contract beneficial rather than a downside hedge for Anon; excluded from meaningful allocation under downside-only principles.",
    "is_major": false,
    "sort_order": 36,
    "allocation_pct": 0,
@@ -2923,7 +2923,7 @@
     "alternative data"
    ],
    "event_title": "California Data Broker Fines Escalate",
-   "rationale": "CPPA guidance confirming B2B analytics platforms serving institutional investors are within ADMT scope would impose risk assessment and opt-out obligations on Killington's core hedge-fund-facing product pipeline.",
+   "rationale": "CPPA guidance confirming B2B analytics platforms serving institutional investors are within ADMT scope would impose risk assessment and opt-out obligations on Anon's core hedge-fund-facing product pipeline.",
    "is_major": false,
    "sort_order": 37,
    "allocation_pct": 1,
@@ -2961,7 +2961,7 @@
    "title": "Will H.R. 8413 (SECURE Data Act — requiring annual FTC registration for data brokers, imposing data minimization standards, and mandating written vendor contracting requirements) be enacted into law before June 30, 2027?",
    "short_title": "SECURE Data Act Passage",
    "display_title": "Will the SECURE Data Act (federal data broker registration) become law before June 2027?",
-   "description": "Tracks full enactment of H.R. 8413, which would require Killington to register annually with the FTC and comply with data minimization and vendor contracting mandates as a covered data broker.",
+   "description": "Tracks full enactment of H.R. 8413, which would require Anon to register annually with the FTC and comply with data minimization and vendor contracting mandates as a covered data broker.",
    "platform": "synthetic",
    "category": "federal_legislation",
    "probability": 0.02,
@@ -3027,7 +3027,7 @@
     "Congress"
    ],
    "event_title": "Federal Data Broker Registration",
-   "rationale": "Committee markup of the SECURE Data Act advancing federal data broker registration requirements is an early-warning procedural trigger that would signal increased regulatory pressure on Killington's business model.",
+   "rationale": "Committee markup of the SECURE Data Act advancing federal data broker registration requirements is an early-warning procedural trigger that would signal increased regulatory pressure on Anon's business model.",
    "is_major": false,
    "sort_order": 39,
    "allocation_pct": 1,
@@ -3077,7 +3077,7 @@
     "FTC"
    ],
    "event_title": "Senate Consumer Privacy Bill",
-   "rationale": "A Senate Commerce Committee hearing on S.4211 would signal legislative momentum toward federal data processing transparency obligations that would expand compliance costs for Killington.",
+   "rationale": "A Senate Commerce Committee hearing on S.4211 would signal legislative momentum toward federal data processing transparency obligations that would expand compliance costs for Anon.",
    "is_major": false,
    "sort_order": 40,
    "allocation_pct": 1,
@@ -3119,7 +3119,7 @@
     "consumer protection"
    ],
    "event_title": "Senate Consumer Privacy Bill",
-   "rationale": "S.4211 enactment would impose federal consumer notification and data processing transparency obligations on Killington, creating a new compliance cost layer on top of existing CCPA/CPRA obligations.",
+   "rationale": "S.4211 enactment would impose federal consumer notification and data processing transparency obligations on Anon, creating a new compliance cost layer on top of existing CCPA/CPRA obligations.",
    "is_major": false,
    "sort_order": 41,
    "allocation_pct": 1,
@@ -3161,7 +3161,7 @@
     "FTC"
    ],
    "event_title": "Senate Consumer Privacy Bill",
-   "rationale": "The Online Privacy Act clearing committee would introduce a competing federal privacy framework with opt-out rights and a new Digital Privacy Agency, adding regulatory uncertainty and potential compliance obligations for Killington.",
+   "rationale": "The Online Privacy Act clearing committee would introduce a competing federal privacy framework with opt-out rights and a new Digital Privacy Agency, adding regulatory uncertainty and potential compliance obligations for Anon.",
    "is_major": false,
    "sort_order": 42,
    "allocation_pct": 1,
@@ -3187,7 +3187,7 @@
    "title": "Will a published industry survey or primary research report by a recognized alternative data research firm (e.g., Neudata, ExtractAlpha, Opimas) document that more than 40% of hedge funds with AUM between $500M and $5B have deployed in-house LLM-powered web-scraping or retail data extraction capabilities as a substitute for third-party alt-data vendor subscriptions by December 31, 2026?",
    "short_title": "Hedge Fund In-House AI Adoption",
    "display_title": "Will more than 40% of mid-sized hedge funds deploy in-house LLM web-scraping as a substitute for third-party alt-data vendors by end of 2026?",
-   "description": "Tracks whether published research confirms majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction, the core disintermediation threat to Killington's vendor model.",
+   "description": "Tracks whether published research confirms majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction, the core disintermediation threat to Anon's vendor model.",
    "platform": "synthetic",
    "category": "macro_policy",
    "probability": 0.03,
@@ -3203,7 +3203,7 @@
     "LLM"
    ],
    "event_title": "Hedge Fund In-House AI Threat",
-   "rationale": "Published research confirming majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction would validate the core disintermediation threat to Killington's vendor subscription model, accelerating customer churn.",
+   "rationale": "Published research confirming majority mid-market hedge fund adoption of in-house LLM-powered retail data extraction would validate the core disintermediation threat to Anon's vendor subscription model, accelerating customer churn.",
    "is_major": false,
    "sort_order": 43,
    "allocation_pct": 1,
@@ -3257,7 +3257,7 @@
     "litigation"
    ],
    "event_title": "Hedge Fund In-House AI Threat",
-   "rationale": "An adverse CFAA or DMCA ruling in Reddit v. Perplexity would directly threaten Killington's commercial scraping infrastructure, already captured in the primary CFAA appellate contract but retained here as a jurisdictionally distinct hedge.",
+   "rationale": "An adverse CFAA or DMCA ruling in Reddit v. Perplexity would directly threaten Anon's commercial scraping infrastructure, already captured in the primary CFAA appellate contract but retained here as a jurisdictionally distinct hedge.",
    "is_major": false,
    "sort_order": 44,
    "allocation_pct": 1,
@@ -3311,7 +3311,7 @@
     "risk alert"
    ],
    "event_title": "SEC Alt-Data Vendor Liability",
-   "rationale": "A formal SEC Risk Alert on alternative data vendor due diligence would signal heightened supervisory expectations, indirectly threatening Killington's hedge fund client relationships and increasing compliance documentation demands.",
+   "rationale": "A formal SEC Risk Alert on alternative data vendor due diligence would signal heightened supervisory expectations, indirectly threatening Anon's hedge fund client relationships and increasing compliance documentation demands.",
    "is_major": false,
    "sort_order": 45,
    "allocation_pct": 1,
@@ -3395,7 +3395,7 @@
    "title": "Will any comprehensive federal consumer data privacy bill imposing data broker registration and data minimization requirements — including H.R. 8014 (Online Privacy Act), H.R. 8413 (SECURE Data Act), or S. 4211 (Consumer Data Privacy and Security Act of 2026) — pass both chambers of Congress and be signed into law before June 30, 2027?",
    "short_title": "Federal Privacy Bill Enactment",
    "display_title": "Will any comprehensive federal privacy bill become law before mid-2027?",
-   "description": "Tracks whether any of the three competing comprehensive federal privacy frameworks advances to enactment, which would impose new federal data broker registration obligations and data minimization requirements on Killington.",
+   "description": "Tracks whether any of the three competing comprehensive federal privacy frameworks advances to enactment, which would impose new federal data broker registration obligations and data minimization requirements on Anon.",
    "platform": "synthetic",
    "category": "federal_legislation",
    "probability": 0.03,
@@ -3411,7 +3411,7 @@
     "preemption"
    ],
    "event_title": "Online Privacy Act New Agency",
-   "rationale": "Enactment of any comprehensive federal privacy bill would impose data broker registration and minimization requirements on Killington, potentially displacing its existing California-centric compliance approach.",
+   "rationale": "Enactment of any comprehensive federal privacy bill would impose data broker registration and minimization requirements on Anon, potentially displacing its existing California-centric compliance approach.",
    "is_major": false,
    "sort_order": 47,
    "allocation_pct": 1,
@@ -3457,7 +3457,7 @@
     "Congress"
    ],
    "event_title": "Online Privacy Act New Agency",
-   "rationale": "SECURE Data Act advancing to a House floor vote signals near-term enactment risk of federal data broker registration requirements, triggering Killington compliance planning costs ahead of a potential law.",
+   "rationale": "SECURE Data Act advancing to a House floor vote signals near-term enactment risk of federal data broker registration requirements, triggering Anon compliance planning costs ahead of a potential law.",
    "is_major": false,
    "sort_order": 48,
    "allocation_pct": 1,
@@ -3487,7 +3487,7 @@
    "title": "Will the Trump Administration's June 2, 2026 Executive Order on Promoting Advanced AI Innovation and Security result in formal SEC guidance or a no-action letter before December 31, 2026 clarifying that AI-driven alternative data analytics tools used by registered investment advisers are exempt from existing MNPI scrutiny frameworks?",
    "short_title": "AI EO SEC MNPI Carveout",
    "display_title": "Will the Trump AI Executive Order lead to SEC guidance exempting AI analytics tools from MNPI scrutiny by end of 2026?",
-   "description": "Tracks whether the Trump AI deregulation EO translates into concrete SEC guidance reducing compliance friction for hedge funds and their AI-powered alternative data vendors, which would materially benefit Killington's sales cycle.",
+   "description": "Tracks whether the Trump AI deregulation EO translates into concrete SEC guidance reducing compliance friction for hedge funds and their AI-powered alternative data vendors, which would materially benefit Anon's sales cycle.",
    "platform": "synthetic",
    "category": "regulatory_actions",
    "probability": 0.03,
@@ -3503,7 +3503,7 @@
     "alternative data"
    ],
    "event_title": "Trump AI Deregulation Order",
-   "rationale": "A YES outcome (SEC grants MNPI carveout for AI data tools) would benefit Killington; the NO position is the downside hedge but the 0.03 probability makes this effectively worthless as a portfolio hedge.",
+   "rationale": "A YES outcome (SEC grants MNPI carveout for AI data tools) would benefit Anon; the NO position is the downside hedge but the 0.03 probability makes this effectively worthless as a portfolio hedge.",
    "is_major": false,
    "sort_order": 49,
    "allocation_pct": 0,
@@ -3549,7 +3549,7 @@
     "alternative data"
    ],
    "event_title": "Trump AI Deregulation Order",
-   "rationale": "California enacting AI legislation conflicting with the federal Trump AI EO would fragment the compliance landscape for Killington's AI-powered data analytics, creating multi-jurisdictional compliance costs and legal uncertainty.",
+   "rationale": "California enacting AI legislation conflicting with the federal Trump AI EO would fragment the compliance landscape for Anon's AI-powered data analytics, creating multi-jurisdictional compliance costs and legal uncertainty.",
    "is_major": false,
    "sort_order": 50,
    "allocation_pct": 1,
@@ -3595,7 +3595,7 @@
     "Tech"
    ],
    "event_title": "Trump AI Deregulation Order",
-   "rationale": "Federal AI safety legislation passing could impose new governance obligations on AI-powered data analytics tools like Killington's, creating compliance costs that are difficult for a seed-stage company to absorb.",
+   "rationale": "Federal AI safety legislation passing could impose new governance obligations on AI-powered data analytics tools like Anon's, creating compliance costs that are difficult for a seed-stage company to absorb.",
    "is_major": false,
    "sort_order": 51,
    "allocation_pct": 1,
@@ -3625,7 +3625,7 @@
    "title": "Will total U.S. fintech seed and pre-seed venture funding in Q3 2026 remain below the Q3 2025 level, as measured by PitchBook or Crunchbase transaction count data, indicating continued capital concentration away from early-stage deals?",
    "short_title": "Fintech Seed Funding Contraction",
    "display_title": "Will U.S. fintech seed funding in Q3 2026 remain below Q3 2025 levels?",
-   "description": "Tracks whether fintech venture capital continues to concentrate into larger, later-stage deals in Q3 2026 rather than recovering to 2025 seed-stage transaction volumes, directly measuring the funding environment Killington must navigate for its next raise.",
+   "description": "Tracks whether fintech venture capital continues to concentrate into larger, later-stage deals in Q3 2026 rather than recovering to 2025 seed-stage transaction volumes, directly measuring the funding environment Anon must navigate for its next raise.",
    "platform": "synthetic",
    "category": "macro_policy",
    "probability": 0.62,
@@ -3641,7 +3641,7 @@
     "alternative data"
    ],
    "event_title": "Venture Capital Funding Squeeze",
-   "rationale": "Continued fintech seed funding contraction in Q3 2026 would directly signal Killington's inability to raise follow-on capital at current valuations, creating existential runway risk for a company already at seed stage.",
+   "rationale": "Continued fintech seed funding contraction in Q3 2026 would directly signal Anon's inability to raise follow-on capital at current valuations, creating existential runway risk for a company already at seed stage.",
    "is_major": false,
    "sort_order": 52,
    "allocation_pct": 1,
@@ -3679,7 +3679,7 @@
    "title": "Will any U.S.-based alternative data or financial data intelligence startup (excluding companies with prior institutional backing exceeding $10M) close a Series A venture funding round of $5M or more before December 31, 2026, as reported by PitchBook, Crunchbase, or SEC Form D filing?",
    "short_title": "Alt-Data Startup Series A Activity",
    "display_title": "Will a U.S. alt-data startup close a $5M+ Series A by end of 2026?",
-   "description": "Tracks whether comparable alternative data startups at Killington's stage are successfully raising Series A capital in 2026, providing a direct benchmark signal for Killington's own fundraising viability.",
+   "description": "Tracks whether comparable alternative data startups at Anon's stage are successfully raising Series A capital in 2026, providing a direct benchmark signal for Anon's own fundraising viability.",
    "platform": "synthetic",
    "category": "macro_policy",
    "probability": 0.97,
@@ -3695,7 +3695,7 @@
     "seed stage"
    ],
    "event_title": "Venture Capital Funding Squeeze",
-   "rationale": "A NO outcome (no comparable alt-data startup closes a Series A) signals market conditions hostile to Killington's own fundraising, indicating VC appetite for this sector has dried up during its critical raise window.",
+   "rationale": "A NO outcome (no comparable alt-data startup closes a Series A) signals market conditions hostile to Anon's own fundraising, indicating VC appetite for this sector has dried up during its critical raise window.",
    "is_major": false,
    "sort_order": 53,
    "allocation_pct": 1,

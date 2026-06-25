@@ -1,19 +1,19 @@
 import { RawEntry } from "./types";
 import killingtonData from "@/data/killington.json";
 
-// Real Killington Technologies dashboard, pulled from dashboard.castle.tech
+// Real Anon Technologies dashboard, pulled from dashboard.castle.tech
 // (generated_dashboards 910c2811-6022-4bd6-ab10-d20cc64d8672) — 24 risks / 59 markets.
 const base = killingtonData as unknown as RawEntry;
 
 // Added risk: SEC making quarterly reporting optional. Linked to the live Kalshi market
 // KXSECQUARTERLY-26MAR-27APR01 (last price 26% as of 6/24/2026). For an investor-facing
-// alt-data vendor this is a demand catalyst — less official disclosure widens the gap Killington fills.
+// alt-data vendor this is a demand catalyst — less official disclosure widens the gap Anon fills.
 const SEC_QUARTERLY_EVENT = {
   id: "evt-sec-quarterly",
   event_key: "evt-sec-quarterly",
   title: "SEC makes quarterly reporting optional",
   description:
-    "An SEC final rule making quarterly (10-Q) reporting optional would sharply cut how often public companies disclose financials — reshaping the information landscape Killington's investor-facing retail intelligence operates in.",
+    "An SEC final rule making quarterly (10-Q) reporting optional would sharply cut how often public companies disclose financials — reshaping the information landscape Anon's investor-facing retail intelligence operates in.",
   category: "regulatory_actions",
   severity: "high",
   timeframe: "By Jan 1, 2027",
@@ -47,7 +47,7 @@ const SEC_QUARTERLY_CONTRACT = {
   tags: [],
   event_title: "SEC makes quarterly reporting optional",
   rationale:
-    "If the SEC makes quarterly reporting optional, public companies disclose far less frequently — widening the information gap that Killington's near-real-time retail intelligence is built to fill, a direct demand catalyst for its investor subscriptions.",
+    "If the SEC makes quarterly reporting optional, public companies disclose far less frequently — widening the information gap that Anon's near-real-time retail intelligence is built to fill, a direct demand catalyst for its investor subscriptions.",
   is_major: true,
   sort_order: 0,
   allocation_pct: 32, // featured — highest modeled value so it ranks first in the ledger
