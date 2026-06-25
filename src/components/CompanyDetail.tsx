@@ -282,7 +282,6 @@ function Exposures({ co, onSelect }: { co: CompanyVM; onSelect: (id: string) => 
       {/* risk map by theme */}
       <div style={{ borderTop: "1px solid rgba(24,24,24,0.16)", padding: "22px 24px", marginTop: 24 }}>
         <Eyebrow>{co.chainLabel}</Eyebrow>
-        <SectionHead>Where the risk concentrates</SectionHead>
         <div style={{ fontSize: 13, color: "var(--muted)", marginTop: 8 }}>
           {co.modeledTotal} modeled · {co.chainSpan}
         </div>
